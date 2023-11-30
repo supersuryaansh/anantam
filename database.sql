@@ -5,6 +5,7 @@ CREATE TABLE users (
     usrGender ENUM('Male', 'Female', 'Other') NOT NUll,
     usrEmail VARCHAR(100) NOT NULL,
     usrPhone VARCHAR(20) NOT NULL,
-    usrPass VARCHAR(100) NOT NULL,
-    usrEvents TEXT
+    usrCollegeId MEDIUMBLOB NOT NULL,
+    usrGovId MEDIUMBLOB NOT NULL,
+    usrPass VARCHAR(100) NOT NULL
 );
