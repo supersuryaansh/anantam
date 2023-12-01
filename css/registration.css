@@ -25,6 +25,9 @@ a {
   width: 103%;
   margin-inline: -30px;
 }
+.hidden {
+  display: none;
+}
 * {
   padding: 0;
   margin: 0;
@@ -165,8 +168,9 @@ form input:focus {
 }
 /* MENU START */
 .menuPage {
-  width: 100%;
-  height: 100vh;
+  /* display: none; */
+  width: 100vw;
+  height: 100%;
   position: fixed;
   top: 0;
   z-index: 99999;

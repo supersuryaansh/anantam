@@ -1,9 +1,10 @@
 // Global Decelaration
-const menuOpenBtn = document.querySelector(".menu--btn");
-const menuPage = document.querySelector(".menuPage");
-const menuCloseBtn = document.querySelector(".menuCloseBtn");
 const video = document.querySelector(".main--anantam-video");
 const muteButton = document.querySelector(".mic--btn");
+// main--menu
+const mainMenuPageOpenBtn = document.querySelectorAll(".main--MenuBtn");
+const mainMenuPageCloseBtn = document.querySelector(".menu--close-btn");
+const mainMenuPage = document.querySelector(".main--menuPage");
 
 function time() {
   const targetDate = new Date("2024-01-08T00:00:00Z").getTime();
@@ -47,18 +48,6 @@ function time() {
 }
 time();
 
-function menu() {
-  menuOpenBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    menuPage.style.transform = "translateX(0%)";
-  });
-  menuCloseBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    menuPage.style.transform = "translateX(120%)";
-  });
-}
-menu();
-
 function toggleMute() {
   muteButton.addEventListener("click", function (e) {
     e.preventDefault();
@@ -67,3 +56,17 @@ function toggleMute() {
   });
 }
 toggleMute();
+
+function mainMenu() {
+  mainMenuPageOpenBtn.forEach((elem) => {
+    elem.addEventListener("click", function (e) {
+      e.preventDefault();
+      mainMenuPage.style.transform = `translateY(0%)`;
+    });
+  });
+  mainMenuPageCloseBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    mainMenuPage.style.transform = `translateY(-130%)`;
+  });
+}
+mainMenu();

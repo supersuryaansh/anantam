@@ -77,6 +77,9 @@
   .mic--btn {
     left: 10%;
   }
+  .main--menuPage a {
+    font-size: 3vw;
+  }
 }
 @media screen and (max-width: 850px) {
   .card--area {
@@ -113,6 +116,9 @@
     gap: 20px;
     margin-inline: 10px;
   }
+  .menuPage--content {
+    grid-template-columns: repeat(3, 200px);
+  }
 }
 @media screen and (max-width: 715px) {
   .menuCloseBtn img {
@@ -143,6 +149,17 @@
   }
   .about--page {
     margin-top: 30px;
+  }
+  .menuPage--content img {
+    display: none;
+  }
+  .menuPage--content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .menuPage--content a {
+    font-size: 2.4rem;
   }
 }
 @media screen and (max-width: 560px) {

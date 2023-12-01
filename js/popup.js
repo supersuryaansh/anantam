@@ -36,3 +36,23 @@ function roboPOP() {
   });
 }
 roboPOP();
+
+// CRUNCH POP
+function crunchPop() {
+  const modelWindow = document.querySelector("#modelWindowCrunch");
+  const roboPopBtn = document.querySelector("#crunch--pop-btn");
+  const popCloseBtn = document.querySelector("#crunch--close-btn");
+
+  roboPopBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    console.log("clickedddd");
+    modelWindow.style.display = `flex`;
+    modelWindow.style.opacity = 1;
+  });
+  popCloseBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    modelWindow.style.display = `none`;
+    modelWindow.style.opacity = 0;
+  });
+}
+crunchPop();
