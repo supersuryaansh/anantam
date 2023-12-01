@@ -1,18 +1,18 @@
 @font-face {
   font-family: noken;
-  src: url(../fonts/nokenmedium.otf);
+  src: url(../assets/fonts/nokenmedium.otf);
 }
 @font-face {
   font-family: medium;
-  src: url(../fonts/nokenItalic.otf);
+  src: url(../assets/fonts/nokenItalic.otf);
 }
 @font-face {
   font-family: semiBold;
-  src: url(../fonts/nockenSemiBold.otf);
+  src: url(../assets/fonts/nockenSemiBold.otf);
 }
 @font-face {
   font-family: clock;
-  src: url(../fonts/CLOCK.ttf);
+  src: url(../assets/fonts/CLOCK.ttf);
 }
 a {
   color: var(--main);

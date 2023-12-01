@@ -1,38 +1,18 @@
 @font-face {
-  font-family: main;
-  src: url("./fonts/LeagueGothic-CondensedRegular.otf");
-}
-@font-face {
-  font-family: main2;
-  src: url(./fonts/LeagueGothic-Regular.otf);
-}
-@font-face {
-  font-family: hanson;
-  src: url(./fonts/hanson-bold.ttf);
-}
-@font-face {
-  font-family: grostek;
-  src: url(./fonts/OverusedGrotesk-Bold-BF64eeac1756b57.otf);
-}
-@font-face {
-  font-family: light;
-  src: url(./fonts/OverusedGrotesk-Light-BF64eeac17cade6.otf);
-}
-@font-face {
   font-family: noken;
-  src: url(./fonts/nokenmedium.otf);
+  src: url(../assets/fonts/nokenmedium.otf);
 }
 @font-face {
   font-family: medium;
-  src: url(./fonts/nokenItalic.otf);
+  src: url(../assets/fonts/nokenItalic.otf);
 }
 @font-face {
   font-family: semiBold;
-  src: url(./fonts/nockenSemiBold.otf);
+  src: url(../assets/fonts/nockenSemiBold.otf);
 }
 @font-face {
   font-family: clock;
-  src: url(./fonts/CLOCK.ttf);
+  src: url(../assets/fonts/CLOCK.ttf);
 }
 html {
   width: 100vw;
@@ -453,7 +433,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-image: url(./images/cardbg.svg);
+  background-image: url(../assets/images/cardbg.svg);
   height: 600px;
   background-repeat: no-repeat;
   transition: 0.4s;
