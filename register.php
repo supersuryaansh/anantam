@@ -2,20 +2,28 @@
 require_once($_SERVER['DOCUMENT_ROOT']."/"."requireme.php");
 //require_class("registerClass");
 
-//create database object
+
 $db = new Database();
 
 if(!$db->isConnected()){
     die("Database Not connected");
 }
 
-$test = new UserRegister("test", "huu", "haaa", "4542",["id"=>1],["id"=>1],"test");
 
 
-echo var_dump($_FILES);
-$fileUploader = new FileUploader("uploads/");
-$fileUploader->uploadFile($_FILES["usrCollegeId"]);
 
+//check if files exist and perform the registeration
+if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST['usrGender']) && !empty($_POST['usrEmail']) && !empty($_POST['usrPhone']) && !empty($_POST['usrPass']))
+{
+    $fileUploader = new FileUploader("uploads/");
+    //random chars for prefix
+    $fileName = "college_id_". substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20) ."_".basename($_FILES["usrCollegeId"]["name"]);
+    $fileUploader->uploadFile($_FILES["usrCollegeId"],$fileName);
+
+    //register the user
+    $user = new UserRegister($_POST['usrName'],genHash(9),genHash(50),$_POST['usrGender'],$_POST['usrEmail'],$_POST['usrPhone'],$fileName,$_POST['usrPass']);
+
+}
 
 
 ?>
@@ -51,13 +59,25 @@ $fileUploader->uploadFile($_FILES["usrCollegeId"]);
         <label for="usrCollegeId">College ID:</label>
         <input type="file"  accept="image/*" id="usrCollegeId" name="usrCollegeId" required><br><br>
 
-        <label for="usrGovId">Government ID:</label>
-        <input type="file" accept="image/*" id="usrGovId" name="usrGovId" required><br><br>
-
         <label for="usrPass">Password:</label>
         <input type="password" id="usrPass" name="usrPass" required><br><br>
 
         <input type="submit" value="Submit" name="submit">
     </form>
+
+
+    <?php
+
+        if(isset($user->errorMessage)){
+            echo $user->errorMessage;
+        }
+
+        if(isset($fileUploader->errorMessage)){
+            echo $fileUploader->errorMessage;
+        }
+
+    ?>
+
+
 </body>
 </html>

@@ -21,27 +21,30 @@ Class UserRegister{
 	//set this variable true if user submitted correct values
 	private $filter;
 
-	public function __construct(string $userName, string $userGender, string $userEmail, int $userPhone,array $userCollegeId,array $userGovId,string $userPassword){
+	public function __construct(string $userName, string $usrCode, string $usrAccountCode, string $userGender, string $userEmail, int $userPhone,string $userCollegeId, string $userPassword){
 		//initialise user value
 		$this->userName = $userName;
+		$this->userCode = $usrCode;
+		$this->userAccountCode = $usrAccountCode;
 		$this->userGender = $userGender;
 		$this->userEmail = $userEmail;
 		$this->userPhone = $userPhone;
 		$this->userCollegeId = $userCollegeId;
-		$this->userGovId = $userGovId;
 		$this->userPassword = $userPassword;
 
-		$this->filter = false;
+		
 		
 		if($this->verifyInput()){
-			$this->verifyInput();
+			$this->filter = true;
+			$this->registerUser();
 		}
+		
 	}
 
 	//verify Input
 	private function verifyInput(){
 		// Check if required fields are not empty
-		if(empty($this->userName) || empty($this->userGender) || empty($this->userEmail) || empty($this->userPhone) || empty($this->userCollegeId) || empty($this->userGovId) || empty($this->userPassword)){
+		if(empty($this->userName) || empty($this->userGender) || empty($this->userEmail) || empty($this->userPhone) || empty($this->userCollegeId)  || empty($this->userPassword)){
 			$this->errorMessage = "All fields are required";
 			return false;
 		}
@@ -65,5 +68,25 @@ Class UserRegister{
 		return true;
 	}
 	
+	//register the user
+	private function registerUser(){
+		global $db;
+		$db->query("INSERT INTO `users` (`usrCode`, `usrAccountCode`, `usrName`, `usrGender`, `usrEmail`, `usrPhone`, `usrCollegeId`, `usrPass`) VALUES (:usrCode,:usrAccountCode,:usrName,:usrGender,:usrEmail,:usrPhone,:usrCollegeId,:usrPass)");
 
+		$db->bind(':usrCode',$this->userCode);
+		$db->bind(':usrAccountCode',$this->userAccountCode);
+		$db->bind(':usrName',$this->userName);
+		$db->bind(':usrGender',$this->userGender);
+		$db->bind(':usrEmail',$this->userEmail);
+		$db->bind(':usrPhone',$this->userPhone);
+		$db->bind(':usrCollegeId',$this->userCollegeId);
+		$db->bind(':usrPass',$this->userPassword);
+
+		$db->execute();
+		echo $db->getError();
+		echo "done";
+
+	}
+
+//end class
 }
