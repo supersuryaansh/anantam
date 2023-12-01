@@ -67,13 +67,3 @@ function toggleMute() {
   });
 }
 toggleMute();
-
-function smoothScroll() {
-  eventBtn.forEach((elem) => {
-    elem.addEventListener("click", function (e) {
-      e.preventDefault();
-      document.getElementById("line3").scrollIntoView({ behavior: "smooth" });
-    });
-  });
-}
-smoothScroll();

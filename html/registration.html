@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/registration.css" />
+    <link rel="tab icon" href="../images/icon/ANANTAMLOGO.svg" />
+    <title>ANANTAM - REGISTRATION</title>
+  </head>
+  <body>
+    <div class="menuPage">
+      <button class="menu--close-btn">
+        <img src="../images/icon/closeBtn.svg" alt="" />
+      </button>
+      <div class="menuPage--content">
+        <img src="../images/menuPageLine/lt-corner.svg" alt="" />
+        <a href="">SPONSORS</a>
+        <img src="../images/menuPageLine/rt-corner.svg" alt="" />
+        <a href="">DEVELOPERS</a>
+        <img class="logo--img" src="../images/icon/BLACK LOGO.svg" alt="" />
+        <a href="">PRIZE POOL</a>
+        <img src="../images/menuPageLine/lb-corner.svg" alt="" />
+        <a href="">GALLERY</a>
+        <img src="../images/menuPageLine/rb-corner.svg" alt="" />
+      </div>
+    </div>
+    <img class="bottom--line" src="../images/webLINES/navLine.png" alt="" />
+    <nav>
+      <img class="line1" src="../images/webLINES/navLine.png" alt="" />
+      <a href="../index.html"
+        ><img src="../images/icon/ANANTAMLOGO.svg" alt=""
+      /></a>
+      <button class="nav--btn">
+        <img src="../images/icon/menu.svg" alt="" />
+      </button>
+    </nav>
+    <main>
+      <form action="" method="post" enctype="multipart/form-data">
+        <h2>User Registration Form :</h2>
+        <div>
+          <span>
+            <label for="usrName">Name:</label>
+            <input
+              type="text"
+              id="usrName"
+              name="usrName"
+              required /><br /><br />
+          </span>
+          <span>
+            <label for="usrGender">Gender:</label>
+            <select id="usrGender" name="usrGender" required>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </span>
+        </div>
+        <span>
+          <label for="usrEmail">Email:</label>
+          <input
+            type="email"
+            id="usrEmail"
+            name="usrEmail"
+            required /><br /><br />
+        </span>
+
+        <span>
+          <label for="usrPhone">Phone:</label>
+          <input
+            type="text"
+            id="usrPhone"
+            name="usrPhone"
+            required /><br /><br />
+        </span>
+        <span>
+          <label for="usrCollegeId">College ID:</label>
+          <input
+            type="file"
+            accept="image/*"
+            id="usrCollegeId"
+            name="usrCollegeId"
+            required /><br /><br />
+        </span>
+        <span>
+          <label for="usrPass">Password:</label>
+          <input
+            type="password"
+            id="usrPass"
+            name="usrPass"
+            required /><br /><br />
+        </span>
+        <span>
+          <label for="usrConfPass">Confirm Password:</label>
+          <input
+            type="password"
+            id="usrConfPass"
+            name="usrConfPass"
+            required /><br /><br />
+        </span>
+        <input class="submit--btn" type="submit" value="Submit" name="submit" />
+      </form>
+    </main>
+    <script src="../js/registration.js"></script>
+  </body>
+</html>

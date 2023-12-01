@@ -428,6 +428,12 @@ body {
 }
 .card--img-area {
   clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0 16%);
+  overflow: hidden;
+  height: 240px;
+}
+.card--img-area img {
+  width: 100%;
+  margin-top: -60px;
 }
 .cards span {
   position: relative;
