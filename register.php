@@ -2,15 +2,19 @@
 require_once($_SERVER['DOCUMENT_ROOT']."/"."requireme.php");
 $session = new UserSession();
 $session->createSession();
-
 global $_SERVER;
-$db = new Database();
 
+$db = new Database();
 if(!$db->isConnected()){
     die("Database Not connected");
 }
 
-
+//check if user is logged in and redirect
+if($session->loggedIn() === true){
+    //redirect to dashboard
+    header("Location: dashboard.php");
+    die();
+}
 
 
 //check if files exist and perform the registeration
@@ -27,12 +31,13 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
 
     //login the user    
     $session->setUser($session_code);
-
+    $db->disconnect();
+    //redirect to dashboard
+    header("Location: dashboard.php");
+    die();
+    
 }
 
-
-// /echo $session->getUser();
-print_r($_SESSION);
 ?>
  
  

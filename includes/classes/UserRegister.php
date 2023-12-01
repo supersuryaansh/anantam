@@ -32,11 +32,15 @@ Class UserRegister{
 		$this->userCollegeId = $userCollegeId;
 		$this->userPassword = $userPassword;
 
-		
-		
+		//verify is data is legal
+		//register only if not registered before
 		if($this->verifyInput()){
+
 			$this->filter = true;
-			$this->registerUser();
+			if(!($this->userExists())){
+				$this->registerUser();
+			}
+
 		}
 		
 	}
@@ -68,6 +72,22 @@ Class UserRegister{
 		return true;
 	}
 	
+	//check if the user exists
+	private function userExists(){
+		global $db;
+		$db->query("SELECT * FROM users where usrEmail=:email");
+		$db->bind(':email',$this->userEmail);
+		$db->execute();
+
+		if($db->rowCount() >=1 ){
+			$this->errorMessage = "User already signed up using this Email address.";
+			echo $this->errorMessage;
+			return true;
+		}
+
+		return false;
+	}
+
 	//register the user
 	private function registerUser(){
 		global $db;
@@ -87,6 +107,7 @@ Class UserRegister{
 		echo "done";
 
 	}
+
 
 //end class
 }

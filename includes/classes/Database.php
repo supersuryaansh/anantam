@@ -35,6 +35,12 @@ class Database {
 		}
 	}
 
+	//Disconnect from the database
+	public function disconnect(){
+		$this->connection = null;
+		$this->dbconnected = false;
+	}
+
 	//Get the Error Message
 	public function getError(){
 		return $this->error;
@@ -71,6 +77,7 @@ class Database {
 		$this->execute();
 		return $this->stmt->fetch(PDO::FETCH_OBJ);
 	}	
+	
 	
 
 	// Bind values
