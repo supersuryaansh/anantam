@@ -35,11 +35,51 @@ a {
   --main: #ffca2b;
   --secondary: #000;
   --other: #ff1010;
+  --third: #2a4fdb;
 }
 body {
   font-family: noken;
   background-color: #000;
   color: var(--main);
+}
+/* MAIN MENU S */
+.main--menuPage {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  background-color: var(--main);
+  transform: translateY(-130%);
+  transition: transform 0.4s;
+}
+.menu--close-btn {
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.main--menuPage a {
+  color: #000;
+  font-size: 2vw;
+}
+.main--menuPage a:hover {
+  color: var(--third);
+}
+.menuPage--content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 300px 200px 300px;
+  grid-template-rows: 100px 100px 100px;
+  justify-items: center;
+  align-items: center;
+}
+.logo--img {
+  width: 200px;
 }
 .menuPage {
   clip-path: polygon(
@@ -62,11 +102,10 @@ body {
   height: 70vh;
   position: fixed;
   right: 0;
-  z-index: 99999;
+  z-index: 1000;
   align-items: center;
   justify-content: center;
   display: none;
-  transform: translateX(120%);
   transition: transform 0.4s;
 }
 .menuPage .nav--links {
@@ -96,14 +135,21 @@ body {
   z-index: 999;
   background-color: #000;
 }
+.menu--btn,
+.main--MenuBtn {
+  width: 60px;
+  background-color: transparent;
+  border: 0px;
+}
+.menu--btn img,
+.main--MenuBtn img {
+  width: 100%;
+}
 nav {
   width: 100%;
   padding: 30px 20px;
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  border-bottom: 2px solid var(--main);
-  z-index: 999;
 }
 nav img {
   width: 200px;
@@ -120,6 +166,23 @@ nav a {
 nav a:nth-child(4) {
   color: transparent;
   -webkit-text-stroke: 1px var(--main);
+}
+/* LINE START */
+.line1 {
+  position: absolute;
+  bottom: -26px;
+  z-index: 999;
+  width: 103%;
+  margin-inline: -30px;
+}
+.line2 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+.line2 img {
+  width: 100%;
 }
 main {
   height: 100%;
@@ -141,7 +204,7 @@ main {
   padding-inline: 100px;
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 80px;
 }
 .description a {
   font-size: 3rem;
@@ -183,10 +246,10 @@ main {
   display: none;
 }
 .model--close-btn {
-  width: 80px;
+  width: 40px;
   position: fixed;
-  top: 10px;
-  right: 50px;
+  top: 50px;
+  right: 70px;
   z-index: 999;
   cursor: pointer;
   transform: rotate(90deg);
@@ -227,6 +290,14 @@ li {
     right: 10px;
   }
 }
+@media screen and (max-width: 850px) {
+  .mobile--nav {
+    display: block;
+  }
+  .desktop--nav {
+    display: none;
+  }
+}
 @media screen and (max-width: 750px) {
   .modelWindow {
     flex-direction: column;
@@ -238,5 +309,8 @@ li {
   }
   .model--content {
     width: 80%;
+  }
+  main {
+    grid-template-columns: 0% 100%;
   }
 }

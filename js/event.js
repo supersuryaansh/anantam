@@ -1,15 +1,17 @@
-const menuOpenBtn = document.querySelector(".menu--btn");
-const menuPage = document.querySelector(".menuPage");
-const menuCloseBtn = document.querySelector(".menuCloseBtn");
+const mainMenuPageOpenBtn = document.querySelectorAll(".main--MenuBtn");
+const mainMenuPageCloseBtn = document.querySelector(".menu--close-btn");
+const mainMenuPage = document.querySelector(".main--menuPage");
 
-function menu() {
-  menuOpenBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    menuPage.style.transform = "translateX(0%)";
+function mainMenu() {
+  mainMenuPageOpenBtn.forEach((elem) => {
+    elem.addEventListener("click", function (e) {
+      e.preventDefault();
+      mainMenuPage.style.transform = `translateY(0%)`;
+    });
   });
-  menuCloseBtn.addEventListener("click", function (e) {
+  mainMenuPageCloseBtn.addEventListener("click", function (e) {
     e.preventDefault();
-    menuPage.style.transform = "translateX(120%)";
+    mainMenuPage.style.transform = `translateY(-130%)`;
   });
 }
-menu();
+mainMenu();
