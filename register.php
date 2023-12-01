@@ -1,8 +1,9 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT']."/"."requireme.php");
-//require_class("registerClass");
+$session = new UserSession();
+$session->createSession();
 
-
+global $_SERVER;
 $db = new Database();
 
 if(!$db->isConnected()){
@@ -20,13 +21,20 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
     $fileName = "college_id_". substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20) ."_".basename($_FILES["usrCollegeId"]["name"]);
     $fileUploader->uploadFile($_FILES["usrCollegeId"],$fileName);
 
+    $session_code = genHash(50);
     //register the user
-    $user = new UserRegister($_POST['usrName'],genHash(9),genHash(50),$_POST['usrGender'],$_POST['usrEmail'],$_POST['usrPhone'],$fileName,$_POST['usrPass']);
+    $user = new UserRegister($_POST['usrName'],genHash(9),$session_code,$_POST['usrGender'],$_POST['usrEmail'],$_POST['usrPhone'],$fileName,$_POST['usrPass']);
+
+    //login the user    
+    $session->setUser($session_code);
 
 }
 
 
+// /echo $session->getUser();
+print_r($_SESSION);
 ?>
+ 
  
 
 <!DOCTYPE html>
