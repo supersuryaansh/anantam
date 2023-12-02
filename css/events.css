@@ -170,7 +170,7 @@ nav a:nth-child(4) {
 /* LINE START */
 .line1 {
   position: absolute;
-  bottom: -26px;
+  /* bottom: -26px; */
   z-index: 999;
   width: 103%;
   margin-inline: -30px;
@@ -291,16 +291,30 @@ li {
   }
 }
 @media screen and (max-width: 850px) {
+  main {
+    padding-top: 0px;
+  }
   .mobile--nav {
-    display: block;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .mobile--nav span {
+    display: flex;
+    align-items: center;
+    gap: 40px;
   }
   .desktop--nav {
     display: none;
+  }
+  .main--menuPage a {
+    font-size: 3vw;
   }
 }
 @media screen and (max-width: 750px) {
   .modelWindow {
     flex-direction: column;
+    z-index: 99999;
   }
   .model--poster {
     width: 60%;
@@ -310,7 +324,43 @@ li {
   .model--content {
     width: 80%;
   }
+  .model--content span {
+    text-align: center;
+  }
+  .menuPage--content img {
+    display: none;
+  }
+  .menuPage--content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .menuPage--content a {
+    font-size: 2.4rem;
+  }
   main {
     grid-template-columns: 0% 100%;
+  }
+  .empty {
+    display: none;
+  }
+  .description {
+    padding-inline: 20px;
+    width: 100%;
+  }
+  .description a {
+    font-size: 2.4rem;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 550px) {
+  .description a {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1450px) {
+  .modelWindow {
+    width: 60vw;
+    height: 70vh;
   }
 }

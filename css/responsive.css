@@ -20,6 +20,14 @@
     gap: 10px;
   }
 }
+@media screen and (max-width: 1050px) {
+  .timer h1 {
+    font-size: 2.5vw;
+  }
+  .about--content {
+    grid-template-columns: 90% 10%;
+  }
+}
 @media (max-width: 991px) {
   .desktop--nav {
     display: none;
@@ -31,6 +39,11 @@
     position: fixed;
     z-index: 999;
     background-color: #000;
+  }
+  .mobile--nav span {
+    display: flex;
+    align-items: center;
+    gap: 50px;
   }
   .mobile--nav .menu--btn {
     height: 40px;
@@ -82,6 +95,13 @@
   }
 }
 @media screen and (max-width: 850px) {
+  .about--left-content p {
+    font-size: 18px;
+  }
+  .about--bg-img {
+    top: 50%;
+    transform: translateY(-50%);
+  }
   .card--area {
     gap: 10px;
     grid-template-columns: 1fr;
@@ -115,6 +135,8 @@
   .card--area {
     gap: 20px;
     margin-inline: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .menuPage--content {
     grid-template-columns: repeat(3, 200px);
