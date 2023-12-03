@@ -42,6 +42,10 @@ body {
   background-color: #000;
   color: var(--main);
 }
+h1:hover,
+a:hover {
+  text-shadow: red -3px 0, cyan 3px 0;
+}
 /* MAIN MENU S */
 .main--menuPage {
   width: 100vw;
