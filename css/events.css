@@ -191,13 +191,18 @@ main {
   padding-top: 80px;
 }
 .empty {
+  overflow: hidden;
   position: relative;
   border-right: 2px solid var(--main);
 }
 .empty img {
-  position: absolute;
-  right: -15%;
-  top: 100px;
+  position: fixed;
+  /* right: -15%; */
+  /* top: 100px; */
+  height: 100%;
+  width: 30%;
+  transform: translateX(-120%);
+  transition: transform 0.4s;
 }
 .description {
   margin-block: 100px;
