@@ -2,6 +2,9 @@
   .card--area {
     grid-template-columns: repeat(2, 1fr);
   }
+  .event--top-line h1 {
+    top: 1%;
+  }
 }
 @media (max-width: 1150px) {
   aside {
@@ -18,6 +21,9 @@
   }
   .about--left-content {
     gap: 10px;
+  }
+  .line1 {
+    bottom: -20px;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -62,9 +68,6 @@
     cursor: pointer;
     z-index: 999999;
   }
-  .mobile--nav img:nth-child(1) {
-    width: 60px;
-  }
   .menu--btn img {
     width: 100%;
     height: 100%;
@@ -105,6 +108,10 @@
   }
   .main--menuPage a {
     font-size: 3vw;
+  }
+  .footer--content {
+    grid-template-columns: 1fr;
+    gap: 60px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -157,6 +164,10 @@
   .about--left-content p {
     font-size: 16px;
   }
+  .event--top-line h1 {
+    top: 0.65%;
+    font-size: 2.4rem;
+  }
 }
 @media screen and (max-width: 715px) {
   .menuCloseBtn img {
@@ -198,6 +209,18 @@
   }
   .menuPage--content a {
     font-size: 2.4rem;
+  }
+  .contacts div {
+    grid-template-columns: 1fr;
+  }
+  .copyright {
+    bottom: 60px;
+  }
+  .social--links {
+    left: 50px;
+  }
+  footer {
+    padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 560px) {
