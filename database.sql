@@ -9,3 +9,13 @@ CREATE TABLE users (
     usrCollegeId VARCHAR(200) NOT NULL,
     usrPass VARCHAR(100) NOT NULL
 );
+
+
+CREATE TABLE events (
+    eventId INT  PRIMARY KEY UNIQUE,
+    eventName VARCHAR(30) NOT NULL,
+    eventDescription VARCHAR(200),
+    eventPicture VARCHAR(200),
+    eventPrice INT
+);
+

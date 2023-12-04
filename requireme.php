@@ -1,4 +1,7 @@
 <?php
+//die if this consant is not defined.
+define("LIFE", "LOVE");
+
 //server root folder
 $server_root = $_SERVER['DOCUMENT_ROOT'];
 //includes folder
@@ -20,4 +23,16 @@ function genHash($length) {
         $randomString .= $characters[random_int(0, $charactersLength - 1)];
     }
     return $randomString;
+}
+
+//include views on demand
+
+function include_view($view){
+    global $includes;
+    $filepath = $includes."views/".$view.".php";
+    if(file_exists($filepath)){
+         return $includes."views/".$view.".php";
+    }else{
+        echo("<h1>View does not exist</h1>");
+    }
 }

@@ -1,0 +1,31 @@
+:root {
+  --color: #ffca2b;
+}
+main {
+  overflow: auto !important;
+}
+a {
+  -webkit-text-stroke: 0.1px rgb(0, 0, 0) !important;
+  color: #000000 !important;
+}
+.desktop--nav,
+.mobile--nav {
+  background-color: #f6f6f6 !important;
+}
+.event--section {
+  background-color: #f6f6f6 !important;
+}
+.card--area {
+  margin-top: 150px !important;
+}
+footer a {
+  color: var(--color) !important;
+}
+.user--code {
+  background-color: var(--color);
+  padding: 14px 30px;
+}
+.desktop--nav span {
+  display: flex;
+  align-items: center;
+}

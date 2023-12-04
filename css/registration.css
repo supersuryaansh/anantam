@@ -50,6 +50,7 @@ body {
   overflow-x: hidden;
 }
 .bottom--line {
+  width: 100%;
   position: absolute;
   bottom: 0;
   transform: rotate(180deg);
