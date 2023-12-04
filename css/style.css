@@ -18,6 +18,9 @@ html {
   width: 100vw;
   overflow-x: hidden;
 }
+button:focus {
+  outline: none;
+}
 ::selection {
   background-color: var(--secondary);
   color: var(--main);
@@ -455,7 +458,7 @@ body {
   flex-direction: column;
   position: relative;
   background-image: url(../assets/images/cardbg.svg);
-  height: 600px;
+  height: 550px;
   background-repeat: no-repeat;
   transition: 0.4s;
 }
@@ -488,6 +491,12 @@ body {
 }
 .cards p {
   color: #fff;
+  position: absolute;
+  font-size: 14px;
+}
+.card--btn {
+  position: absolute;
+  bottom: 0px;
 }
 .card--btn button {
   padding: 12px 22px;
@@ -497,6 +506,7 @@ body {
   border: 2px solid var(--main);
   position: absolute;
   right: 20%;
+  top: 120px;
   cursor: pointer;
 }
 footer {

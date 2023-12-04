@@ -150,9 +150,10 @@ a:hover {
 }
 .mobile--nav div:nth-child(2) {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-between;
 }
 .mobile--nav a {
   font-size: 1rem !important;
@@ -164,12 +165,9 @@ a:hover {
   cursor: pointer;
   z-index: 999999;
 }
-.mobile--nav img:nth-child(1) {
-  width: 60px;
-}
 .menu--btn,
 .main--MenuBtn {
-  width: 60px;
+  width: 40px !important;
   background-color: transparent;
   border: 0px;
 }
@@ -339,6 +337,7 @@ li {
     display: flex;
     position: relative;
     align-items: center;
+    gap: 30px;
   }
   .mobile--nav .line1 {
     display: block;
