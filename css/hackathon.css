@@ -171,6 +171,7 @@ main {
   padding-inline: 100px;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 main form {
   display: flex;
