@@ -6,6 +6,7 @@ Class UserLogin{
 
 	public $sessionCode;
 	public $loggedIn;
+
 	//user submitted values
 	private $userEmail;
 	private $userPassword;

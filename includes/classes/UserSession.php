@@ -4,6 +4,7 @@
 Class UserSession{
     
     private $user;
+    public $joinCode;
 
     public function __construct(){
         
@@ -21,6 +22,19 @@ Class UserSession{
         global $_SESSION;
         $this->user = $user;
         $_SESSION["user"] = $this->user;
+
+		global $db;
+		$db->query("SELECT * FROM users where usrAccountCode=:usrAccountCode");
+		$db->bind(':usrAccountCode',$this->user);
+		$db->execute();
+		echo $db->getError();
+		
+        $userCode = $db->resultset();
+        $userCode = get_object_vars($userCode[0]);
+        $userCode = $userCode['usrCode'];
+        $this->joinCode = $userCode;
+        $_SESSION["joinCode"] = $this->joinCode;
+
     }
 
     public function getUser(){
