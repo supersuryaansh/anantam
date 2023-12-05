@@ -289,4 +289,11 @@ option {
   }
 }
 @media screen and (max-width: 650px) {
+  form span {
+    display: flex;
+    flex-direction: column;
+  }
+  select {
+    margin-top: 10px;
+  }
 }
