@@ -58,6 +58,6 @@
         <input class="submit--btn" type="submit" value="SUBMIT" name="submit" />
       </form>
     </main>
-    <!-- <script src="/js/hackthon.js"></script> -->
+    <script src="/js/hackthon.js"></script>
   </body>
 </html>
