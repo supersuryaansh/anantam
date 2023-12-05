@@ -3,56 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/hackathon.css" />
+    <link rel="stylesheet" href="/css/hackathon.css" />
     <title>ANANTAM NETRUNN - REGISTRATION</title>
   </head>
   <body>
     <div class="main--menuPage">
       <button class="menu--close-btn">
-        <img src="./assets/images/icon/closeBtn.svg" alt="" />
+        <img src="/assets/images/icon/closeBtn.svg" alt="" />
       </button>
       <div class="menuPage--content">
-        <img src="./assets/images/menuPageLine/lt-corner.svg" alt="" />
+        <img src="/assets/images/menuPageLine/lt-corner.svg" alt="" />
         <a href="">SPONSORS</a>
-        <img src="./assets/images/menuPageLine/rt-corner.svg" alt="" />
+        <img src="/assets/images/menuPageLine/rt-corner.svg" alt="" />
         <a href="">DEVELOPERS</a>
         <img
           class="logo--img"
-          src="./assets/images/icon/BLACK LOGO.svg"
+          src="/assets/images/icon/BLACK LOGO.svg"
           alt="" />
         <a href="">PRIZE POOL</a>
-        <img src="./assets/images/menuPageLine/lb-corner.svg" alt="" />
+        <img src="/assets/images/menuPageLine/lb-corner.svg" alt="" />
         <a href="">GALLERY</a>
-        <img src="./assets/images/menuPageLine/rb-corner.svg" alt="" />
+        <img src="/assets/images/menuPageLine/rb-corner.svg" alt="" />
       </div>
     </div>
     <nav class="mobile--nav">
       <div>
-        <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
+        <img src="/assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
         <span>
           <button class="main--MenuBtn">
-            <img src="./assets/images/icon/menu.svg" alt="" />
+            <img src="/assets/images/icon/menu.svg" alt="" />
           </button>
         </span>
       </div>
       <div>
-        <a href="./events.php">EVENTS</a>
-        <a href="./registration.php">REGISTER</a>
+        <a href="/events.php">EVENTS</a>
+        <a href="/registration.php">REGISTER</a>
         <a href="">SIGN IN</a>
       </div>
     </nav>
     <nav class="desktop--nav">
       <span>
-        <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
+        <img src="/assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
       </span>
       <span class="nav--links">
-        <a class="menuOpenAnker" href="./events.php">EVENTS</a>
-        <a href="./register.php">REGISTRATION</a>
+        <a class="menuOpenAnker" href="/events.php">EVENTS</a>
+        <a href="/register.php">REGISTRATION</a>
         <button class="main--MenuBtn">
-          <img src="./assets/images/icon/menu.svg" alt="" />
+          <img src="/assets/images/icon/menu.svg" alt="" />
         </button>
       </span>
-      <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
+      <img class="line1" src="/assets/images/webLINES/navLine.png" alt="" />
     </nav>
     <main>
       <h1>ANANT NETRUNN REGISTRATION :</h1>
@@ -104,6 +104,6 @@
         <input class="submit--btn" type="submit" value="SUBMIT" name="submit" />
       </form>
     </main>
-    <script src="./js/hackthon.js"></script>
+    <script src="/js/hackthon.js"></script>
   </body>
 </html>
