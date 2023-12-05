@@ -314,6 +314,22 @@ body {
   color: var(--other);
   letter-spacing: 6px;
 }
+.date--left {
+  position: fixed;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: var(--main);
+  z-index: 9999;
+}
+/* .time {
+  top: 65%;
+  letter-spacing: 0px;
+}
+.date {
+  top: 85%;
+  letter-spacing: 0px;
+  color: var(--main);
+} */
 .timer h1 {
   display: flex;
   flex-direction: row;
@@ -365,6 +381,7 @@ body {
 }
 .about--left-content p {
   font-size: 24px;
+  text-align: justify;
 }
 .about--right-content img {
   position: relative;
@@ -513,7 +530,7 @@ footer {
   position: relative;
   background-color: var(--secondary);
   padding-inline: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 140px;
 }
 footer a {
   display: flex;
@@ -603,7 +620,7 @@ p {
 }
 .social--links {
   position: absolute;
-  bottom: 10px;
+  bottom: 60px;
   right: 100px;
   display: flex;
   gap: 20px;
@@ -621,5 +638,5 @@ p {
 }
 .copyright {
   position: absolute;
-  bottom: 10px;
+  bottom: 60px;
 }

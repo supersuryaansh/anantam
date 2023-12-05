@@ -1,3 +1,14 @@
+@media screen and (max-width: 1360px) {
+  .timer {
+    letter-spacing: 0px;
+    left: 57%;
+  }
+  .timer h1,
+  .time h1,
+  .date h1 {
+    font-size: 3vw;
+  }
+}
 @media screen and (max-width: 1250px) {
   .card--area {
     grid-template-columns: repeat(2, 1fr);
@@ -13,9 +24,6 @@
   .timer {
     left: 60%;
   }
-  .timer h1 {
-    font-size: 3vw;
-  }
   .about--left-content button {
     margin-top: 50px;
   }
@@ -24,6 +32,15 @@
   }
   .line1 {
     bottom: -20px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .timer h1 {
+    font-size: 2.4vw;
+  }
+  .time,
+  .date {
+    font-size: 14px !important;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -81,6 +98,16 @@
     top: 30%;
     left: 60%;
     transform: translate(-50%, -50%);
+  }
+  .model--poster {
+    width: 25%;
+  }
+  .model--content {
+    width: 55%;
+  }
+  .model--close-btn {
+    top: 10px;
+    right: 10px;
   }
   aside {
     display: none;
@@ -168,6 +195,21 @@
     top: 0.65%;
     font-size: 2.4rem;
   }
+  .modelWindow {
+    flex-direction: column;
+    z-index: 99999;
+  }
+  .model--poster {
+    width: 60%;
+    height: 30vh;
+    object-fit: cover;
+  }
+  .model--content {
+    width: 80%;
+  }
+  .model--content span {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 715px) {
   .menuCloseBtn img {
@@ -193,8 +235,19 @@
     font-size: 6vw;
   }
   .timer {
+    position: absolute;
+    width: 100%;
     top: 50%;
-    left: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+  }
+  .time {
+    top: 60%;
+    font-size: 16px !important;
+  }
+  .date {
+    top: 85%;
+    font-size: 16px !important;
   }
   .about--page {
     margin-top: 30px;
@@ -234,6 +287,11 @@
   .mobile--nav {
     gap: 20px;
   }
+  .model--poster {
+    width: 100%;
+    object-fit: contain;
+    height: 24vh;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -251,5 +309,21 @@
 @media screen and (max-width: 380px) {
   .event--top-line h1 {
     left: 24%;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .modelWindow {
+    width: 60vw;
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 1550px) {
+  .card--area {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .line1{
+    bottom: -30px;
   }
 }

@@ -81,13 +81,13 @@ $events = $db->resultset();
         </span>
         <img class="line1" src="../assets/images/webLINES/navLine.png" alt="" />
       </nav>
-    <?php
-      if(isset($_GET['action'])){
-        include_view('TableView');
-      }else{
-        include(include_view('dashboardView'));
-      }
-    ?>
+      <?php
+        if(isset($_GET['action'])){
+          include_view('TableView');
+        }else{
+          include(include_view('dashboardView'));
+        }
+    ?>   
     <footer>
       <!-- <img
         class="footer--top-line"
@@ -175,6 +175,7 @@ $events = $db->resultset();
     <script src="../js/dashScript.js"></script>
   </body>
 </html>
+
 
 <?php $db->disconnect();
 ?>

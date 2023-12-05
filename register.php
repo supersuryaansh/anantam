@@ -12,7 +12,7 @@ if(!$db->isConnected()){
 //check if user is logged in and redirect
 if($session->loggedIn() === true){
     //redirect to dashboard
-    header("Location: index.php");
+    header("Location: dashboard/");
     die();
 }
 
