@@ -1,3 +1,13 @@
+<div class="event--section">
+        <span class="event--top-line">
+          <img
+            class="line3"
+            id="line3"
+            src="../assets/images/webLINES/EventLine.svg"
+            alt="" />
+          <h1>/// EVENTS</h1>
+        </span>
+        <div class="card--area d--card--area">
 
       <h1>ANANT NETRUNN REGISTRATION :</h1>
       <form action="" method="get">
@@ -48,3 +58,5 @@
         <input class="submit--btn" type="submit" value="SUBMIT" name="submit" />
       </form>
 
+</div>
+</div>
