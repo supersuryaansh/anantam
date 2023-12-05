@@ -115,12 +115,6 @@
   .timer {
     left: 75%;
   }
-  .menuPage .nav--links {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   .event--section {
     overflow: hidden;
   }
@@ -214,13 +208,6 @@
 @media screen and (max-width: 715px) {
   .menuCloseBtn img {
     width: 65%;
-  }
-  .menuPage .nav--links {
-    font-size: 4vw;
-  }
-  .menuPage {
-    width: 300px;
-    height: 55vh;
   }
   .mic--btn {
     left: 14%;
@@ -323,7 +310,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
   }
-  .line1{
+  .line1 {
     bottom: -30px;
   }
 }

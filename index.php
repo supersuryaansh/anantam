@@ -40,8 +40,8 @@
           </span>
         </div>
         <div>
-          <a href="./events.html">EVENTS</a>
-          <a href="./registration.html">REGISTER</a>
+          <a href="./events.php">EVENTS</a>
+          <a href="./registration.php">REGISTER</a>
           <a href="">SIGN IN</a>
         </div>
       </nav>
@@ -50,8 +50,8 @@
           <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
         </span>
         <span class="nav--links">
-          <a class="menuOpenAnker" href="./events.html">EVENTS</a>
-          <a href="./register.html">REGISTRATION</a>
+          <a class="menuOpenAnker" href="./events.php">EVENTS</a>
+          <a href="./register.php">REGISTRATION</a>
           <button class="main--MenuBtn">
             <img src="./assets/images/icon/menu.svg" alt="" />
           </button>
