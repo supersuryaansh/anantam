@@ -41,6 +41,7 @@
 .model--poster {
   height: 80vh;
   width: 40%;
+  object-fit: contain;
 }
 .model--content {
   height: 100%;

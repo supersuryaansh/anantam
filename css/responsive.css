@@ -99,6 +99,16 @@
     left: 60%;
     transform: translate(-50%, -50%);
   }
+  .model--poster {
+    width: 25%;
+  }
+  .model--content {
+    width: 55%;
+  }
+  .model--close-btn {
+    top: 10px;
+    right: 10px;
+  }
   aside {
     display: none;
   }
@@ -185,6 +195,21 @@
     top: 0.65%;
     font-size: 2.4rem;
   }
+  .modelWindow {
+    flex-direction: column;
+    z-index: 99999;
+  }
+  .model--poster {
+    width: 60%;
+    height: 30vh;
+    object-fit: cover;
+  }
+  .model--content {
+    width: 80%;
+  }
+  .model--content span {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 715px) {
   .menuCloseBtn img {
@@ -262,6 +287,11 @@
   .mobile--nav {
     gap: 20px;
   }
+  .model--poster {
+    width: 100%;
+    object-fit: contain;
+    height: 24vh;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -279,5 +309,21 @@
 @media screen and (max-width: 380px) {
   .event--top-line h1 {
     left: 24%;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .modelWindow {
+    width: 60vw;
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 1550px) {
+  .card--area {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .line1{
+    bottom: -30px;
   }
 }
