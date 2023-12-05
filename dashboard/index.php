@@ -85,8 +85,17 @@ $events = $db->resultset();
       <!-- Auto load the cards from php -->
       <?php
         if(isset($_GET['action'])){
-          include_view('TableView');
+          //use switch case to load views on demand
+          $get = $_GET['action'];
+            global $includes;
+            $filepath = $includes."views/".$get.".php";
+            if(file_exists($filepath)){
+              include(include_view($get));
+            }else{
+              include(include_view('dashboardView'));
+            }
         }else{
+          //load the default view if demanded view was not found
           include(include_view('dashboardView'));
         }
     ?>   
