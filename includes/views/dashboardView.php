@@ -28,7 +28,7 @@ if(!defined('LIFE')){
 
                   <div class="cards">
                   $i
-                  <span>dashboardView
+                  <span>
                     <img src="../assets/images/cardhead.svg" alt="" />
                     <h1>/// $eventName </h1>
                   </span>

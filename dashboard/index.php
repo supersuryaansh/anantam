@@ -16,6 +16,7 @@ if ($session->loggedIn() === false) {
     die();
 }
 
+//get all available events
 $db->query("SELECT * FROM events");
 $db->execute();
 $events = $db->resultset();
@@ -74,7 +75,7 @@ $events = $db->resultset();
         <span class="nav--links">
           <a class="menuOpenAnker" href="../events.html">MY EVENTS</a>
           <a href="">LOG OUT</a>
-          <a class="user--code">000000000</a>
+          <a class="user--code"><?=$_SESSION["joinCode"]?></a>
           <button class="main--MenuBtn">
             <img src="../assets/images/icon/menu.svg" alt="" />
           </button>
