@@ -29,7 +29,7 @@
     </div>
     <nav class="mobile--nav">
       <div>
-        <img src="./assets/images/icon/LOGO-ICON.png" alt="" />
+        <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
         <span>
           <button class="main--MenuBtn">
             <img src="./assets/images/icon/menu.svg" alt="" />
@@ -37,20 +37,20 @@
         </span>
       </div>
       <div>
-        <a href="./events.php">EVENTS</a>
-        <a href="./register.php">REGISTER</a>
+        <a href="./events.html">EVENTS</a>
+        <a href="./registration.html">REGISTER</a>
         <a href="">SIGN IN</a>
       </div>
       <img src="./assets/images/webLINES/navLine.png" alt="" class="line1" />
     </nav>
     <nav class="desktop--nav">
       <span>
-        <a href="./index.php"
+        <a href="./index.html"
           ><img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt=""
         /></a>
       </span>
       <span class="nav--links">
-        <a class="menuOpenAnker" href="./events.php">EVENTS</a>
+        <a class="menuOpenAnker" href="./events.html">EVENTS</a>
         <a href="">ABOUT</a>
         <a href="">SOCIAL</a>
         <button class="main--MenuBtn">
@@ -623,7 +623,7 @@
         alt="" />
       <div class="model--content">
         <span>
-          <h1>MANGA MANIA</h1>
+          <h1>FRAMEFLIX</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
             ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat

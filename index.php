@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="tab icon" href="./assets/images/icon/ANANTAMLOGO.svg" />
+    <link rel="stylesheet" href="./css/popup.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <title>ANANTAM</title>
@@ -31,7 +32,7 @@
     <main>
       <nav class="mobile--nav">
         <div>
-          <img src="./assets/images/icon/LOGO-ICON.png" alt="" />
+          <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
           <span>
             <button class="main--MenuBtn">
               <img src="./assets/images/icon/menu.svg" alt="" />
@@ -39,8 +40,8 @@
           </span>
         </div>
         <div>
-          <a href="./events.php">EVENTS</a>
-          <a href="./register.php">REGISTER</a>
+          <a href="./events.html">EVENTS</a>
+          <a href="./registration.html">REGISTER</a>
           <a href="">SIGN IN</a>
         </div>
       </nav>
@@ -49,9 +50,8 @@
           <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
         </span>
         <span class="nav--links">
-          <a class="menuOpenAnker" href="./events.php">EVENTS</a>
-          <a href="">ABOUT</a>
-          <a href="./register.php">SOCIAL</a>
+          <a class="menuOpenAnker" href="./events.html">EVENTS</a>
+          <a href="./register.html">REGISTRATION</a>
           <button class="main--MenuBtn">
             <img src="./assets/images/icon/menu.svg" alt="" />
           </button>
@@ -120,7 +120,10 @@
           <h1 id="minutes">60 :</h1>
           <h1 id="seconds">60</h1>
         </div>
+        <!-- <h1 class="timer time">days : hrs : mins : secs</h1>
+        <h1 class="timer date">08/01/2024-11/01/2024</h1> -->
       </div>
+      <div class="date--left">08/01/2024 - 11/01/2024</div>
     </main>
     <div class="about--page">
       <div class="line2">
@@ -178,14 +181,14 @@
           /></span>
           <span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente doloremque adipisci nam magni! Provident nam
-              velit officia consequuntur minima dolores porro perspiciatis qui
-              dignissimos. Porro hic quo aliquam quibusdam?
+              The 4-Day Hackathon is the centre-piece of ANANTAM 2023-24. It's
+              an intensive coding competition where participants have four days
+              to collaborate, innovate, and create real-world solutions using
+              technology
             </p>
           </span>
           <span class="card--btn">
-            <a href=""><button>EXPLORE</button></a>
+            <a href="" id="anant--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards">
@@ -202,14 +205,14 @@
           /></span>
           <span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente doloremque adipisci nam magni! Provident nam
-              velit officia consequuntur minima dolores porro perspiciatis qui
-              dignissimos. Porro hic quo aliquam quibusdam?
+              The Robo-Battle is an exciting robotics competition where teams
+              design and build combat robots that engage in thrilling battles
+              within an arena. This event tests engineering skills, strategy,
+              and teamwork.
             </p>
           </span>
           <span class="card--btn">
-            <a href=""><button>EXPLORE</button></a>
+            <a href="" id="robo--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards" id="cards">
@@ -219,23 +222,20 @@
             <h1>/// CODE CRUNCH</h1>
           </span>
           <span class="card--img-area">
-            <img
-              src="./assets/images/POSTERS/ANANT NETRUNN POSTER.svg"
-              alt="" />
+            <img src="./assets/images/POSTERS/CODE CRUNCH.jpg" alt="" />
           </span>
           <span
             ><img src="./assets/images/webLINES/card-line.png" alt=""
           /></span>
           <span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente doloremque adipisci nam magni! Provident nam
-              velit officia consequuntur minima dolores porro perspiciatis qui
-              dignissimos. Porro hic quo aliquam quibusdam?
+              The DSA Competition is a challenging contest where individuals or
+              teams demonstrate their problem-solving skills and algorithmic
+              expertise.
             </p>
           </span>
           <span class="card--btn">
-            <a href=""><button>EXPLORE</button></a>
+            <a href="" id="crunch--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards">
@@ -259,7 +259,7 @@
             </p>
           </span>
           <span class="card--btn">
-            <a href=""><button>EXPLORE</button></a>
+            <a href="" id="esports--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards">
@@ -269,21 +269,22 @@
             <h1>/// BID BOUNDARIES</h1>
           </span>
           <span class="card--img-area">
-            <img src="./assets/images/ROBOWAR-POSTER 1.svg" alt="" />
+            <img src="./assets/images/POSTERS/BID BOUNDARIES.jpg" alt="" />
           </span>
           <span
             ><img src="./assets/images/webLINES/card-line.png" alt=""
           /></span>
           <span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente doloremque adipisci nam magni! Provident nam
-              velit officia consequuntur minima dolores porro perspiciatis qui
-              dignissimos. Porro hic quo aliquam quibusdam?
+              The "Auction" takes inspiration from the high-energy world of IPL
+              auctions but with a unique twist—participants bid for virtual
+              players. This exciting game adds a layer of strategy and
+              excitement as participants strategically bid for players, aiming
+              to create the most formidable team.
             </p>
           </span>
           <span class="card--btn">
-            <a href=""><button>EXPLORE</button></a>
+            <a href="" id="bid--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards">
@@ -300,14 +301,16 @@
           /></span>
           <span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente doloremque adipisci nam magni! Provident nam
-              velit officia consequuntur minima dolores porro perspiciatis qui
-              dignissimos. Porro hic quo aliquam quibusdam?
+              "Dalal Street" is a simulated stock market journey where
+              participants use virtual capital to become virtual investors. The
+              challenge is strategic decision-making—invest wisely, navigate
+              market fluctuations, and maximize the portfolio's value. This
+              immersive experience aims to enhance financial awareness and
+              acumen.
             </p>
           </span>
           <span class="card--btn">
-            <a href=""><button>EXPLORE</button></a>
+            <a href="" id="dalal--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards">
@@ -317,21 +320,23 @@
             <h1>/// BINARY BRAINS</h1>
           </span>
           <span class="card--img-area">
-            <img src="./assets/images/ROBOWAR-POSTER 1.svg" alt="" />
+            <img src="./assets/images/POSTERS/BINARY BRAINS.jpg" alt="" />
           </span>
           <span
             ><img src="./assets/images/webLINES/card-line.png" alt=""
           /></span>
           <span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente doloremque adipisci nam magni! Provident nam
-              velit officia consequuntur minima dolores porro perspiciatis qui
-              dignissimos. Porro hic quo aliquam quibusdam?
+              The "Tech Quiz" is a cerebral challenge that explores the vast
+              landscape of technology. Participants delve into a series of
+              thought-provoking questions covering a spectrum of technological
+              domains. From coding languages to emerging trends, the quiz is
+              designed to test participants' knowledge and acumen in the
+              ever-evolving world of tech.
             </p>
           </span>
           <span class="card--btn">
-            <a href=""><button>EXPLORE</button></a>
+            <a href="" id="binary--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards">
@@ -341,21 +346,22 @@
             <h1>/// MANGA MANIA</h1>
           </span>
           <span class="card--img-area">
-            <img src="./assets/images/ROBOWAR-POSTER 1.svg" alt="" />
+            <img src="./assets/images/POSTERS/MANGA MANIA.jpg" alt="" />
           </span>
           <span
             ><img src="./assets/images/webLINES/card-line.png" alt=""
           /></span>
           <span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente doloremque adipisci nam magni! Provident nam
-              velit officia consequuntur minima dolores porro perspiciatis qui
-              dignissimos. Porro hic quo aliquam quibusdam?
+              The "Anime Quiz" is a journey into the vibrant and diverse world
+              of anime. Participants test their knowledge of characters,
+              storylines, and the expansive anime universe. From classics to
+              contemporary favorites, the quiz celebrates the rich tapestry of
+              Japanese animation.
             </p>
           </span>
           <span class="card--btn">
-            <a href=""><button>EXPLORE</button></a>
+            <a href="" id="manga--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards">
@@ -365,21 +371,23 @@
             <h1>/// FRAMEFLIX</h1>
           </span>
           <span class="card--img-area">
-            <img src="./assets/images/ROBOWAR-POSTER 1.svg" alt="" />
+            <img src="./assets/images/POSTERS/FRAMEFLIX.jpg" alt="" />
           </span>
           <span
             ><img src="./assets/images/webLINES/card-line.png" alt=""
           /></span>
           <span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente doloremque adipisci nam magni! Provident nam
-              velit officia consequuntur minima dolores porro perspiciatis qui
-              dignissimos. Porro hic quo aliquam quibusdam?
+              The "Cinematics Competition" invites participants to unleash their
+              storytelling prowess through the lens, whether in motion or still
+              frames. This dual category competition encompasses both motion
+              pictures and captivating still images. Participants embark on a
+              visual journey, capturing narratives, emotions, and moments in
+              time, turning creativity into compelling visual tales.
             </p>
           </span>
           <span class="card--btn">
-            <a href="./html/frameflix.html"><button>EXPLORE</button></a>
+            <a href="" id="frame--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards">
@@ -389,7 +397,7 @@
             <h1>/// PIXEL PERFECT</h1>
           </span>
           <span class="card--img-area">
-            <img src="./assets/images/ROBOWAR-POSTER 1.svg" alt="" />
+            <img src="./assets/images/POSTERS/PIXEL PERFECT.jpg" alt="" />
           </span>
           <span
             ><img src="./assets/images/webLINES/card-line.png" alt=""
@@ -403,7 +411,7 @@
             </p>
           </span>
           <span class="card--btn">
-            <a href="./html/pixelPerfect.html"><button>EXPLORE</button></a>
+            <a href="" id="pixel--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards">
@@ -413,29 +421,677 @@
             <h1>/// BLIND DATE</h1>
           </span>
           <span class="card--img-area">
-            <img src="./assets/images/ROBOWAR-POSTER 1.svg" alt="" />
+            <img src="./assets/images/POSTERS/BLIND DATE.jpg" alt="" />
           </span>
           <span
             ><img src="./assets/images/webLINES/card-line.png" alt=""
           /></span>
           <span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente doloremque adipisci nam magni! Provident nam
-              velit officia consequuntur minima dolores porro perspiciatis qui
-              dignissimos. Porro hic quo aliquam quibusdam?
+              The Blind Code Challenge tests participants' coding skills without
+              visual aids. They receive code snippets through auditory or
+              tactile cues and must quickly write the corresponding code,
+              emphasizing precision and speed.
             </p>
           </span>
           <span class="card--btn">
-            <a href=""><button>EXPLORE</button></a>
+            <a href="" id="blind--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
-        <!-- <img
-          class="event--low-line"
-          src="./images/webLINES/event-low-line.svg"
-          alt="" /> -->
       </div>
     </div>
+    <footer>
+      <div class="maker--logo">
+        <span>
+          <img src="./assets/images/icon/IEEE.png" alt="" />
+          <img class="gdsc--logo" src="./assets/images/icon/GDSC.svg" alt="" />
+          <img src="./assets/images/icon/BKBIET.png" alt="" />
+        </span>
+      </div>
+      <div class="footer--content">
+        <span class="links">
+          <h1>LINKS</h1>
+          <a href="">events</a>
+          <a href="">registration</a>
+          <a href="">sign in</a>
+          <a href="">developers</a>
+          <a href="">prize pool</a>
+          <a href="">sponsors</a>
+          <a href="">F&Q</a>
+        </span>
+        <span class="contacts">
+          <h1>CONTACT US</h1>
+          <div>
+            <span>
+              <h2>Dr. Santosh Jangir</h2>
+              <p>HOD of ECE Dep. & Branch Counsellor of IEEE BKBIET SB</p>
+              <a href="" target="_blank"
+                ><img
+                  src="./assets/images/icon/Phone.png"
+                  alt="" />+91-9414367879</a
+              >
+            </span>
+            <span>
+              <h2>Dr. Nimish</h2>
+              <p>HOD of CSE/AI/IT/DS Dep. & Faculty Incharge of GDSC BKBIET</p>
+              <a href="" target="_blank"
+                ><img
+                  src="./assets/images/icon/Phone.png"
+                  alt="" />+91-9414648683</a
+              >
+            </span>
+            <span>
+              <h2>Mr. Sachin</h2>
+              <p>Chairperson, IEEE BKBIET SB</p>
+              <a href="" target="_blank"
+                ><img
+                  src="./assets/images/icon/Phone.png"
+                  alt="" />+91-9772541952</a
+              >
+            </span>
+            <span>
+              <h2>Mr. Aditya Sharma</h2>
+              <p>Lead, GDSC BKBIET</p>
+              <a href="" target="_blank"
+                ><img
+                  src="./assets/images/icon/Phone.png"
+                  alt="" />+91-8250639553</a
+              >
+            </span>
+          </div>
+          <a href="mailto:anantam@bkbiet.ac.in" class="mail" target="_blank"
+            ><img
+              src="./assets/images/icon/gmail.png"
+              alt="" />anantam@bkbiet.ac.in</a
+          >
+        </span>
+        <span class="address">
+          <h1>ADDRESS</h1>
+          <a target="_blank" href=""
+            >B K Birla Institute of Engineering and Technology, Ceeri Road,
+            Jhunjhunu, Pilani, Rajasthan 333031</a
+          >
+          <a href="https://bkbiet.ac.in/" target="_blank" class="mail"
+            >https://bkbiet.ac.in/</a
+          >
+        </span>
+      </div>
+      <div class="social--links">
+        <a href=""><img src="./assets/images/icon/gmail.png" alt="" /></a>
+        <a href=""><img src="./assets/images/icon/instagram.png" alt="" /></a>
+        <a href=""><img src="./assets/images/icon/linkedin.png" alt="" /></a>
+        <a href=""><img src="./assets/images/icon/gmail.png" alt="" /></a>
+      </div>
+      <p class="copyright">&COPY; made by ANANTAM TEAM, with 💓💓💓</p>
+    </footer>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- POPUP AREA -->
+    <div class="modelWindow" id="modelWindowAnant">
+      <img
+        class="model--close-btn"
+        id="anant--close-btn"
+        src="./assets/images/icon/yellow-close.svg"
+        alt="" />
+      <img
+        class="model--poster"
+        src="./assets/images/POSTERS/ANANT NETRUNN POSTER.svg"
+        alt="" />
+      <div class="model--content">
+        <span>
+          <h1>ANANT HACKATHON</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
+            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
+            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
+            similique adipisci eius cumque, amet itaque temporibus repellat
+            odio, magni nesciunt maiores blanditiis tempore.
+          </p>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <div class="modelWindow" id="modelWindowRobo">
+      <img
+        class="model--close-btn"
+        id="robo--close-btn"
+        src="./assets/images/icon/yellow-close.svg"
+        alt="" />
+      <img
+        class="model--poster"
+        src="./assets/images/POSTERS/ROBOWAR POSTER.svg"
+        alt="" />
+      <div class="model--content">
+        <span>
+          <h1>ROBO BATTLES</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
+            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
+            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
+            similique adipisci eius cumque, amet itaque temporibus repellat
+            odio, magni nesciunt maiores blanditiis tempore.
+          </p>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!--CODE CRUNCH-->
+    <div class="modelWindow" id="modelWindowCrunch">
+      <img
+        class="model--close-btn"
+        id="crunch--close-btn"
+        src="./assets/images/icon/yellow-close.svg"
+        alt="" />
+      <img
+        class="model--poster"
+        src="./assets/images/POSTERS/CODE CRUNCH.jpg"
+        alt="" />
+      <div class="model--content">
+        <span>
+          <h1>CODE CRUNCH</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
+            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
+            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
+            similique adipisci eius cumque, amet itaque temporibus repellat
+            odio, magni nesciunt maiores blanditiis tempore.
+          </p>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!-- ESPORTS -->
+    <div class="modelWindow" id="modelWindowEsports">
+      <img
+        class="model--close-btn"
+        id="esports--close-btn"
+        src="./assets/images/icon/yellow-close.svg"
+        alt="" />
+      <img
+        class="model--poster"
+        src="./assets/images/POSTERS/ESPORTS POSTER.svg"
+        alt="" />
+      <div class="model--content">
+        <span>
+          <h1>ESPORTS STREET</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
+            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
+            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
+            similique adipisci eius cumque, amet itaque temporibus repellat
+            odio, magni nesciunt maiores blanditiis tempore.
+          </p>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!-- BID BOUNDARIES -->
+    <div class="modelWindow" id="modelWindowBid">
+      <img
+        class="model--close-btn"
+        id="bid--close-btn"
+        src="./assets/images/icon/yellow-close.svg"
+        alt="" />
+      <img
+        class="model--poster"
+        src="./assets/images/POSTERS/BID BOUNDARIES.jpg"
+        alt="" />
+      <div class="model--content">
+        <span>
+          <h1>ESPORTS STREET</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
+            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
+            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
+            similique adipisci eius cumque, amet itaque temporibus repellat
+            odio, magni nesciunt maiores blanditiis tempore.
+          </p>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!-- DALAL STREET -->
+    <div class="modelWindow" id="modelWindowDalal">
+      <img
+        class="model--close-btn"
+        id="dalal--close-btn"
+        src="./assets/images/icon/yellow-close.svg"
+        alt="" />
+      <img
+        class="model--poster"
+        src="./assets/images/POSTERS/DALAL POSTER.svg"
+        alt="" />
+      <div class="model--content">
+        <span>
+          <h1>DALAL STREET</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
+            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
+            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
+            similique adipisci eius cumque, amet itaque temporibus repellat
+            odio, magni nesciunt maiores blanditiis tempore.
+          </p>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!-- BINARY BRAINS -->
+    <div class="modelWindow" id="modelWindowBinary">
+      <img
+        class="model--close-btn"
+        id="binary--close-btn"
+        src="./assets/images/icon/yellow-close.svg"
+        alt="" />
+      <img
+        class="model--poster"
+        src="./assets/images/POSTERS/BINARY BRAINS.jpg"
+        alt="" />
+      <div class="model--content">
+        <span>
+          <h1>BINARY BRAINS</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
+            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
+            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
+            similique adipisci eius cumque, amet itaque temporibus repellat
+            odio, magni nesciunt maiores blanditiis tempore.
+          </p>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!-- MANGA MANIA -->
+    <div class="modelWindow" id="modelWindowManga">
+      <img
+        class="model--close-btn"
+        id="manga--close-btn"
+        src="./assets/images/icon/yellow-close.svg"
+        alt="" />
+      <img
+        class="model--poster"
+        src="./assets/images/POSTERS/MANGA MANIA.jpg"
+        alt="" />
+      <div class="model--content">
+        <span>
+          <h1>MANGA MANIA</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
+            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
+            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
+            similique adipisci eius cumque, amet itaque temporibus repellat
+            odio, magni nesciunt maiores blanditiis tempore.
+          </p>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!-- FRAMEFLIX -->
+    <div class="modelWindow" id="modelWindowFrame">
+      <img
+        class="model--close-btn"
+        id="frame--close-btn"
+        src="./assets/images/icon/yellow-close.svg"
+        alt="" />
+      <img
+        class="model--poster"
+        src="./assets/images/POSTERS/FRAMEFLIX.jpg"
+        alt="" />
+      <div class="model--content">
+        <span>
+          <h1>MANGA MANIA</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
+            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
+            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
+            similique adipisci eius cumque, amet itaque temporibus repellat
+            odio, magni nesciunt maiores blanditiis tempore.
+          </p>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!-- PIXEL PERFECT -->
+    <div class="modelWindow" id="modelWindowPixel">
+      <img
+        class="model--close-btn"
+        id="pixel--close-btn"
+        src="./assets/images/icon/yellow-close.svg"
+        alt="" />
+      <img
+        class="model--poster"
+        src="./assets/images/POSTERS/PIXEL PERFECT.jpg"
+        alt="" />
+      <div class="model--content">
+        <span>
+          <h1>PIXEL PERFECT</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
+            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
+            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
+            similique adipisci eius cumque, amet itaque temporibus repellat
+            odio, magni nesciunt maiores blanditiis tempore.
+          </p>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!-- BLIND DATE -->
+    <div class="modelWindow" id="modelWindowBlind">
+      <img
+        class="model--close-btn"
+        id="blind--close-btn"
+        src="./assets/images/icon/yellow-close.svg"
+        alt="" />
+      <img
+        class="model--poster"
+        src="./assets/images/POSTERS/BLIND DATE.jpg"
+        alt="" />
+      <div class="model--content">
+        <span>
+          <h1>BLIND DATE</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
+            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
+            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
+            similique adipisci eius cumque, amet itaque temporibus repellat
+            odio, magni nesciunt maiores blanditiis tempore.
+          </p>
+        </span>
+        <span>
+          <h1>RULES :</h1>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio maiores dolores.
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
     <script src="./js/script.js"></script>
+    <!-- <script src="./js/event.js"></script> -->
+    <script src="./js/popup.js"></script>
   </body>
 </html>
