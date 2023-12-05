@@ -33,7 +33,7 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
     $session->setUser($session_code);
     $db->disconnect();
     //redirect to dashboard
-    header("Location: index.php");
+    header("Location: dashboard/");
     die();
     
 }

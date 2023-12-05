@@ -12,7 +12,7 @@ if (!$db->isConnected()) {
 //check if user is logged in else redirect
 if ($session->loggedIn() === false) {
     //redirect to dashboard
-    header("Location: login.php");
+    header("Location: /login.php");
     die();
 }
 
@@ -81,6 +81,7 @@ $events = $db->resultset();
         </span>
         <img class="line1" src="../assets/images/webLINES/navLine.png" alt="" />
       </nav>
+      <!-- Auto load the cards from php -->
       <?php
         if(isset($_GET['action'])){
           include_view('TableView');

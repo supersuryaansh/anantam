@@ -1,3 +1,44 @@
+<?php
+require_once($_SERVER['DOCUMENT_ROOT']."/"."requireme.php");
+$session = new UserSession();
+$session->createSession();
+global $_SERVER;
+
+$db = new Database();
+if(!$db->isConnected()){
+    die("Database Not connected");
+}
+
+//check if user is logged in and redirect
+if($session->loggedIn() === true){
+    //redirect to dashboard
+    header("Location: dashboard/");
+    die();
+}
+
+
+//login the user
+if(!empty($_POST['submit']) && !empty($_POST['usrEmail']) && !empty($_POST['usrPass']))
+{
+
+
+    $session_code = genHash(50);
+    //register the user
+    $user = new UserLogin($_POST['usrEmail'], $_POST['usrPass'] );
+
+    //login the user
+    if($user->loggedIn === true){
+      $session->setUser($user->sessionCode);
+      $db->disconnect();
+      //redirect to dashboard
+      header("Location: dashboard/");
+      die();  
+    }    
+
+}
+
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +64,7 @@
     </nav>
     <main>
       <form action="" method="post" enctype="multipart/form-data">
-        <h2>User LOGIN Form :</h2>
+        <h2>LOGIN Form :</h2>
         <span>
           <label for="usrEmail">Email:</label>
           <input
@@ -42,6 +83,12 @@
         </span>
         <input class="submit--btn" type="submit" value="Submit" name="submit" />
       </form>
+      <?php
+
+        if(isset($user->errorMessage)){
+            echo $user->errorMessage;
+        }
+      ?>  
     </main>
     <script src="./js/registration.js"></script>
   </body>
