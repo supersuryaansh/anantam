@@ -37,7 +37,7 @@
       </div>
       <div>
         <a href="/events.php">EVENTS</a>
-        <a href="/registration.php">REGISTER</a>
+        <a href="/register.php">REGISTER</a>
         <a href="">SIGN IN</a>
       </div>
     </nav>
