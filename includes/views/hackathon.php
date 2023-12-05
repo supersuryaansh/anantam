@@ -9,8 +9,8 @@
         </span>
         <div class="card--area d--card--area">
 
-      <h1>ANANT NETRUNN REGISTRATION :</h1>
-      <form action="" method="get">
+          <form action="" method="get">
+        <h1>ANANT NETRUNN REGISTRATION :</h1>
         <span>
           <label for="usrProblemSt">PROBLEM STATEMENT : </label>
           <input type="text" id="usrProblemSt" name="usrProblemSt" />
@@ -24,8 +24,7 @@
           <select name="usrProblemStSelect" id="usrProblemStSelect">
             <option value="001">
               Development of software application for analysis and processing of
-              dvbs2 receiver output stream i.e., raw BB Frames, GSE and TS in
-              near real time.
+              dvbs2 receiver output stream.
             </option>
             <option value="003">Quantum Secure Email Client Application</option>
             <option value="004">
@@ -57,6 +56,5 @@
         </span>
         <input class="submit--btn" type="submit" value="SUBMIT" name="submit" />
       </form>
-
 </div>
 </div>
