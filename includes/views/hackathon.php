@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/hackathon.css" />
-    <link rel="tab icon" href="/assets/images/icon/ANANTAMLOGO.svg">
-    <title>ANANTAM NETRUNN - REGISTRATION</title>
-  </head>
-  <body>
-    <main>
+
       <h1>ANANT NETRUNN REGISTRATION :</h1>
       <form action="" method="get">
         <span>
@@ -57,7 +47,4 @@
         </span>
         <input class="submit--btn" type="submit" value="SUBMIT" name="submit" />
       </form>
-    </main>
-    <!-- <script src="/js/hackthon.js"></script> -->
-  </body>
-</html>
+
