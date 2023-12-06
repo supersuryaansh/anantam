@@ -130,7 +130,7 @@ $events = $db->resultset();
           >
           <div>
             <span>
-              <h2>Dr. Santosh Jangir</h2>
+              <h2>Dr. Santosh Jangid</h2>
               <p>HOD of ECE Dep. & Branch Counsellor of IEEE BKBIET SB</p>
               <a href="" target="_blank"
                 ><img
@@ -139,7 +139,7 @@ $events = $db->resultset();
               >
             </span>
             <span>
-              <h2>Dr. Nimish</h2>
+              <h2>Dr. Nimish Kumar</h2>
               <p>HOD of CSE/AI/IT/DS Dep. & Faculty Incharge of GDSC BKBIET</p>
               <a href="" target="_blank"
                 ><img

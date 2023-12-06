@@ -14,7 +14,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .event--top-line h1 {
-    top: 1%;
+    top: 6%;
   }
 }
 @media (max-width: 1150px) {

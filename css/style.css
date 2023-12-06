@@ -31,10 +31,10 @@ button:focus {
   box-sizing: border-box;
   font-family: noken;
 }
-h1:hover,
+/* h1:hover,
 a:hover {
   text-shadow: red -3px 0, cyan 3px 0;
-}
+} */
 body {
   overflow-x: hidden;
 }
