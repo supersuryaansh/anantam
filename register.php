@@ -115,11 +115,12 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
         </span>
 
         <span>
-          <label for="usrPhone">Phone:</label>
+          <label for="usrPhone" >Phone:</label>
           <input
             type="text"
             id="usrPhone"
             name="usrPhone"
+          pattern="[0-9]{10}"
             required /><br /><br />
         </span>
         <span>
