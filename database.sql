@@ -20,3 +20,16 @@ CREATE TABLE events (
     eventAction VARCHAR(100)
 );
 
+CREATE TABLE teams (
+    teamID INT AUTO_INCREMENT,
+    teamCode CHAR(9),
+    teamName VARCHAR(100),
+    teamLeader VARCHAR(100),
+    member1 VARCHAR(100),
+    member2 VARCHAR(100),
+    member3 VARCHAR(100),
+    presentation VARCHAR(100),
+    PRIMARY KEY (teamID)
+);
+
+ALTER TABLE `teams` ADD `problemStatement` INT(10) NOT NULL AFTER `presentation`;

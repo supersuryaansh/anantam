@@ -1,8 +1,9 @@
 <?php
+global $server_root;
 if(!defined('LIFE')){
   die();
 }
-
+echo var_dump($session->getName());
 //verify input and register
 if(isset($_POST['hackathon-submit'])){
   if(!empty($_POST['usrTeamName'])  && !empty($_POST['usrProblemSt'])  && !empty($_FILES['usrPresentation']['name']) ){
@@ -11,12 +12,14 @@ if(isset($_POST['hackathon-submit'])){
       $fileName = "presentation_". substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20) ."_".basename($_FILES["usrPresentation"]["name"]);
       $fileUploader->uploadFile($_FILES["usrPresentation"],$fileName,array('pptx', 'ppt', 'docx','doc','pdf'));
 
-//      if($fileUploader->uploadOk) {
-//        //handle registration
-//        $register = new EventRegister($_GET['usrTeamName'],$_GET['usrProblemSt'],$_FILE['usrPresentation']['name']);
-//      }else{
-//          echo "<h1>YOOOO</h1>";
-//      }
+      if($fileUploader->uploadOk) {
+        //handle registration
+        $register = new EventRegister();
+        $register->hackathon($_POST['usrTeamName'],$_POST['usrProblemSt'],$_FILES['usrPresentation']['name'],$session->getName());
+
+      }else{
+          echo "Something went wrong";
+      }
 
   }//end form value check
 }//end submit form check
