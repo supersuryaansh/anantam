@@ -13,7 +13,7 @@ if(!defined('LIFE')){
             alt="" />
           <h1>/// EVENTS</h1>
         </span>
-        <div class="card--area d--card--area">
+        <div class="card--area">
           
 
         <?php
