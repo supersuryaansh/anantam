@@ -26,16 +26,15 @@
   .event--section {
     background-color: #f6f6f6 !important;
     width: 100%;
-    margin-top: 0px !important;
     height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-left: 20px !important;
+    margin: 0px !important;
   }
   .d--card--area {
-    margin-top: 150px !important;
     display: flex !important;
     flex-direction: row;
     align-items: center;
@@ -43,7 +42,6 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
-    margin-inline: 0px !important;
   }
   .event--top-line img, .event--top-line h1{
     display: none;
@@ -85,8 +83,7 @@
 </style>
 <div class="event--section">
   <span class="event--top-line">
-    <img
-      class="line3"
+    <img class="line3"
       id="line3"
       src="../assets/images/webLINES/EventLine.svg"
       alt="" />

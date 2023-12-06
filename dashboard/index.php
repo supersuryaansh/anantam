@@ -65,7 +65,7 @@ $events = $db->resultset();
         <div>
           <a href="../events.html">MY EVENTS</a>
           <a href="">SIGN IN</a>
-          <a class="user--code">TEAM ID000000000</a>
+          <a class="user--code">TEAM ID 000000000</a>
         </div>
       </nav>
       <nav class="desktop--nav">
