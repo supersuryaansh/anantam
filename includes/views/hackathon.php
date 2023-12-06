@@ -1,5 +1,27 @@
 <?php
+if(!defined('LIFE')){
+  die();
+}
 
+//verify input and register
+if(isset($_POST['hackathon-submit'])){
+
+  if(!empty($_POST['usrTeamName'])  && !empty($_POST['usrProblemSt'])  && !empty($_FILES['usrPresentation']['name']) ){
+
+      $fileUploader = new FileUploader("uploads/presentation/");
+      //random chars for prefix
+      $fileName = "presentation_". substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20) ."_".basename($_FILES["usrPresentation"]["name"]);
+      $fileUploader->uploadFile($_FILES["usrPresentation"],$fileName,array('pptx', 'ppt', 'docx','doc','pdf'));
+
+      if($fileUploader->uploadOk) {
+        //handle registration
+        $register = new EventRegister($_GET['usrTeamName'],$_GET['usrProblemSt'],$_FILE['usrPresentation']['name']);
+      }else{
+          echo "<h1>YOOOO</h1>";
+      }
+
+  }//end form value check
+}//end submit form check
 
 ?>
 
@@ -91,21 +113,19 @@
   </span>
   <div class="card--area d--card--area">
     <img class="hackathon--poster-img" src="/assets/images/POSTERS/ANANT NETRUNN POSTER.svg" alt="">
-    <form action="/dashboard/?action=hackathon&" method="get">
+    <form action="/dashboard/?action=hackathon&" method="post">
       
       <input type="hidden" name="action" value="hackathon" />
       <h1>ANANT NETRUNN REGISTRATION :</h1>
-           <span>
+      <!-- Team Name -->
+      <span>
         <label for="usrTeamName">TEAM NAME : </label>
         <input type="text" id="usrTeamName" name="usrTeamName" required />
       </span>
-      <span>
-        <label for="usrProblemSt">PROBLEM STATEMENT : </label>
-        <input type="text" id="usrProblemSt" name="usrProblemSt" required />
-      </span>
+      <!-- Problem Statements -->
       <span>
         <label for="usrProblemStSelect">SELECT PROBLEM STATEMENT : </label>
-        <select name="usrProblemStSelect" id="usrProblemStSelect" required>
+        <select name="usrProblemSt" id="usrProblemStSelect" required>
           <option selected disabled>Select your problem statement</option>
           <option value="001">
             Development of software application for analysis and processing of
@@ -136,9 +156,20 @@
           </option>
         </select>
       </span>
-      <input class="submit--btn" type="submit" value="SUBMIT" name="submit" />
+      <!-- Presentation -->
+      <span>
+          <label for="usrPresentation">Presentation:</label>
+          <input
+            type="file"
+            accept=".ppt, .pptx, .pdf"
+            id="usrPresentation"
+            name="usrPresentation"
+            required /><br /><br />
+        </span>
+      <input class="submit--btn" type="submit" value="SUBMIT" name="hackathon-submit" />
     </form>
-    <?php
+      <?php
+
       if(isset($user->errorMessage)){
           echo $user->errorMessage;
       }
@@ -146,6 +177,6 @@
       if(isset($fileUploader->errorMessage)){
           echo $fileUploader->errorMessage;
       }
-  ?> 
+      ?>
   </div>
 </div>

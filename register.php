@@ -23,18 +23,20 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
     $fileUploader = new FileUploader("uploads/");
     //random chars for prefix
     $fileName = "college_id_". substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20) ."_".basename($_FILES["usrCollegeId"]["name"]);
-    $fileUploader->uploadFile($_FILES["usrCollegeId"],$fileName);
+    $fileUploader->uploadFile($_FILES["usrCollegeId"],$fileName,array('png', 'jpg', 'jpeg'));
 
-    $session_code = genHash(50);
-    //register the user
-    $user = new UserRegister($_POST['usrName'],genHash(9),$session_code,$_POST['usrGender'],$_POST['usrEmail'],$_POST['usrPhone'],$fileName,$_POST['usrPass']);
+    if($fileUploader->uploadOk) {
+        $session_code = genHash(50);
+        //register the user
+        $user = new UserRegister($_POST['usrName'], genHash(9), $session_code, $_POST['usrGender'], $_POST['usrEmail'], $_POST['usrPhone'], $fileName, $_POST['usrPass']);
 
-    //login the user    
-    $session->setUser($session_code);
-    $db->disconnect();
-    //redirect to dashboard
-    header("Location: dashboard/");
-    die();
+        //login the user
+        $session->setUser($session_code);
+        $db->disconnect();
+        //redirect to dashboard
+        header("Location: dashboard/");
+        die();
+    }
     
 }
 
