@@ -211,3 +211,6 @@ option {
   width: 200px;
 }
 /* MENU END */
+.register--link a {
+  color: var(--other) !important;
+}

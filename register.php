@@ -50,6 +50,25 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
     <title>ANANTAM - REGISTRATION</title>
   </head>
   <body>
+        <!-- <div class="main--menuPage">
+      <button class="menu--close-btn">
+        <img src="../assets/images/icon/closeBtn.svg" alt="" />
+      </button>
+      <div class="menuPage--content">
+        <img src="../assets/images/menuPageLine/lt-corner.svg" alt="" />
+        <a href="">SPONSORS</a>
+        <img src="../assets/images/menuPageLine/rt-corner.svg" alt="" />
+        <a href="">DEVELOPERS</a>
+        <img
+          class="logo--img"
+          src="../assets/images/icon/BLACK LOGO.svg"
+          alt="" />
+        <a href="">PRIZE POOL</a>
+        <img src="../assets/images/menuPageLine/lb-corner.svg" alt="" />
+        <a href="">GALLERY</a>
+        <img src="../assets/images/menuPageLine/rb-corner.svg" alt="" />
+      </div>
+    </div> -->
     <img
       class="bottom--line"
       src="./assets/images/webLINES/navLine.png"
@@ -125,6 +144,9 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
             id="usrConfPass"
             name="usrConfPass"
             required /><br /><br />
+        </span>
+         <span class="register--link">
+        <p>already have an account?</p><a href="./login.php">LOGIN NOW!!!</a>
         </span>
         <input class="submit--btn" type="submit" value="Submit" name="submit" />
       </form>
