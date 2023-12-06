@@ -24,6 +24,7 @@ if(!defined('LIFE')){
             $eventImage = "/uploads/event-pictures/".$event["eventPicture"];
             $eventText = $event["eventDescription"];
             $eventId = $event["eventId"];
+            $eventAction = $event["eventAction"];
             $card = <<<TEXT
 
                   <div class="cards">
@@ -46,7 +47,7 @@ if(!defined('LIFE')){
                     </p>
                   </span>
                   <span class="card--btn">
-                    <a href="#$eventId"><button>REGISTER</button></a>
+                    <a href="?action=$eventAction"><button>REGISTER</button></a>
                   </span>
                 </div>
 
