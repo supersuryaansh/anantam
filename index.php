@@ -443,9 +443,9 @@
     <footer>
       <div class="maker--logo">
         <span>
-          <img src="./assets/images/icon/IEEE.png" alt="" />
-          <img class="gdsc--logo" src="./assets/images/icon/GDSC.svg" alt="" />
-          <img src="./assets/images/icon/BKBIET.png" alt="" />
+          <a href=""><img src="./assets/images/icon/IEEE.png" alt="" /></a>
+          <a href="https://gdsc.community.dev/b-k-birla-institute-of-engineering-technology-pilani/"><img class="gdsc--logo" src="./assets/images/icon/GDSC.svg" alt="" /></a>
+          <a href="https://bkbiet.ac.in/"><img src="./assets/images/icon/BKBIET.png" alt="" /></a>
         </span>
       </div>
       <div class="footer--content">
@@ -463,7 +463,7 @@
           <h1>CONTACT US</h1>
           <div>
             <span>
-              <h2>Dr. Santosh Jangir</h2>
+              <h2>Dr. Santosh Jangid</h2>
               <p>HOD of ECE Dep. & Branch Counsellor of IEEE BKBIET SB</p>
               <a href="" target="_blank"
                 ><img
@@ -472,7 +472,7 @@
               >
             </span>
             <span>
-              <h2>Dr. Nimish</h2>
+              <h2>Dr. Nimish Kumar</h2>
               <p>HOD of CSE/AI/IT/DS Dep. & Faculty Incharge of GDSC BKBIET</p>
               <a href="" target="_blank"
                 ><img
