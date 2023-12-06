@@ -86,13 +86,13 @@
   <div class="card--area d--card--area">
     <form action="" method="get">
       <h1>ANANT NETRUNN REGISTRATION :</h1>
+           <span>
+        <label for="usrTeamName">TEAM NAME : </label>
+        <input type="text" id="usrTeamName" name="usrTeamName" />
+      </span>
       <span>
         <label for="usrProblemSt">PROBLEM STATEMENT : </label>
         <input type="text" id="usrProblemSt" name="usrProblemSt" />
-      </span>
-      <span>
-        <label for="usrProblemStID">PROBLEM STATEMENT ID : </label>
-        <input type="text" id="usrProblemStID" name="usrProblemStID" />
       </span>
       <span>
         <label for="usrProblemStSelect">SELECT PROBLEM STATEMENT : </label>
