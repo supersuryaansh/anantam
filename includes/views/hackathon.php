@@ -5,20 +5,18 @@ if(!defined('LIFE')){
 
 //verify input and register
 if(isset($_POST['hackathon-submit'])){
-
   if(!empty($_POST['usrTeamName'])  && !empty($_POST['usrProblemSt'])  && !empty($_FILES['usrPresentation']['name']) ){
-
-      $fileUploader = new FileUploader("uploads/presentation/");
+      $fileUploader = new FileUploader($server_root."/uploads/presentations/");
       //random chars for prefix
       $fileName = "presentation_". substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20) ."_".basename($_FILES["usrPresentation"]["name"]);
       $fileUploader->uploadFile($_FILES["usrPresentation"],$fileName,array('pptx', 'ppt', 'docx','doc','pdf'));
 
-      if($fileUploader->uploadOk) {
-        //handle registration
-        $register = new EventRegister($_GET['usrTeamName'],$_GET['usrProblemSt'],$_FILE['usrPresentation']['name']);
-      }else{
-          echo "<h1>YOOOO</h1>";
-      }
+//      if($fileUploader->uploadOk) {
+//        //handle registration
+//        $register = new EventRegister($_GET['usrTeamName'],$_GET['usrProblemSt'],$_FILE['usrPresentation']['name']);
+//      }else{
+//          echo "<h1>YOOOO</h1>";
+//      }
 
   }//end form value check
 }//end submit form check
@@ -113,7 +111,7 @@ if(isset($_POST['hackathon-submit'])){
   </span>
   <div class="card--area d--card--area">
     <img class="hackathon--poster-img" src="/assets/images/POSTERS/ANANT NETRUNN POSTER.svg" alt="">
-    <form action="/dashboard/?action=hackathon&" method="post">
+    <form action="/dashboard/?action=hackathon" method="post" enctype="multipart/form-data">
       
       <input type="hidden" name="action" value="hackathon" />
       <h1>ANANT NETRUNN REGISTRATION :</h1>
