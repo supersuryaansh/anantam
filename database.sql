@@ -16,6 +16,7 @@ CREATE TABLE events (
     eventName VARCHAR(30) NOT NULL,
     eventDescription VARCHAR(200),
     eventPicture VARCHAR(200),
-    eventPrice INT
+    eventPrice INT,
+    eventAction VARCHAR(100)
 );
 

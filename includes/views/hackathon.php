@@ -1,3 +1,8 @@
+<?php
+
+
+?>
+
 <style>
   @font-face {
     font-family: noken;
@@ -84,19 +89,20 @@
     <h1>/// EVENTS</h1>
   </span>
   <div class="card--area d--card--area">
-    <form action="" method="get">
+    <form action="?action=hackathon/" method="get">
       <h1>ANANT NETRUNN REGISTRATION :</h1>
            <span>
         <label for="usrTeamName">TEAM NAME : </label>
-        <input type="text" id="usrTeamName" name="usrTeamName" />
+        <input type="text" id="usrTeamName" name="usrTeamName" required />
       </span>
       <span>
         <label for="usrProblemSt">PROBLEM STATEMENT : </label>
-        <input type="text" id="usrProblemSt" name="usrProblemSt" />
+        <input type="text" id="usrProblemSt" name="usrProblemSt" required />
       </span>
       <span>
         <label for="usrProblemStSelect">SELECT PROBLEM STATEMENT : </label>
-        <select name="usrProblemStSelect" id="usrProblemStSelect">
+        <select name="usrProblemStSelect" id="usrProblemStSelect" required>
+          <option selected disabled>Select your problem statement</option>
           <option value="001">
             Development of software application for analysis and processing of
             dvbs2 receiver output stream.
@@ -128,5 +134,14 @@
       </span>
       <input class="submit--btn" type="submit" value="SUBMIT" name="submit" />
     </form>
+    <?php
+      if(isset($user->errorMessage)){
+          echo $user->errorMessage;
+      }
+
+      if(isset($fileUploader->errorMessage)){
+          echo $fileUploader->errorMessage;
+      }
+  ?> 
   </div>
 </div>
