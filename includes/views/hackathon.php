@@ -32,11 +32,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 20px !important;
   }
   .d--card--area {
     margin-top: 150px !important;
     display: flex !important;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -78,6 +79,9 @@
   select:focus {
     outline: none;
   }
+  .hackathon--poster-img{
+    max-width: 500px;
+  }
 </style>
 <div class="event--section">
   <span class="event--top-line">
@@ -89,6 +93,7 @@
     <h1>/// EVENTS</h1>
   </span>
   <div class="card--area d--card--area">
+    <img class="hackathon--poster-img" src="/assets/images/POSTERS/ANANT NETRUNN POSTER.svg" alt="">
     <form action="?action=hackathon/" method="get">
       <h1>ANANT NETRUNN REGISTRATION :</h1>
            <span>

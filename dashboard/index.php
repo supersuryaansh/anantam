@@ -65,7 +65,7 @@ $events = $db->resultset();
         <div>
           <a href="../events.html">MY EVENTS</a>
           <a href="">SIGN IN</a>
-          <a class="user--code">000000000</a>
+          <a class="user--code">TEAM ID000000000</a>
         </div>
       </nav>
       <nav class="desktop--nav">
@@ -75,7 +75,7 @@ $events = $db->resultset();
         <span class="nav--links">
           <a class="menuOpenAnker" href="../events.html">MY EVENTS</a>
           <a href="">LOG OUT</a>
-          <a class="user--code"><?=$_SESSION["joinCode"]?></a>
+          <a class="user--code">TEAM ID <?=$_SESSION["joinCode"]?></a>
           <button class="main--MenuBtn">
             <img src="../assets/images/icon/menu.svg" alt="" />
           </button>
