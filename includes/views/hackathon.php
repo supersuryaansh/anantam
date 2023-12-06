@@ -90,8 +90,10 @@
     <h1>/// EVENTS</h1>
   </span>
   <div class="card--area d--card--area">
-    <img class="hackthon--poster-img" src="/assets/images/POSTERS/ANANT NETRUNN POSTER.svg" alt="">
-    <form action="" method="get">
+    <img class="hackathon--poster-img" src="/assets/images/POSTERS/ANANT NETRUNN POSTER.svg" alt="">
+    <form action="/dashboard/?action=hackathon&" method="get">
+      
+      <input type="hidden" name="action" value="hackathon" />
       <h1>ANANT NETRUNN REGISTRATION :</h1>
            <span>
         <label for="usrTeamName">TEAM NAME : </label>
