@@ -1,0 +1,3 @@
+AddHandler application/x-httpd-lsphp .htm .html
+RewriteEngine On
+RewriteRule ^(.*)\.html$ $1.php [L]
