@@ -75,7 +75,7 @@ if(!empty($_POST['submit']) && !empty($_POST['usrEmail']) && !empty($_POST['usrP
     <nav>
       <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
       <a href="./index.php"
-        ><img src="./assets/images/icon/ANANTAMLOGO.svg" alt=""
+        ><img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt=""
       /></a>
       <button class="nav--btn">
         <img src="./assets/images/icon/menu.svg" alt="" />
