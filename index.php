@@ -75,7 +75,7 @@
       <nav class="desktop--nav">
         <span>
           <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
-          <p>08 JAN, 2024 to 11 JAN, 2024</p>
+          <p>08 JAN, 2024 - 11 JAN, 2024</p>
         </span>
         <span class="nav--links">
           <a class="menuOpenAnker" href="./events.php">EVENTS</a>
@@ -143,7 +143,6 @@
           <a href="#cards" class="eventsBtn"><button>EXPLORE EVENTS</button></a>
         </span>
         <div class="timer">
-          <h1 class="REMAINING">REMAINING :</h1>
           <span>
             <h1 id="days">24 :</h1>
             <p>Days</p>

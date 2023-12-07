@@ -140,6 +140,7 @@ a {
   flex-direction: row;
   z-index: 999;
   background-color: #000;
+  gap: 30px;
 }
 .desktop--nav {
   display: flex;
