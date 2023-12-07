@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <title>ANANTAM</title>
+    <!-- ANANTAM META Files -->
+    <meta
+      name="google-site-verification"
+      content="_d8yCbcsbclgiZlrO4ycQXb4GBr8A6jnGxdjbxVONPo" />
+    <meta
+      name="description"
+      content="ANANTAM is a collaborative and grand-scale technical fest organized by IEEE BKBIET Student Branch and GDSC BKBIET Techfest. It features a diverse range of events, including a continuous four-day hackathon, robo race, robo war, DSA competition, Teach Quiz, various speaker sessions covering technical, non-technical, and administrative themes, Dalal Street (related to finance and stock market), Auction (related to IPL Auction), UX/UI design challenge, Murder Mystery (related to solving crime cases). Additionally, the fest includes fun activities like footloose, open mic, bonfire, anime quiz, and panel discussions with eminent guests and speakers. ANANTAM is a fusion of the successful annual tech fests, VIBES by IEEE BKBIET SB and Zenith by GDSC BKBIET, creating a comprehensive and engaging experience for participants." />
+    <meta
+      name="keywords"
+      content="ANANTAM, BKBIET-ANANTAM, BKBIET ANANTAM, Hackathon, Techfest, four-day hackathon, Robo war, Robo race, Robo Battle, DSA competition, Teach Quiz, Dalal Street, UX/UI design challenge, Auction, VIbes, Zenith, Robotics, Speaker Sessions, IEEE BKBIET, GDSC BKBIET, BKBIET, Pilani" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2XJ9X1PHH6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2XJ9X1PHH6");
+    </script>
   </head>
   <body>
     <div class="main--menuPage">
@@ -32,7 +56,10 @@
     <main>
       <nav class="mobile--nav">
         <div>
-          <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
+          <span>
+            <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
+            <p>08 JAN, 2024 to 11 JAN, 2024</p>
+          </span>
           <span>
             <button class="main--MenuBtn">
               <img src="./assets/images/icon/menu.svg" alt="" />
@@ -48,6 +75,7 @@
       <nav class="desktop--nav">
         <span>
           <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
+          <p>08 JAN, 2024 to 11 JAN, 2024</p>
         </span>
         <span class="nav--links">
           <a class="menuOpenAnker" href="./events.php">EVENTS</a>
@@ -115,10 +143,23 @@
           <a href="#cards" class="eventsBtn"><button>EXPLORE EVENTS</button></a>
         </span>
         <div class="timer">
-          <h1 id="days">24 :</h1>
-          <h1 id="hours">60 :</h1>
-          <h1 id="minutes">60 :</h1>
-          <h1 id="seconds">60</h1>
+          <h1 class="REMAINING">REMAINING :</h1>
+          <span>
+            <h1 id="days">24 :</h1>
+            <p>Days</p>
+          </span>
+          <span>
+            <h1 id="hours">60 :</h1>
+            <p>Hrs</p>
+          </span>
+          <span>
+            <h1 id="minutes">60 :</h1>
+            <p>Mins</p>
+          </span>
+          <span>
+            <h1 id="seconds">60</h1>
+            <p>Secs</p>
+          </span>
         </div>
         <!-- <h1 class="timer time">days : hrs : mins : secs</h1>
         <h1 class="timer date">08/01/2024-11/01/2024</h1> -->
@@ -444,20 +485,25 @@
       <div class="maker--logo">
         <span>
           <a href=""><img src="./assets/images/icon/IEEE.png" alt="" /></a>
-          <a href="https://gdsc.community.dev/b-k-birla-institute-of-engineering-technology-pilani/"><img class="gdsc--logo" src="./assets/images/icon/GDSC.svg" alt="" /></a>
-          <a href="https://bkbiet.ac.in/"><img src="./assets/images/icon/BKBIET.png" alt="" /></a>
+          <a
+            href="https://gdsc.community.dev/b-k-birla-institute-of-engineering-technology-pilani/"
+            ><img class="gdsc--logo" src="./assets/images/icon/GDSC.svg" alt=""
+          /></a>
+          <a href="https://bkbiet.ac.in/"
+            ><img src="./assets/images/icon/BKBIET.png" alt=""
+          /></a>
         </span>
       </div>
       <div class="footer--content">
         <span class="links">
           <h1>LINKS</h1>
-          <a href="">events</a>
-          <a href="">registration</a>
-          <a href="">sign in</a>
+          <a href="/events.php">events</a>
+          <a href="/register.php">registration</a>
+          <a href="/login.php">sign in</a>
           <a href="">developers</a>
           <a href="">prize pool</a>
           <a href="">sponsors</a>
-          <a href="">F&Q</a>
+          <a href="./fnq.html">F&Q</a>
         </span>
         <span class="contacts">
           <h1>CONTACT US</h1>

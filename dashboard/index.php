@@ -55,7 +55,7 @@ $events = $db->resultset();
     <main>
       <nav class="mobile--nav">
         <div>
-          <a href="./index.html"><img src="../assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" /></a>
+          <a href="./index.php"><img src="../assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" /></a>
           <span>
             <button class="main--MenuBtn">
               <img src="../assets/images/icon/menu.svg" alt="" />
@@ -63,17 +63,17 @@ $events = $db->resultset();
           </span>
         </div>
         <div>
-          <a href="../events.html">MY EVENTS</a>
+          <a href="../events.php">MY EVENTS</a>
           <a href="">SIGN IN</a>
           <a class="user--code">TEAM ID 000000000</a>
         </div>
       </nav>
       <nav class="desktop--nav">
         <span>
-          <a href="./index.html"><img src="../assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" /></a>
+          <a href="./index.php"><img src="../assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" /></a>
         </span>
         <span class="nav--links">
-          <a class="menuOpenAnker" href="../events.html">MY EVENTS</a>
+          <a class="menuOpenAnker" href="../events.php">MY EVENTS</a>
           <a href="">LOG OUT</a>
           <a class="user--code">TEAM ID <?=$_SESSION["joinCode"]?></a>
           <button class="main--MenuBtn">
@@ -114,20 +114,15 @@ $events = $db->resultset();
       <div class="footer--content">
         <span class="links">
           <h1>LINKS</h1>
-          <a href="">events</a>
-          <a href="">registration</a>
-          <a href="">sign in</a>
+          <a href="../events.php">events</a>
+          <a href="../register.php">registration</a>
+          <a href="../login.php">sign in</a>
           <a href="">developers</a>
           <a href="">prize pool</a>
           <a href="">sponsors</a>
         </span>
         <span class="contacts">
           <h1>CONTACTS</h1>
-          <a href="mailto:anantam@bkbiet.ac.in" class="mail" target="_blank"
-            ><img
-              src="../assets/images/icon/gmail.png"
-              alt="" />anantam@bkbiet.ac.in</a
-          >
           <div>
             <span>
               <h2>Dr. Santosh Jangid</h2>
@@ -165,6 +160,11 @@ $events = $db->resultset();
                   alt="" />+91-8250639553</a
               >
             </span>
+               <a href="mailto:anantam@bkbiet.ac.in" class="mail" target="_blank"
+            ><img
+              src="../assets/images/icon/gmail.png"
+              alt="" />anantam@bkbiet.ac.in</a
+          >
           </div>
         </span>
         <span class="address">
