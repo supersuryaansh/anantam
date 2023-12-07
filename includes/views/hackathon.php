@@ -102,7 +102,7 @@
           </details>
         </td>
         <!-- <td><button class="AN--btn">APPLY</button></td> -->
-        <td><input type="button" value="APPLY" class="AN--btn" /></td>
+        <td><button>APPLY</button></td>
       </tr>
 
       <tr>
