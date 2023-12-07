@@ -148,6 +148,9 @@ a {
   z-index: 999;
   background-color: #000;
 }
+.date--of-event{
+  font-size: 12px;
+}
 .menu--btn,
 .main--MenuBtn {
   width: 60px;
@@ -522,7 +525,7 @@ footer {
   position: relative;
   background-color: var(--secondary);
   padding-inline: 50px;
-  padding-bottom: 140px;
+  padding-bottom: 170px;
 }
 footer a {
   display: flex;

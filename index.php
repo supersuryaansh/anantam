@@ -58,7 +58,7 @@
         <div>
           <span>
             <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
-            <p>08 JAN, 2024 to 11 JAN, 2024</p>
+            <p class="date--of-event">08 JAN, 2024 to 11 JAN, 2024</p>
           </span>
           <span>
             <button class="main--MenuBtn">
@@ -75,7 +75,7 @@
       <nav class="desktop--nav">
         <span>
           <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
-          <p>08 JAN, 2024 - 11 JAN, 2024</p>
+          <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
         </span>
         <span class="nav--links">
           <a class="menuOpenAnker" href="./events.php">EVENTS</a>
@@ -160,8 +160,6 @@
             <p>Secs</p>
           </span>
         </div>
-        <!-- <h1 class="timer time">days : hrs : mins : secs</h1>
-        <h1 class="timer date">08/01/2024-11/01/2024</h1> -->
       </div>
       <div class="date--left">08/01/2024 - 11/01/2024</div>
     </main>
@@ -177,13 +175,11 @@
             ANANTAM is a collaborative and grand-scale technical fest organized
             by IEEE BKBIET Student Branch and GDSC BKBIET Techfest. It features
             a diverse range of events, including a
-            <b
-              >continuous four-day hackathon, robo race, robo war, DSA
+            continuous four-day hackathon, robo race, robo war, DSA
               competition, Teach Quiz, various speaker sessions covering
               technical, non-technical, and administrative themes, Dalal
-              Street</b
-            >(related to finance and stock market),<b> Auction </b>(related to
-            IPL Auction),<b> UX/UI design challenge, Murder Mystery </b>(related
+              Street(related to finance and stock market), Auction(related to
+            IPL Auction), UX/UI design challenge, Murder Mystery (related
             to solving crime cases). Additionally, the fest includes fun
             activities like footloose, open mic, bonfire, anime quiz, and panel
             discussions with eminent guests and speakers. ANANTAM is a fusion of
