@@ -29,6 +29,7 @@ $events = $db->resultset();
     <link rel="tab icon" href="../assets/images/icon/ANANTAMLOGO.svg" />
     <link rel="stylesheet" href="../css/dashIndex.css">
     <link rel="stylesheet" href="../css/style.css" />
+    <link href="path/to/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/responsive.css" />
     <title>ANANTAM</title>
   </head>
@@ -74,7 +75,7 @@ $events = $db->resultset();
         </span>
         <span class="nav--links">
           <a class="menuOpenAnker" href="../events.php">MY EVENTS</a>
-          <a href="">LOG OUT</a>
+          <a href="" onclick="clearCookies()">LOG OUT</a>
           <a class="user--code">TEAM ID <?=$_SESSION["joinCode"]?></a>
           <button class="main--MenuBtn">
             <img src="../assets/images/icon/menu.svg" alt="" />
@@ -184,6 +185,13 @@ $events = $db->resultset();
       </div>
     </footer>
     <script src="../js/dashScript.js"></script>
+    <script src="path/to/lightbox.js"></script>
+    <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
   </body>
 </html>
 
