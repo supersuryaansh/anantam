@@ -55,6 +55,16 @@ Class UserSession{
     
         return (!empty($_SESSION["user"]) && $user) ? true : false; // Check if user exists
     }
+
+    public function getName(){
+        global $_SESSION;
+        global $db;
+        $db->query("SELECT usrName from users where usrAccountCode=:userAccountCode");
+        $db->bind(':userAccountCode', $_SESSION["user"]);
+
+        $userName = get_object_vars($db->single());
+        return  $userName['usrName'];
+}
     
 
 
