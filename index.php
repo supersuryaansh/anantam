@@ -142,6 +142,7 @@
           <img src="./assets/images/ANANTAM/Rectangle 11.svg" alt="" />
           <a href="#cards" class="eventsBtn"><button>EXPLORE EVENTS</button></a>
         </span>
+          <div class="mobile--timer"></div>
         <div class="timer">
           <span>
             <h1 id="days">24 :</h1>
@@ -161,7 +162,7 @@
           </span>
         </div>
       </div>
-      <div class="date--left">08/01/2024 - 11/01/2024</div>
+<!--      <div class="date--left">08/01/2024 - 11/01/2024</div>-->
     </main>
     <div class="about--page">
       <div class="line2">

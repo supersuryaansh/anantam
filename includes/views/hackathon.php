@@ -1,3 +1,6 @@
+<?php
+if (!isset($_GET['problemId'])){
+?>
 <style>
   body {
     font-family: sans-serif !important;
@@ -295,20 +298,4 @@
     </tbody>
   </table>
 </div>
-<script>
-  const applyBtn = document.querySelectorAll(".AN--btn");
-
-  function idRetrieve() {
-    applyBtn.forEach((elem) => {
-      elem.addEventListener("click", function (e) {
-        e.preventDefault();
-        const closestEventId = elem.closest(".event--id");
-        const eventIdInput = closestEventId.querySelector(".AN--btn"); // Replace with the actual class of your input field
-        const eventId = eventIdInput.value;
-        console.log(eventId);
-      });
-    });
-  }
-
-  idRetrieve();
-</script>
+<?php } ?>
