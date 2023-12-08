@@ -107,7 +107,7 @@ if (!isset($_GET['problemId'])){
                         </p>
                     </details>
                 </td>
-                <td><form method="get" action="dashboard?action=hackathon"><input type="hidden" name="action" value="hackathon"><input type="hidden" name="problemId" value="<?= $problemArray['ID'] ?>"> <button type="submit">APPLY</button></form></td>
+                <td><form method="get" action=""><input type="hidden" name="action" value="hackathon"><input type="hidden" name="problemId" value="<?= $problemArray['ID'] ?>"> <button type="submit">APPLY</button></form></td>
             </tr>
         <?php $i +=1;} //end for each    ?>
     </tbody>
