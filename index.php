@@ -316,10 +316,7 @@ if (!$db->isConnected()) {
           /></span>
           <span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente doloremque adipisci nam magni! Provident nam
-              velit officia consequuntur minima dolores porro perspiciatis qui
-              dignissimos. Porro hic quo aliquam quibusdam?
+              Immerse yourself in the virtual world, competing in thrilling esports challenges.
             </p>
           </span>
           <span class="card--btn">
@@ -531,36 +528,36 @@ if (!$db->isConnected()) {
             <span>
               <h2>Dr. Santosh Jangid</h2>
               <p>HOD of ECE Dep. & Branch Counsellor of IEEE BKBIET SB</p>
-              <a href="" target="_blank"
+              <a href="tel:+91-9414367879" 
                 ><img
-                  src="./assets/images/icon/Phone.png"
+                  src="/assets/images/icon/PHONE.png"
                   alt="" />+91-9414367879</a
               >
             </span>
             <span>
               <h2>Dr. Nimish Kumar</h2>
               <p>HOD of CSE/AI/IT/DS Dep. & Faculty Incharge of GDSC BKBIET</p>
-              <a href="" target="_blank"
+              <a href="tel:+91-9414648683" 
                 ><img
-                  src="./assets/images/icon/Phone.png"
+                  src="/assets/images/icon/PHONE.png"
                   alt="" />+91-9414648683</a
               >
             </span>
             <span>
               <h2>Mr. Sachin</h2>
               <p>Chairperson, IEEE BKBIET SB</p>
-              <a href="" target="_blank"
+              <a href="tel:+91-9772541952" 
                 ><img
-                  src="./assets/images/icon/Phone.png"
+                  src="/assets/images/icon/PHONE.png"
                   alt="" />+91-9772541952</a
               >
             </span>
             <span>
               <h2>Mr. Aditya Sharma</h2>
               <p>Lead, GDSC BKBIET</p>
-              <a href="" target="_blank"
+              <a href="tel:+91-8250639553 " 
                 ><img
-                  src="./assets/images/icon/Phone.png"
+                  src="/assets/images/icon/PHONE.png"
                   alt="" />+91-8250639553</a
               >
             </span>
@@ -573,7 +570,7 @@ if (!$db->isConnected()) {
         </span>
         <span class="address">
           <h1>ADDRESS</h1>
-          <a target="_blank" href=""
+          <a  href="https://maps.app.goo.gl/TUQJHh7gtAHLH32W7"
             >B K Birla Institute of Engineering and Technology, Ceeri Road,
             Jhunjhunu, Pilani, Rajasthan 333031</a
           >
@@ -583,10 +580,10 @@ if (!$db->isConnected()) {
         </span>
       </div>
       <div class="social--links">
-        <a href=""><img src="./assets/images/icon/gmail.png" alt="" /></a>
-        <a href=""><img src="./assets/images/icon/instagram.png" alt="" /></a>
-        <a href=""><img src="./assets/images/icon/linkedin.png" alt="" /></a>
-        <a href=""><img src="./assets/images/icon/gmail.png" alt="" /></a>
+        <a href="mailto:anantam@bkbiet.ac.in"><img src="./assets/images/icon/gmail.png" alt="" /></a>
+        <a href="https://www.instagram.com/bkbiet.anantam/"><img src="./assets/images/icon/instagram.png" alt="" /></a>
+<!--         <a href=""><img src="./assets/images/icon/linkedin.png" alt="" /></a> -->
+<!--         <a href=""><img src="./assets/images/icon/gmail.png" alt="" /></a> -->
       </div>
       <p class="copyright">&COPY; made by ANANTAM TEAM, with 💓💓💓</p>
     </footer>
