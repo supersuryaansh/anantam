@@ -48,12 +48,13 @@ Class UserSession{
     public function loggedIn(){
         global $_SESSION;
         global $db;
-        $db->query("SELECT * from users where usrAccountCode=:userAccountCode");
-        $db->bind(':userAccountCode', $_SESSION["user"]);
-        
-        $user = $db->single(); // Fetch a single record
-    
-        return (!empty($_SESSION["user"]) && $user) ? true : false; // Check if user exists
+        if(!empty($_SESSION["user"]) ) {
+            $db->query("SELECT * from users where usrAccountCode=:userAccountCode");
+            $db->bind(':userAccountCode', $_SESSION["user"]);
+
+            $user = $db->single(); // Fetch a single record
+        }
+        return (!empty($_SESSION["user"]) && isset($user)) ? true : false; // Check if user exists
     }
 
     public function getName(){
