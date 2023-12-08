@@ -81,7 +81,7 @@
         </span>
         <span class="nav--links">
           <a class="menuOpenAnker" href="./events.php">EVENTS</a>
-          <a href="./register.php">REGISTRATION</a>
+          <a href="register.php">REGISTRATION</a>
           <button class="main--MenuBtn">
             <img src="./assets/images/icon/menu.svg" alt="" />
           </button>

@@ -37,7 +37,7 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
         header("Location: dashboard/");
         die();
     }
-    
+
 }
 
 ?>
@@ -52,7 +52,7 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
     <title>ANANTAM - REGISTRATION</title>
   </head>
   <body>
-        <!-- <div class="main--menuPage">
+  <div class="main--menuPage">
       <button class="menu--close-btn">
         <img src="../assets/images/icon/closeBtn.svg" alt="" />
       </button>
@@ -70,7 +70,7 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
         <a href="">GALLERY</a>
         <img src="../assets/images/menuPageLine/rb-corner.svg" alt="" />
       </div>
-    </div> -->
+    </div>
     <nav>
       <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
       <a href="./index.php"

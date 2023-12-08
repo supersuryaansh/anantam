@@ -72,6 +72,44 @@ nav a {
   font-size: 20px;
   letter-spacing: 3px;
 }
+.main--menuPage {
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  background-color: var(--main);
+  transform: translateY(-130%);
+  transition: transform 0.4s;
+}
+.menu--close-btn {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.main--menuPage a {
+  color: #000;
+  font-size: 2vw;
+}
+.main--menuPage a:hover {
+  color: var(--third);
+}
+.menuPage--content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 300px 200px 300px;
+  grid-template-rows: 100px 100px 100px;
+  justify-items: center;
+  align-items: center;
+}
+.logo--img {
+  width: 200px;
+}
 .nav--links {
   display: flex;
   gap: 30px;
@@ -83,8 +121,9 @@ nav a:nth-child(4) {
 }
 .nav--btn {
   background-color: transparent;
-  border: 0px;
+  border: 0;
   width: 50px;
+  position: relative;
 }
 .nav--btn img {
   width: 100%;
@@ -104,7 +143,8 @@ form {
   justify-content: center;
   gap: 20px;
   width: 100%;
-  height: 100vh;
+  padding-bottom: 100px;
+  /*height: 100vh;*/
 }
 form h2 {
   font-size: 2.4rem;
@@ -121,20 +161,19 @@ form span label {
 form span {
   display: flex;
   gap: 10px;
-  display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 form span input {
   /* width: 50vw; */
   padding: 10px;
   background-color: transparent;
-  border: 0px;
+  border: 0;
   border-bottom: 0.2px solid var(--main);
 }
 form label,
 form input {
   font-size: 1.2rem;
-  padding: 14px 0px 14px 0px;
+  padding: 14px 0 14px 0;
   color: #ffca2b;
 }
 input[type="file"]::-webkit-file-upload-button {
@@ -213,6 +252,7 @@ option {
 }
 /* MENU END */
 .register--link a {
+  white-space: nowrap;
   color: var(--other) !important;
 }
 /*RESPONSIVE*/
@@ -223,7 +263,55 @@ option {
     align-items: flex-start;
     gap: 20px;
   }
+  .main--menuPage a {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 850px){
+  form h2{
+    font-size: 2rem;
+  }
+  form label, form input{
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 760px){
-
+  .menuPage--content {
+    grid-template-columns: repeat(3, 200px);
+  }
+  .menuPage--content img {
+    display: none;
+  }
+  .menuPage--content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .menuPage--content a {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  form span{
+    flex-direction: column;
+    gap: 0;
+  }
+  form{
+    position: absolute;
+    top: 10%;
+  }
+  form div{
+    gap: 0;
+  }
+}
+@media screen and (max-width: 450px){
+  form h2{
+    font-size: 1.7rem;
+  }
+  main{
+    margin-inline: 14px;
+  }
+  form span input{
+    width: 90vw;
+  }
 }

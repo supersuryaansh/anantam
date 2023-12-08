@@ -89,10 +89,6 @@
     width: 100%;
     height: 100%;
   }
-  .menuPage {
-    display: block;
-    transform: translateX(120%);
-  }
   .nav--links {
     position: absolute;
     top: 30%;
@@ -211,9 +207,6 @@
   }
 }
 @media screen and (max-width: 715px) {
-  .menuCloseBtn img {
-    width: 65%;
-  }
   .mic--btn {
     left: 14%;
   }

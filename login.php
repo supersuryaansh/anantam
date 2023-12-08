@@ -101,7 +101,7 @@ if(!empty($_POST['submit']) && !empty($_POST['usrEmail']) && !empty($_POST['usrP
             required /><br /><br />
         </span>
         <span class="register--link">
-        <p>do not have an account?</p><a href="./register.php">REGISTER NOW!!!</a>
+        <p>do not have an account?</p><a href="register.php">REGISTER NOW!!!</a>
         </span>
         <input class="submit--btn" type="submit" value="Submit" name="submit" />
       </form>
