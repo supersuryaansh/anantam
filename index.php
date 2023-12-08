@@ -84,7 +84,7 @@ if (!$db->isConnected()) {
             //check if user is logged in else redirect
                 if ($session->loggedIn() === false) {
                     //redirect to dashboard
-                    echo "<a href='./registration.php'>REGISTER</a>";
+                    echo "<a href='./register.php'>REGISTER</a>";
                 }else{
                     echo "<a href='./dashboard'>DASHBOARD</a>";
                 }
@@ -98,12 +98,11 @@ if (!$db->isConnected()) {
         </span>
         <span class="nav--links">
           <a class="menuOpenAnker" href="./events.php">EVENTS</a>
-          <a href="register.php">REGISTRATION</a>
             <?php
             //check if user is logged in else redirect
             if ($session->loggedIn() === false) {
                 //redirect to dashboard
-                echo "<a href='./registration.php'>REGISTER</a>";
+                echo "<a href='./register.php'>REGISTER</a>";
             }else{
                 echo "<a href='./dashboard'>DASHBOARD</a>";
             }
