@@ -1,3 +1,13 @@
+<?php
+require_once($_SERVER['DOCUMENT_ROOT']."/"."requireme.php");
+$session = new UserSession();
+$session->createSession();
+global $_SERVER;
+$db = new Database();
+if (!$db->isConnected()) {
+    die("Database Not connected");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,8 +80,15 @@
         </div>
         <div>
           <a href="./events.php">EVENTS</a>
-          <a href="./registration.php">REGISTER</a>
-          <a href="">SIGN IN</a>
+            <?php
+            //check if user is logged in else redirect
+                if ($session->loggedIn() === false) {
+                    //redirect to dashboard
+                    echo "<a href='./registration.php'>REGISTER</a>";
+                }else{
+                    echo "<a href='./dashboard'>DASHBOARD</a>";
+                }
+            ?>
         </div>
       </nav>
       <nav class="desktop--nav">
@@ -81,7 +98,15 @@
         </span>
         <span class="nav--links">
           <a class="menuOpenAnker" href="./events.php">EVENTS</a>
-          <a href="./register.php">REGISTRATION</a>
+            <?php
+            //check if user is logged in else redirect
+            if ($session->loggedIn() === false) {
+                //redirect to dashboard
+                echo "<a href='./registration.php'>REGISTER</a>";
+            }else{
+                echo "<a href='./dashboard'>DASHBOARD</a>";
+            }
+            ?>
           <button class="main--MenuBtn">
             <img src="./assets/images/icon/menu.svg" alt="" />
           </button>
