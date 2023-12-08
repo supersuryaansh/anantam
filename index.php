@@ -34,6 +34,8 @@
     </script>
   </head>
   <body>
+  <div class="date--left">08/01/2024 - 11/01/2024</div>
+
     <div class="main--menuPage">
       <button class="menu--close-btn">
         <img src="./assets/images/icon/closeBtn.svg" alt="" />
@@ -58,7 +60,7 @@
         <div>
           <span>
             <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
-            <p class="date--of-event">08 JAN, 2024 to 11 JAN, 2024</p>
+            <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
           </span>
           <span>
             <button class="main--MenuBtn">
@@ -140,7 +142,7 @@
         <span>
           <img src="./assets/images/ANANTAM/Rectangle 10.svg" alt="" />
           <img src="./assets/images/ANANTAM/Rectangle 11.svg" alt="" />
-          <a href="#cards" class="eventsBtn"><button>EXPLORE EVENTS</button></a>
+          <a href="" class="eventsBtn"><button>EXPLORE EVENTS</button></a>
         </span>
         <div class="timer">
           <span>
@@ -161,7 +163,6 @@
           </span>
         </div>
       </div>
-      <div class="date--left">08/01/2024 - 11/01/2024</div>
     </main>
     <div class="about--page">
       <div class="line2">
@@ -212,9 +213,9 @@
               src="./assets/images/POSTERS/ANANT NETRUNN POSTER.svg"
               alt="" />
           </span>
-          <span
-            ><img src="./assets/images/webLINES/card-line.png" alt=""
-          /></span>
+          <span>
+              <img src="./assets/images/webLINES/card-line.png" alt=""/>
+          </span>
           <span>
             <p>
               The 4-Day Hackathon is the centre-piece of ANANTAM 2023-24. It's

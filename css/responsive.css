@@ -14,8 +14,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .event--top-line h1 {
-    top: 6%;
+    top: 1.4%;
   }
+
 }
 @media (max-width: 1150px) {
   aside {
@@ -58,7 +59,6 @@
   .mobile--nav {
     display: flex;
     flex-direction: column;
-    background-color: var(--secondary);
     position: fixed;
     z-index: 999;
     background-color: #000;
@@ -81,7 +81,7 @@
   .mobile--nav .menu--btn {
     height: 40px;
     background-color: transparent;
-    border: 0px;
+    border: 0;
     cursor: pointer;
     z-index: 999999;
   }
@@ -148,7 +148,8 @@
     grid-template-columns: 1fr;
   }
   .event--top-line h1 {
-    top: 6%;
+    top: 0.7%;
+    font-size: 6vw;
   }
   .explore--section button {
     transform: translate(20%, 200%);
@@ -163,7 +164,7 @@
     font-size: 4vw;
   }
   .about--content {
-    grid-template-columns: 100% 0%;
+    grid-template-columns: 100% 0;
   }
   .about--right-content {
     display: none;
@@ -219,7 +220,7 @@
   .line2 img {
     width: 180%;
   }
-  .explore--section span {
+  .explore--section span:nth-child(1) {
     display: none;
   }
   .timer h1 {
@@ -227,10 +228,10 @@
   }
   .timer {
     position: absolute;
-    width: 100%;
+    /*width: 100%;*/
     top: 50%;
-    left: 20%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .time {
     top: 60%;
@@ -266,7 +267,11 @@
   footer {
     padding-bottom: 170px;
   }
-}
+  .about--left-content {
+    padding-inline: 10px;
+  }
+
+  }
 @media screen and (max-width: 560px) {
   .event--top-line h1 {
     font-size: 2.6rem;
@@ -285,6 +290,10 @@
   }
   .date--of-event{
     font-size: 12px; !important;
+  }
+  .modelWindow{
+    background-color: #000;
+    background-image: none;
   }
 }
 

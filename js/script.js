@@ -5,6 +5,12 @@ const muteButton = document.querySelector(".mic--btn");
 const mainMenuPageOpenBtn = document.querySelectorAll(".main--MenuBtn");
 const mainMenuPageCloseBtn = document.querySelector(".menu--close-btn");
 const mainMenuPage = document.querySelector(".main--menuPage");
+// footer
+const footer = document.querySelector("footer");
+const bottomDate = document.querySelector(".date--left");
+// ScrollIntoView
+const exploreEventBtn = document.querySelector(".eventsBtn");
+const cardArea = document.querySelector(".event--top-line");
 
 function time() {
   const targetDate = new Date("2024-01-08T00:00:00Z").getTime();
@@ -70,3 +76,27 @@ function mainMenu() {
   });
 }
 mainMenu();
+
+function footerDateDisplayNone(){
+  window.addEventListener('scroll', function (e){
+    if(footer.getBoundingClientRect().top <= 650){
+      bottomDate.style.opacity = "0";
+      bottomDate.style.transition = "opacity 0.7s";
+    }
+    else {
+      bottomDate.style.opacity = "1";
+    }
+  })
+}
+footerDateDisplayNone();
+
+function eventScrollView(){
+  exploreEventBtn.addEventListener('click', function (e){
+    e.preventDefault();
+    cardArea.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}
+eventScrollView();
