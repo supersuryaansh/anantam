@@ -71,10 +71,6 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
         <img src="../assets/images/menuPageLine/rb-corner.svg" alt="" />
       </div>
     </div> -->
-    <img
-      class="bottom--line"
-      src="./assets/images/webLINES/navLine.png"
-      alt="" />
     <nav>
       <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
       <a href="./index.php"
@@ -162,7 +158,11 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
         if(isset($fileUploader->errorMessage)){
             echo $fileUploader->errorMessage;
         }
-    ?>      
+    ?>
+        <img
+                class="bottom--line"
+                src="./assets/images/webLINES/navLine.png"
+                alt="" />
     </main>
     <script src="./js/registration.js"></script>
   </body>

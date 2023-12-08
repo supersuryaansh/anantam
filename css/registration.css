@@ -51,7 +51,7 @@ body {
 }
 .bottom--line {
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   transform: rotate(180deg);
 }
@@ -60,9 +60,10 @@ nav {
   padding: 30px 20px;
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  border: 0px;
+  position: relative;
+  border: 0;
   z-index: 999;
+  background-color: var(--third);
 }
 nav img {
   width: 200px;
@@ -94,7 +95,6 @@ main {
   justify-content: center;
   height: 100vh;
   margin-inline: 50px;
-  padding-top: 100px;
   position: relative;
 }
 form {
@@ -104,6 +104,7 @@ form {
   justify-content: center;
   gap: 20px;
   width: 100%;
+  height: 100vh;
 }
 form h2 {
   font-size: 2.4rem;
@@ -213,4 +214,16 @@ option {
 /* MENU END */
 .register--link a {
   color: var(--other) !important;
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 991px){
+  form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 760px){
+
 }

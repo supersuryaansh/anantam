@@ -144,6 +144,7 @@
           <img src="./assets/images/ANANTAM/Rectangle 11.svg" alt="" />
           <a href="" class="eventsBtn"><button>EXPLORE EVENTS</button></a>
         </span>
+          <div class="mobile--timer"></div>
         <div class="timer">
           <span>
             <h1 id="days">24 :</h1>
