@@ -43,6 +43,7 @@ body {
   --secondary: #000;
   --other: #ff1010;
   --third: #2a4fdb;
+  --footer: #3E8667;
 }
 main {
   position: relative;
@@ -67,7 +68,7 @@ a {
 }
 .menu--close-btn {
   background-color: transparent;
-  border: 0px;
+  border: 0;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -127,7 +128,7 @@ a {
 .menuCloseBtn {
   width: 80px;
   background-color: transparent;
-  border: 0px;
+  border: 0;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -155,7 +156,7 @@ a {
 .main--MenuBtn {
   width: 60px;
   background-color: transparent;
-  border: 0px;
+  border: 0;
 }
 .menu--btn img,
 .main--MenuBtn img {
@@ -225,11 +226,9 @@ body {
   z-index: 500;
   width: 100%;
   background-color: transparent;
-  border: 0px;
+  border: 0;
   padding: 30px 30px;
-}
-.mic--btn img {
-  width: 100%;
+  color: var(--footer);
 }
 .hero--section-aside-image {
   position: absolute;
@@ -307,6 +306,11 @@ body {
   color: var(--main);
   border: 2px solid var(--main);
   white-space: nowrap;
+  transition: 0.4s;
+}
+.explore--section button:hover{
+  background-color: var(--main);
+  color: var(--footer);
 }
 .timer {
   display: flex;
@@ -325,6 +329,7 @@ body {
   background-color: var(--main);
   z-index: 9999;
   bottom: 0;
+  color: var(--secondary);
 }
 .timer h1 {
   display: flex;
@@ -425,7 +430,7 @@ body {
 }
 /* EVENT END */
 .card--area {
-  margin-top: 100px;
+  padding-block: 100px;
   gap: 40px;
   margin-inline: 50px;
   overflow: scroll;
@@ -482,7 +487,7 @@ body {
   color: var(--main);
   z-index: 100;
   position: absolute;
-  top: 0;
+  /*top: 0;*/
   font-size: 21px;
   top: 50%;
   left: 50%;
@@ -524,9 +529,9 @@ body {
 }
 footer {
   position: relative;
-  background-color: var(--secondary);
   padding-inline: 50px;
   padding-bottom: 170px;
+  background: var(--footer);
 }
 footer a {
   display: flex;
@@ -552,10 +557,10 @@ footer img {
   justify-content: space-between;
 }
 .maker--logo img {
-  width: 60px;
+  width: 160px;
 }
-.maker--logo img:nth-child(2) {
-  width: 140px;
+.bkbiet--logo {
+  width: 60px !important;
 }
 .gdsc--logo {
   width: 500px;
@@ -601,7 +606,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 70%;
+  width: 80%;
 }
 .contacts span h2 {
   font-size: 18px;

@@ -79,7 +79,17 @@ mainMenu();
 
 function footerDateDisplayNone(){
   window.addEventListener('scroll', function (e){
-    if(footer.getBoundingClientRect().top <= 650){
+    if(cardArea.getBoundingClientRect().top>=685){
+      bottomDate.style.backgroundColor = "var(--main)";
+      bottomDate.style.color = "var(--secondary)";
+      bottomDate.style.transition = "0.5s";
+    } else {
+      bottomDate.style.backgroundColor = "var(--footer)";
+      bottomDate.style.color = "var(--main)";
+      bottomDate.style.transition = "0.5s";
+    }
+    if(footer.getBoundingClientRect().top
+        <= 650){
       bottomDate.style.opacity = "0";
       bottomDate.style.transition = "opacity 0.7s";
     }

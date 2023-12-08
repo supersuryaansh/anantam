@@ -480,13 +480,13 @@
     <footer>
       <div class="maker--logo">
         <span>
-          <a href=""><img src="./assets/images/icon/IEEE.png" alt="" /></a>
+          <a href=""><img src="./assets/images/icon/black_logo.png" alt="" /></a>
           <a
             href="https://gdsc.community.dev/b-k-birla-institute-of-engineering-technology-pilani/"
             ><img class="gdsc--logo" src="./assets/images/icon/GDSC.svg" alt=""
           /></a>
           <a href="https://bkbiet.ac.in/"
-            ><img src="./assets/images/icon/BKBIET.png" alt=""
+            ><img class="bkbiet--logo" src="./assets/images/icon/BKBIET.png" alt=""
           /></a>
         </span>
       </div>
