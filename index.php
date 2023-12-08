@@ -468,10 +468,7 @@ if (!$db->isConnected()) {
           /></span>
           <span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus sapiente doloremque adipisci nam magni! Provident nam
-              velit officia consequuntur minima dolores porro perspiciatis qui
-              dignissimos. Porro hic quo aliquam quibusdam?
+              Cinematics: Showcase your storytelling skills through motion and still picture creations.
             </p>
           </span>
           <span class="card--btn">
