@@ -52,3 +52,11 @@ footer a {
 .event--top-line h1 {
   top: 1% !important;
 }
+@media screen and (max-width: 991px){
+  .event--top-line img, .event--top-line h1 {
+    top: 56px !important;
+  }
+  .event--top-line h1 {
+
+  }
+  }
