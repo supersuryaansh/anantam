@@ -7,12 +7,11 @@ Class UserSession{
     public $joinCode;
 
     public function __construct(){
-        
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
     }
 
-    public function createSession(){
-        session_start();
-    }
 
     public function destroySession(){
         session_destroy();
@@ -65,9 +64,25 @@ Class UserSession{
 
         $userName = get_object_vars($db->single());
         return  $userName['usrName'];
-}
+    }
     
+    public function userEvents()
+    {
+        global $_SESSION;
+        global $db;
+        $db->query("SELECT `ANANT HACKATHON` FROM `users` WHERE `usrAccountCode`=:userAccountCode");
+        $db->bind(':userAccountCode', $_SESSION["user"]);
 
+        $events = get_object_vars($db->single());
+        $temp_arr = array();
+        foreach ($events as $eventName => $bool){
+            if($bool === 'Yes'){
+                $temp_arr[] = $eventName;
+            }
+        }
+        return $temp_arr;
+
+    }
 
 }
 

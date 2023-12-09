@@ -21,7 +21,7 @@ Class EventRegister{
         $this->usrAccount = $_SESSION["user"];
 
 
-        $db->query("INSERT INTO teams(`teamCode`,`teamName`,`teamLeader`,`presentation`,`problemStatement`) VALUES(:joinCode,:teamName,:teamLeader,:presentation,:problem)");
+        $db->query("INSERT INTO hackathon_teams(`teamCode`,`teamName`,`teamLeader`,`presentation`,`problemStatement`) VALUES(:joinCode,:teamName,:teamLeader,:presentation,:problem)");
         //bind parameters
         $db->bind(':joinCode', $this->usrJoinCode);
         $db->bind(':teamName', $this->teamName);

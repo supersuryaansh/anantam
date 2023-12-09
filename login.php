@@ -1,7 +1,7 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT']."/"."requireme.php");
 $session = new UserSession();
-$session->createSession();
+
 global $_SERVER;
 
 $db = new Database();

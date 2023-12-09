@@ -18,13 +18,20 @@ if(!defined('LIFE')){
 
         <?php
         $i = 1;
+        $userEventArray = $session->userEvents();
         foreach ($events as $event) {
+
             $event = get_object_vars($event);
             $eventName = $event["eventName"];
             $eventImage = "/uploads/event-pictures/".$event["eventPicture"];
             $eventText = $event["eventDescription"];
             $eventId = $event["eventId"];
             $eventAction = $event["eventAction"];
+            //skip if already registered
+            if(in_array($eventName,$userEventArray)){
+                continue;
+            }
+
             $card = <<<TEXT
 
                   <div class="cards">

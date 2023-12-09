@@ -1,6 +1,4 @@
 <?php
-
-echo var_dump($session->getName());
 //verify input and register
 if(isset($_POST['hackathon-submit'])){
 if(!empty($_POST['usrTeamName'])  && !empty($_POST['usrProblemSt'])  && !empty($_FILES['usrPresentation']['name']) ){
@@ -107,6 +105,8 @@ echo "Something went wrong";
         max-width: 500px;
     }
 </style>
+
+
 <div class="event--section">
   <span class="event--top-line">
     <img class="line3"

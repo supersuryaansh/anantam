@@ -33,3 +33,5 @@ CREATE TABLE teams (
 );
 
 ALTER TABLE `teams` ADD `problemStatement` INT(10) NOT NULL AFTER `presentation`;
+RENAME TABLE `teams` TO hackathon_teams;
+ALTER TABLE `users` ADD COLUMN `ANANT HACKATHON` ENUM('Yes','No') AFTER usrPass;
