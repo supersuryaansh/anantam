@@ -14,6 +14,10 @@ if($fileUploader->uploadOk) {
 //handle registration
 $register = new EventRegister();
 $register->hackathon($_POST['usrTeamName'],$_POST['usrProblemSt'],$_FILES['usrPresentation']['name'],$session->getName());
+//redirect to dashboard
+    //redirect to dashboard
+    header("Location: ?registered=true");
+    die();
 
 }else{
 echo "Something went wrong";

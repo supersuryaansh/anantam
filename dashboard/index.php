@@ -187,11 +187,30 @@ $events = $db->resultset();
     <script src="../js/dashScript.js"></script>
     <script src="path/to/lightbox.js"></script>
     <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
-</script>
+        // Check if the "registered" parameter is set to "true" when the DOM content is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('registered') === 'true') {
+                const popup = document.createElement('div');
+                popup.textContent = 'Registered for the event';
+                popup.style.backgroundColor = 'green';
+                popup.style.position = 'fixed';
+                popup.style.top = '10px';
+                popup.style.left = '50%';
+                popup.style.zIndex = '9999';
+                popup.style.transform = 'translateX(-50%)';
+                popup.style.padding = '10px';
+                popup.style.borderRadius = '5px';
+                document.body.appendChild(popup);
+
+                setTimeout(function() {
+                    popup.style.display = 'none';
+                }, 4000);
+            }
+        });
+
+
+    </script>
   </body>
 </html>
 
