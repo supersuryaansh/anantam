@@ -163,7 +163,7 @@ if (!$db->isConnected()) {
         </span>
       </div>
       <div class="explore--section">
-        <span>
+        <span class="explore--section--area">
           <img src="./assets/images/ANANTAM/Rectangle 10.svg" alt="" />
           <img src="./assets/images/ANANTAM/Rectangle 11.svg" alt="" />
           <a href="" class="eventsBtn"><button>EXPLORE EVENTS</button></a>

@@ -254,6 +254,9 @@
   .social--links {
     left: 50px;
   }
+  .explore--section--area{
+    display: none !important;
+  }
   footer {
     padding-bottom: 170px;
   }
