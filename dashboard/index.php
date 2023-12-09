@@ -178,10 +178,10 @@ $events = $db->resultset();
         </span>
       </div>
       <div class="social--links">
-        <a href=""><img src="../assets/images/icon/gmail.png" alt="" /></a>
-        <a href=""><img src="../assets/images/icon/instagram.png" alt="" /></a>
-        <a href=""><img src="../assets/images/icon/linkedin.png" alt="" /></a>
-        <a href=""><img src="../assets/images/icon/gmail.png" alt="" /></a>
+<!--         <a href=""><img src="../assets/images/icon/gmail.png" alt="" /></a> -->
+        <a href="https://www.instagram.com/bkbiet.anantam/"><img src="../assets/images/icon/instagram.png" alt="" /></a>
+<!--         <a href=""><img src="../assets/images/icon/linkedin.png" alt="" /></a> -->
+<!--         <a href=""><img src="../assets/images/icon/gmail.png" alt="" /></a> -->
       </div>
     </footer>
     <script src="../js/dashScript.js"></script>
