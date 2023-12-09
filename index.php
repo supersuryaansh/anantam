@@ -228,7 +228,7 @@ if (!$db->isConnected()) {
         <h1>/// EVENTS</h1>
       </span>
       <div class="card--area">
-        <div class="cards">
+        <div class="cards card">
           1
           <span>
             <img src="./assets/images/cardhead.svg" alt="" />
@@ -251,10 +251,10 @@ if (!$db->isConnected()) {
             </p>
           </span>
           <span class="card--btn">
-            <a href="" id="anant--pop-btn"><button>EXPLORE</button></a>
+            <a href="http://localhost/dashboard/?action=hackathon" id="" target="_blank"><button>EXPLORE</button></a>
           </span>
         </div>
-        <div class="cards">
+        <div class="cards card">
           2
           <span>
             <img src="./assets/images/cardhead.svg" alt="" />
@@ -278,7 +278,7 @@ if (!$db->isConnected()) {
             <a href="" id="robo--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
-        <div class="cards" id="cards">
+        <div class="cards card" id="cards">
           3
           <span>
             <img src="./assets/images/cardhead.svg" alt="" />
@@ -301,7 +301,7 @@ if (!$db->isConnected()) {
             <a href="" id="crunch--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
-        <div class="cards">
+        <div class="cards card">
           4
           <span>
             <img src="./assets/images/cardhead.svg" alt="" />
@@ -322,7 +322,7 @@ if (!$db->isConnected()) {
             <a href="" id="esports--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
-        <div class="cards">
+        <div class="cards card">
           5
           <span>
             <img src="./assets/images/cardhead.svg" alt="" />
@@ -347,7 +347,7 @@ if (!$db->isConnected()) {
             <a href="" id="bid--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
-        <div class="cards">
+        <div class="cards card">
           6
           <span>
             <img src="./assets/images/cardhead.svg" alt="" />
@@ -373,7 +373,7 @@ if (!$db->isConnected()) {
             <a href="" id="dalal--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
-        <div class="cards">
+        <div class="cards card">
           7
           <span>
             <img src="./assets/images/cardhead.svg" alt="" />
@@ -397,7 +397,7 @@ if (!$db->isConnected()) {
             <a href="" id="binary--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
-        <div class="cards">
+        <div class="cards card">
           8
           <span>
             <img src="./assets/images/cardhead.svg" alt="" />
@@ -422,7 +422,7 @@ if (!$db->isConnected()) {
             <a href="" id="manga--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
-        <div class="cards">
+        <div class="cards card">
           9
           <span>
             <img src="./assets/images/cardhead.svg" alt="" />
@@ -446,7 +446,7 @@ if (!$db->isConnected()) {
             <a href="" id="frame--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
-        <div class="cards">
+        <div class="cards card">
           10
           <span>
             <img src="./assets/images/cardhead.svg" alt="" />
@@ -467,7 +467,7 @@ if (!$db->isConnected()) {
             <a href="" id="pixel--pop-btn"><button>EXPLORE</button></a>
           </span>
         </div>
-        <div class="cards">
+        <div class="cards card">
           11
           <span>
             <img src="./assets/images/cardhead.svg" alt="" />

@@ -49,38 +49,34 @@ if(!empty($_POST['submit']) && !empty($_POST['usrEmail']) && !empty($_POST['usrP
     <title>ANANTAM - REGISTRATION</title>
   </head>
   <body>
-        <!-- <div class="main--menuPage">
+  <div class="main--menuPage">
       <button class="menu--close-btn">
-        <img src="../assets/images/icon/closeBtn.svg" alt="" />
+          <img src="../assets/images/icon/closeBtn.svg" alt="" />
       </button>
       <div class="menuPage--content">
-        <img src="../assets/images/menuPageLine/lt-corner.svg" alt="" />
-        <a href="">SPONSORS</a>
-        <img src="../assets/images/menuPageLine/rt-corner.svg" alt="" />
-        <a href="">DEVELOPERS</a>
-        <img
-          class="logo--img"
-          src="../assets/images/icon/BLACK LOGO.svg"
-          alt="" />
-        <a href="">PRIZE POOL</a>
-        <img src="../assets/images/menuPageLine/lb-corner.svg" alt="" />
-        <a href="">GALLERY</a>
-        <img src="../assets/images/menuPageLine/rb-corner.svg" alt="" />
+          <img src="../assets/images/menuPageLine/lt-corner.svg" alt="" />
+          <a href="">SPONSORS</a>
+          <img src="../assets/images/menuPageLine/rt-corner.svg" alt="" />
+          <a href="">DEVELOPERS</a>
+          <img
+                  class="logo--img"
+                  src="../assets/images/icon/BLACK LOGO.svg"
+                  alt="" />
+          <a href="">PRIZE POOL</a>
+          <img src="../assets/images/menuPageLine/lb-corner.svg" alt="" />
+          <a href="">GALLERY</a>
+          <img src="../assets/images/menuPageLine/rb-corner.svg" alt="" />
       </div>
-    </div> -->
-    <img
-      class="bottom--line"
-      src="./assets/images/webLINES/navLine.png"
-      alt="" />
-    <nav>
+  </div>
+  <nav>
       <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
       <a href="./index.php"
-        ><img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt=""
-      /></a>
+      ><img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt=""
+          /></a>
       <button class="nav--btn">
-        <img src="./assets/images/icon/menu.svg" alt="" />
+          <img src="./assets/images/icon/menu.svg" alt="" />
       </button>
-    </nav>
+  </nav>
     <main>
       <form action="" method="post" enctype="multipart/form-data">
         <h2>LOGIN Form :</h2>
