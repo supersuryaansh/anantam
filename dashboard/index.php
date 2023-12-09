@@ -64,9 +64,9 @@ $events = $db->resultset();
           </span>
         </div>
         <div>
-          <a href="../events.php">MY EVENTS</a>
-          <a href="">SIGN IN</a>
-          <a class="user--code">TEAM ID 000000000</a>
+            <a class="menuOpenAnker" href="../events.php">MY EVENTS</a>
+            <a href="" onclick="clearCookies()">LOG OUT</a>
+            <a class="user--code">TEAM ID <?=$_SESSION["joinCode"]?></a>
         </div>
       </nav>
       <nav class="desktop--nav">
