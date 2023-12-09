@@ -157,7 +157,7 @@ $events = $db->resultset();
               <p>Lead, GDSC BKBIET</p>
               <a href="" target="_blank"
                 ><img
-                  src="../assets/images/icon/Phone.png"
+                  src="/assets/images/icon/Phone.png"
                   alt="" />+91-8250639553</a
               >
             </span>
