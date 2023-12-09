@@ -263,6 +263,9 @@ option {
     align-items: flex-start;
     gap: 20px;
   }
+  main{
+    padding-top: 100px !important;
+  }
   .main--menuPage a {
     font-size: 3vw;
   }

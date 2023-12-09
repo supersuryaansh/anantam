@@ -488,8 +488,8 @@ body {
 footer {
   position: relative;
   padding-inline: 50px;
-  padding-bottom: 170px;
-  background: var(--footer);
+  padding-block: 100px;
+  background: var(--secondary);
 }
 footer a {
   display: flex;
