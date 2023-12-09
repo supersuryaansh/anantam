@@ -130,7 +130,7 @@ $events = $db->resultset();
               <p>HOD of ECE Dep. & Branch Counsellor of IEEE BKBIET SB</p>
               <a href="" target="_blank"
                 ><img
-                  src="../assets/images/icon/Phone.png"
+                  src="../assets/images/icon/PHONE.png"
                   alt="" />+91-9414367879</a
               >
             </span>
@@ -139,7 +139,7 @@ $events = $db->resultset();
               <p>HOD of CSE/AI/IT/DS Dep. & Faculty Incharge of GDSC BKBIET</p>
               <a href="" target="_blank"
                 ><img
-                  src="../assets/images/icon/Phone.png"
+                  src="../assets/images/icon/PHONE.png"
                   alt="" />+91-9414648683</a
               >
             </span>
@@ -148,7 +148,7 @@ $events = $db->resultset();
               <p>Chairperson, IEEE BKBIET SB</p>
               <a href="" target="_blank"
                 ><img
-                  src="../assets/images/icon/Phone.png"
+                  src="./assets/images/icon/PHONE.png"
                   alt="" />+91-9772541952</a
               >
             </span>
@@ -157,7 +157,7 @@ $events = $db->resultset();
               <p>Lead, GDSC BKBIET</p>
               <a href="" target="_blank"
                 ><img
-                  src="/assets/images/icon/Phone.png"
+                  src="./assets/images/icon/PHONE.png"
                   alt="" />+91-8250639553</a
               >
             </span>
