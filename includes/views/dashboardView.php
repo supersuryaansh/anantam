@@ -20,7 +20,7 @@ if(!defined('LIFE')){
         $i = 1;
         $userEventArray = $session->userEvents();
         foreach ($events as $event) {
-
+            $skip = false;
             $event = get_object_vars($event);
             $eventName = $event["eventName"];
             $eventImage = "/uploads/event-pictures/".$event["eventPicture"];
@@ -29,20 +29,18 @@ if(!defined('LIFE')){
             $eventAction = $event["eventAction"];
             //skip if already registered
             if(in_array($eventName,$userEventArray)){
-                continue;
+                $skip = true;
             }
-
-            $card = <<<TEXT
-
-                  <div class="cards">
-                  $i
+            ?>
+                  <div class="cards" <?php if(isset($skip) && $skip){echo "style='filter: grayscale(1);'";} ?>>
+                 <?= $i ?>
                   <span>
                     <img src="../assets/images/cardhead.svg" alt="" />
-                    <h1>/// $eventName </h1>
+                    <h1>/// <?= $eventName ?> </h1>
                   </span>
                   <span class="card--img-area">
                     <img
-                      src="$eventImage"
+                      src="<?= $eventImage ?>"
                       alt="" />
                   </span>
                   <span
@@ -50,16 +48,25 @@ if(!defined('LIFE')){
                   /></span>
                   <span>
                     <p>
-                      $eventText
+                      <?= $eventText ?>
                     </p>
                   </span>
                   <span class="card--btn">
-                    <a href="?action=$eventAction"><button>REGISTER</button></a>
+                    <a href="?action=<?= $eventAction ?>">
+                        <button <?php if(isset($skip) && $skip){echo "disabled";} ?> >
+                            <?php
+                            if(isset($skip) && $skip)
+                            {
+                                echo "REGISTERED";
+                            } else{
+                                echo "REGISTER";
+                            }
+                            ?>
+                        </button>
+                    </a>
                   </span>
                 </div>
-
-            TEXT;
-            echo $card;
+        <?php
             $i += 1;
         }
         ?>
