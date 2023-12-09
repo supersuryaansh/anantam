@@ -29,7 +29,7 @@ $events = $db->resultset();
     <link rel="tab icon" href="../assets/images/icon/ANANTAMLOGO.svg" />
     <link rel="stylesheet" href="../css/dashIndex.css">
     <link rel="stylesheet" href="../css/style.css" />
-    <link href="path/to/lightbox.css" rel="stylesheet" />
+<!--    <link href="path/to/lightbox.css" rel="stylesheet" />-->
     <link rel="stylesheet" href="../css/responsive.css" />
     <title>ANANTAM</title>
   </head>
