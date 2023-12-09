@@ -231,6 +231,7 @@ option {
   }
   .mobile--nav div:nth-child(2) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 40px;

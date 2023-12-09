@@ -50,7 +50,7 @@ footer a {
   align-items: center;
 }
 .event--top-line h1 {
-  top: 1% !important;
+  top: 1.7% !important;
 }
 
 @media screen and (max-width: 1050px){
