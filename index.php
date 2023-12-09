@@ -520,24 +520,25 @@ if (!$db->isConnected()) {
         <span class="contacts">
           <h1>CONTACT US</h1>
           <div>
-            <span>
-              <h2>Dr. Santosh Jangid</h2>
-              <p>HOD of ECE Dep. & Branch Counsellor of IEEE BKBIET SB</p>
-              <a href="tel:+91-9414367879" 
-                ><img
-                  src="/assets/images/icon/PHONE.png"
-                  alt="" />+91-9414367879</a
-              >
-            </span>
-            <span>
+               <span>
               <h2>Dr. Nimish Kumar</h2>
               <p>HOD of CSE/AI/IT/DS Dep. & Faculty Incharge of GDSC BKBIET</p>
-              <a href="tel:+91-9414648683" 
+<!--               <a href="tel:+91-9414648683" 
                 ><img
                   src="/assets/images/icon/PHONE.png"
                   alt="" />+91-9414648683</a
-              >
+              > -->
             </span>
+            <span>
+              <h2>Dr. Santosh Jangid</h2>
+              <p>HOD of ECE Dep. & Branch Counsellor of IEEE BKBIET SB</p>
+<!--               <a href="tel:+91-9414367879" 
+                ><img
+                  src="/assets/images/icon/PHONE.png"
+                  alt="" />+91-9414367879</a
+              > -->
+            </span>
+           
             <span>
               <h2>Mr. Sachin</h2>
               <p>Chairperson, IEEE BKBIET SB</p>
