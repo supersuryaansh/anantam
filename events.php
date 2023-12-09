@@ -37,22 +37,22 @@
         </span>
       </div>
       <div>
-        <a href="./events.html">EVENTS</a>
-        <a href="./registration.html">REGISTER</a>
-        <a href="">SIGN IN</a>
+<!--         <a href="./events.php">EVENTS</a> -->
+        <a href="./register.php">REGISTER</a>
+        <a href="./login.php">SIGN IN</a>
       </div>
       <img src="./assets/images/webLINES/navLine.png" alt="" class="line1" />
     </nav>
     <nav class="desktop--nav">
       <span>
-        <a href="./index.html"
+        <a href="./index.php"
           ><img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt=""
         /></a>
       </span>
       <span class="nav--links">
-        <a class="menuOpenAnker" href="./events.html">EVENTS</a>
-        <a href="">ABOUT</a>
-        <a href="">SOCIAL</a>
+<!--         <a class="menuOpenAnker" href="./events.php">EVENTS</a> -->
+        <a href="./register.php">REGISTER</a>
+        <a href="./login.php">SIGN IN</a>
         <button class="main--MenuBtn">
           <img src="./assets/images/icon/menu.svg" alt="" />
         </button>
