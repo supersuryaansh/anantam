@@ -125,43 +125,43 @@ $events = $db->resultset();
         <span class="contacts">
           <h1>CONTACTS</h1>
           <div>
-            <span>
-              <h2>Dr. Santosh Jangid</h2>
-              <p>HOD of ECE Dep. & Branch Counsellor of IEEE BKBIET SB</p>
-              <a href="" target="_blank"
-                ><img
-                  src="../assets/images/icon/PHONE.png"
-                  alt="" />+91-9414367879</a
-              >
-            </span>
-            <span>
+              <span>
               <h2>Dr. Nimish Kumar</h2>
               <p>HOD of CSE/AI/IT/DS Dep. & Faculty Incharge of GDSC BKBIET</p>
-              <a href="" target="_blank"
+              <a href="tel:+91-9414648683" 
                 ><img
                   src="../assets/images/icon/PHONE.png"
                   alt="" />+91-9414648683</a
               >
             </span>
             <span>
+              <h2>Dr. Santosh Jangid</h2>
+              <p>HOD of ECE Dep. & Branch Counsellor of IEEE BKBIET SB</p>
+              <a href="tel:+91-9414367879" 
+                ><img
+                  src="../assets/images/icon/PHONE.png"
+                  alt="" />+91-9414367879</a
+              >
+            </span>
+            <span>
               <h2>Mr. Sachin</h2>
               <p>Chairperson, IEEE BKBIET SB</p>
-              <a href="" target="_blank"
+              <a href="tel:+91-9772541952"
                 ><img
-                  src="./assets/images/icon/PHONE.png"
+                  src="../assets/images/icon/PHONE.png"
                   alt="" />+91-9772541952</a
               >
             </span>
             <span>
               <h2>Mr. Aditya Sharma</h2>
               <p>Lead, GDSC BKBIET</p>
-              <a href="" target="_blank"
+              <a href="tel:+91-8250639553" 
                 ><img
-                  src="./assets/images/icon/PHONE.png"
+                  src="../assets/images/icon/PHONE.png"
                   alt="" />+91-8250639553</a
               >
             </span>
-               <a href="mailto:anantam@bkbiet.ac.in" class="mail" target="_blank"
+               <a href="mailto:anantam@bkbiet.ac.in" class="mail" 
             ><img
               src="../assets/images/icon/gmail.png"
               alt="" />anantam@bkbiet.ac.in</a
