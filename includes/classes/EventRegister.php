@@ -31,6 +31,8 @@ Class EventRegister{
         // Execute the prepared statement
         $db->execute();
 
+        $event = new Event();
+        $event->setEvent($this->usrAccount,'ANANT HACKATHON','Yes');
 
     }
 

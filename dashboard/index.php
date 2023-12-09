@@ -15,10 +15,9 @@ if ($session->loggedIn() === false) {
     die();
 }
 
-//get all available events
-$db->query("SELECT * FROM events");
-$db->execute();
-$events = $db->resultset();
+//get all available allEvents
+$events = new Event();
+$allEvents = $events->allEvents();
 ?>
 <!DOCTYPE html>
 <html lang="en">

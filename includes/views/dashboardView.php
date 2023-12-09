@@ -18,8 +18,8 @@ if(!defined('LIFE')){
 
         <?php
         $i = 1;
-        $userEventArray = $session->userEvents();
-        foreach ($events as $event) {
+        $userEventArray = $events->userEvents();
+        foreach ($allEvents as $event) {
             $skip = false;
             $event = get_object_vars($event);
             $eventName = $event["eventName"];
