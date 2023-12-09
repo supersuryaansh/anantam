@@ -58,7 +58,7 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
       </button>
       <div class="menuPage--content">
         <img src="../assets/images/menuPageLine/lt-corner.svg" alt="" />
-        <a href="">SPONSORS</a>x
+        <a href="">SPONSORS</a>
         <img src="../assets/images/menuPageLine/rt-corner.svg" alt="" />
         <a href="">DEVELOPERS</a>
         <img
