@@ -390,9 +390,7 @@ if (!$db->isConnected()) {
               The "Tech Quiz" is a cerebral challenge that explores the vast
               landscape of technology. Participants delve into a series of
               thought-provoking questions covering a spectrum of technological
-              domains. From coding languages to emerging trends, the quiz is
-              designed to test participants' knowledge and acumen in the
-              ever-evolving world of tech.
+              domains. 
             </p>
           </span>
           <span class="card--btn">
@@ -441,9 +439,7 @@ if (!$db->isConnected()) {
               The "Cinematics Competition" invites participants to unleash their
               storytelling prowess through the lens, whether in motion or still
               frames. This dual category competition encompasses both motion
-              pictures and captivating still images. Participants embark on a
-              visual journey, capturing narratives, emotions, and moments in
-              time, turning creativity into compelling visual tales.
+              pictures and captivating still images. 
             </p>
           </span>
           <span class="card--btn">
@@ -464,7 +460,7 @@ if (!$db->isConnected()) {
           /></span>
           <span>
             <p>
-              The "Web Design Challenge/PIXEL PERFECT" is a creative voyage into the world of digital aesthetics and functionality. Participants are invited to showcase their web design prowess by crafting visually stunning and user-friendly websites. This challenge transcends mere technicalities; it's an opportunity to merge innovation with design, creating digital experiences that captivate and inspire.
+              The "Web Design Challenge/PIXEL PERFECT" is a creative voyage into the world of digital aesthetics and functionality. Participants are invited to showcase their web design prowess by crafting visually stunning and user-friendly websites. This challenge transcends mere technicalities.
             </p>
           </span>
           <span class="card--btn">
