@@ -464,7 +464,7 @@ if (!$db->isConnected()) {
           /></span>
           <span>
             <p>
-              Cinematics: Showcase your storytelling skills through motion and still picture creations.
+              The "Web Design Challenge/PIXEL PERFECT" is a creative voyage into the world of digital aesthetics and functionality. Participants are invited to showcase their web design prowess by crafting visually stunning and user-friendly websites. This challenge transcends mere technicalities; it's an opportunity to merge innovation with design, creating digital experiences that captivate and inspire.
             </p>
           </span>
           <span class="card--btn">
@@ -884,34 +884,26 @@ if (!$db->isConnected()) {
         <span>
           <h1>BINARY BRAINS</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
-            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
-            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
-            similique adipisci eius cumque, amet itaque temporibus repellat
-            odio, magni nesciunt maiores blanditiis tempore.
+            The "Tech Quiz/BINARY BRAINS" is a cerebral challenge that explores the vast landscape of technology. Participants delve into a series of thought-provoking questions covering a spectrum of technological domains. From coding languages to emerging trends, the quiz is designed to test participants' knowledge and acumen in the ever-evolving world of tech. The "Tech Quiz" is more than a competition; it's an intellectual exploration of the diverse facets of technology. Participants gain insights into both foundational and cutting-edge tech concepts, fostering a culture of continuous learning and curiosity.
           </p>
         </span>
         <span>
           <h1>RULES :</h1>
           <ul>
             <li>
+             Open to tech enthusiasts of all levels, the "Tech Quiz" welcomes participants to engage in a friendly yet competitive environment, fostering a passion for continuous learning in the field of technology.
+            </li>
+            <li>
+              Participants engage in a series of quiz rounds, each featuring questions of varying difficulty levels. Topics include programming languages, tech history, and current innovations. The quiz not only challenges knowledge but also encourages participants to stay abreast of the dynamic tech landscape.
+            </li>
+<!--             <li>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio maiores dolores.
             </li>
             <li>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio maiores dolores.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio maiores dolores.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio maiores dolores.
-            </li>
+            </li> -->
           </ul>
         </span>
       </div>
@@ -931,34 +923,26 @@ if (!$db->isConnected()) {
         <span>
           <h1>MANGA MANIA</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
-            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
-            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
-            similique adipisci eius cumque, amet itaque temporibus repellat
-            odio, magni nesciunt maiores blanditiis tempore.
+           The "Anime Quiz" is a journey into the vibrant and diverse world of anime. Participants test their knowledge of characters, storylines, and the expansive anime universe. From classics to contemporary favorites, the quiz celebrates the rich tapestry of Japanese animation. Beyond a quiz, this event is a homage to the artistry and storytelling magic of anime. Participants connect over shared love for the medium, fostering a sense of community and appreciation for the diverse narratives woven into the anime landscape.
           </p>
         </span>
         <span>
           <h1>RULES :</h1>
           <ul>
             <li>
+              Open to anime enthusiasts of all levels, the "Anime Quiz" beckons participants to showcase their passion for this unique form of storytelling and artistic expression.
+            </li>
+            <li>
+              The quiz features rounds that span different genres, eras, and styles of anime. Questions may cover character backgrounds, plot intricacies, and iconic moments. Participants not only demonstrate their knowledge but also contribute to the collective celebration of anime culture.
+            </li>
+<!--             <li>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio maiores dolores.
             </li>
             <li>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio maiores dolores.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio maiores dolores.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio maiores dolores.
-            </li>
+            </li> -->
           </ul>
         </span>
       </div>
@@ -976,36 +960,28 @@ if (!$db->isConnected()) {
         alt="" />
       <div class="model--content">
         <span>
-          <h1>MANGA MANIA</h1>
+          <h1>FRAMEFLIX</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
-            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
-            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
-            similique adipisci eius cumque, amet itaque temporibus repellat
-            odio, magni nesciunt maiores blanditiis tempore.
+            The "Cinematics Competition/FRAMEFLIX" invites participants to unleash their storytelling prowess through the lens, whether in motion or still frames. This dual category competition encompasses both motion pictures and captivating still images. Participants embark on a visual journey, capturing narratives, emotions, and moments in time, turning creativity into compelling visual tales. The "Cinematics Competition" is a celebration of visual storytelling. It provides a platform for participants to express their narratives through the powerful mediums of motion picture and still imagery. This competition aligns with our commitment to fostering creativity and diverse forms of expression, enriching the event with unique visual perspectives.
           </p>
         </span>
         <span>
           <h1>RULES :</h1>
           <ul>
             <li>
+              Open to participants with a passion for visual storytelling, the "Cinematics Competition" is an inclusive platform that welcomes individuals with diverse perspectives and levels of expertise.
+            </li>
+            <li>
+              In the motion picture category, participants create a short film or video sequence as the “Film of the Event”, while in the still picture category, captivating images are the focus. Entries will be evaluated based on storytelling, cinematography, composition, and overall impact. Participants are encouraged to showcase their unique vision and creativity within the specified guidelines.
+            </li>
+<!--             <li>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio maiores dolores.
             </li>
             <li>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio maiores dolores.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio maiores dolores.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio maiores dolores.
-            </li>
+            </li> -->
           </ul>
         </span>
       </div>
@@ -1025,34 +1001,25 @@ if (!$db->isConnected()) {
         <span>
           <h1>PIXEL PERFECT</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
-            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
-            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
-            similique adipisci eius cumque, amet itaque temporibus repellat
-            odio, magni nesciunt maiores blanditiis tempore.
+           The "Web Design Challenge" is a creative voyage into the world of digital aesthetics and functionality. Participants are invited to showcase their web design prowess by crafting visually stunning and user-friendly websites. This challenge transcends mere technicalities; it's an opportunity to merge innovation with design, creating digital experiences that captivate and inspire.
           </p>
         </span>
         <span>
           <h1>RULES :</h1>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio maiores dolores.
+              Open to participants with varying levels of technical expertise, the "Web Design Challenge" is inclusive, encouraging a diverse group of individuals to explore the artistry of web design.
             </li>
             <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio maiores dolores.
+             Participants have the freedom to unleash their creativity within specified guidelines. The challenge involves designing a website within a set timeframe, emphasizing both aesthetics and functionality. Judges will evaluate entries based on design innovation, user experience, and technical proficiency.
             </li>
             <li>
+              The "Web Design Challenge" is not just about coding; it's about crafting digital experiences. By merging technology with design principles, participants gain insights into user-centric design and innovative web development. This aligns with our commitment to nurturing well-rounded tech enthusiasts equipped with both technical and creative skills.
+            </li>
+<!--             <li>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio maiores dolores.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio maiores dolores.
-            </li>
+            </li> -->
           </ul>
         </span>
       </div>
@@ -1072,34 +1039,26 @@ if (!$db->isConnected()) {
         <span>
           <h1>BLIND DATE</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            ipsum nemo. Mollitia, sunt eligendi. Minima sunt eligendi quaerat
-            deserunt natus debitis quo facilis quis? Pariatur et sequi incidunt
-            eius! Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Consequatur aperiam possimus, et soluta qui eveniet porro
-            similique adipisci eius cumque, amet itaque temporibus repellat
-            odio, magni nesciunt maiores blanditiis tempore.
+            The "Blind Code Challenge" transforms coding into a sensory experience where participants showcase their programming prowess without the luxury of visual aids. This unique challenge requires participants to write given code snippets solely based on auditory or tactile cues. With a focus on precision and speed, participants aim to minimize errors and showcase their coding instincts. The "Blind Code Challenge" goes beyond standard coding competitions, providing a dynamic and sensory-rich experience. Participants not only showcase their coding proficiency but also demonstrate adaptability and precision under unique constraints. This event celebrates the diverse dimensions of coding expertise and the thrill of coding without relying on visual aids.
           </p>
         </span>
         <span>
           <h1>RULES :</h1>
           <ul>
             <li>
+             Open to coding enthusiasts seeking a thrilling and unconventional challenge, the "Blind Code Challenge" invites participants to embrace the excitement of coding without visual cues, adding a layer of complexity to the traditional coding experience.
+            </li>
+            <li>
+              Participants are presented with code snippets or programming problems without the ability to see their screens. They rely solely on auditory or tactile cues to interpret and write the code accurately. The challenge may involve a speed component, with participants vying for the fastest and most error-free solutions.
+            </li>
+<!--             <li>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio maiores dolores.
             </li>
             <li>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Distinctio maiores dolores.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio maiores dolores.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio maiores dolores.
-            </li>
+            </li> -->
           </ul>
         </span>
       </div>
