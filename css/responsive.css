@@ -213,9 +213,6 @@
   .line2 img {
     width: 180%;
   }
-  .explore--section span:nth-child(1) {
-    display: none;
-  }
   .timer h1 {
     font-size: 24px;
   }
