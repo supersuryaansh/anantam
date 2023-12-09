@@ -28,7 +28,6 @@ $events = $db->resultset();
     <link rel="tab icon" href="../assets/images/icon/ANANTAMLOGO.svg" />
     <link rel="stylesheet" href="../css/dashIndex.css">
     <link rel="stylesheet" href="../css/style.css" />
-<!--    <link href="path/to/lightbox.css" rel="stylesheet" />-->
     <link rel="stylesheet" href="../css/responsive.css" />
     <title>ANANTAM</title>
   </head>
@@ -184,7 +183,6 @@ $events = $db->resultset();
       </div>
     </footer>
     <script src="../js/dashScript.js"></script>
-    <script src="path/to/lightbox.js"></script>
     <script>
         // Check if the "registered" parameter is set to "true" when the DOM content is loaded
         document.addEventListener('DOMContentLoaded', function() {
