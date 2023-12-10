@@ -189,7 +189,7 @@ $allEvents = $events->allEvents();
             if (urlParams.get('registered') === 'true') {
                 const popup = document.createElement('div');
                 popup.textContent = 'Registered for the event';
-                popup.style.backgroundColor = 'green';
+                popup.style.backgroundColor = '#3E8667';
                 popup.style.position = 'fixed';
                 popup.style.top = '10px';
                 popup.style.left = '50%';
@@ -197,6 +197,8 @@ $allEvents = $events->allEvents();
                 popup.style.transform = 'translateX(-50%)';
                 popup.style.padding = '10px';
                 popup.style.borderRadius = '5px';
+                popup.style.padding = '30px 20px';
+                popup.style.color = '#ffca2b';
                 document.body.appendChild(popup);
 
                 setTimeout(function() {

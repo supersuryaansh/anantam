@@ -482,7 +482,7 @@ body {
   border: 2px solid var(--main);
   position: absolute;
   right: 20%;
-  top: 120px;
+  top: 110px;
   cursor: pointer;
 }
 footer {
