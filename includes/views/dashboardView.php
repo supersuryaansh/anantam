@@ -37,6 +37,7 @@ if(!defined('LIFE')){
                               <?php
                               if(isset($skip) && $skip){
                                   echo "style='
+                                  filter: inherit;
                                      display: block;
                                      position: absolute !important;
                                      margin-top: -70px;

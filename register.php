@@ -56,16 +56,16 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
       </button>
       <div class="menuPage--content">
         <img src="../assets/images/menuPageLine/lt-corner.svg" alt="" />
-        <a href="">SPONSORS</a>
+        <a href="./sponsors.php">SPONSORS</a>
         <img src="../assets/images/menuPageLine/rt-corner.svg" alt="" />
-        <a href="">DEVELOPERS</a>
+        <a href="./developer.php">DEVELOPERS</a>
         <img
           class="logo--img"
           src="../assets/images/icon/BLACK LOGO.svg"
           alt="" />
-        <a href="">PRIZE POOL</a>
+        <a href="./prizepool.php">PRIZE POOL</a>
         <img src="../assets/images/menuPageLine/lb-corner.svg" alt="" />
-        <a href="">GALLERY</a>
+        <a href="./gallery.php">GALLERY</a>
         <img src="../assets/images/menuPageLine/rb-corner.svg" alt="" />
       </div>
     </div>
