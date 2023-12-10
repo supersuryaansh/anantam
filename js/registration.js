@@ -13,3 +13,20 @@ function mainMenu() {
   });
 }
 mainMenu();
+
+const userPass = document.querySelector("#usrPass");
+const userConfirmPass = document.querySelector("#usrConfPass");
+const formSubmit = document.querySelector("#Form");
+function checkPassword(){
+    if(userPass.value === userConfirmPass.value)
+        return true;
+    else
+        alert("You entered wrong password");
+    return false;
+}
+
+formSubmit.addEventListener('click', function (e){
+    if(!checkPassword()){
+        e.preventDefault();
+    }
+});

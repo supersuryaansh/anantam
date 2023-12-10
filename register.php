@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 require_once($_SERVER['DOCUMENT_ROOT']."/"."requireme.php");
 $session = new UserSession();
 global $_SERVER;
@@ -38,8 +38,7 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
     }
 
 }
-
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -51,7 +50,7 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
     <title>ANANTAM - REGISTRATION</title>
   </head>
   <body>
-  <div class="main--menuPage">
+    <div class="main--menuPage">
       <button class="menu--close-btn">
         <img src="../assets/images/icon/closeBtn.svg" alt="" />
       </button>
@@ -80,7 +79,7 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
       </button>
     </nav>
     <main>
-      <form action="" method="post" enctype="multipart/form-data">
+      <form action="" method="post" enctype="multipart/form-data" id="Form">
         <h2>User Registration Form :</h2>
         <div>
           <span>
@@ -110,12 +109,12 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
         </span>
 
         <span>
-          <label for="usrPhone" >Phone:</label>
+          <label for="usrPhone">Phone:</label>
           <input
             type="text"
             id="usrPhone"
             name="usrPhone"
-          pattern="[0-9]{10}"
+            pattern="[0-9]{10}"
             required /><br /><br />
         </span>
         <span>
@@ -143,25 +142,21 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
             name="usrConfPass"
             required /><br /><br />
         </span>
-         <span class="register--link">
-        <p>already have an account?</p><a href="./login.php">LOGIN NOW!!!</a>
+        <span class="register--link">
+          <p>already have an account?</p>
+          <a href="./login.php">LOGIN NOW!!!</a>
         </span>
         <input class="submit--btn" type="submit" value="Submit" name="submit" />
       </form>
       <?php
 
-        if(isset($user->errorMessage)){
-            echo $user->errorMessage;
-        }
-
-        if(isset($fileUploader->errorMessage)){
-            echo $fileUploader->errorMessage;
-        }
-    ?>
-        <img
-                class="bottom--line"
-                src="./assets/images/webLINES/navLine.png"
-                alt="" />
+        if(isset($user->errorMessage)){ echo $user->errorMessage; }
+      if(isset($fileUploader->errorMessage)){ echo $fileUploader->errorMessage;
+      } ?>
+      <img
+        class="bottom--line"
+        src="./assets/images/webLINES/navLine.png"
+        alt="" />
     </main>
     <script src="./js/registration.js"></script>
   </body>
