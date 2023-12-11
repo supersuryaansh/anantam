@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 require_once($_SERVER['DOCUMENT_ROOT']."/"."requireme.php");
 $session = new UserSession();
 global $_SERVER;
@@ -38,7 +38,7 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
     }
 
 }
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
