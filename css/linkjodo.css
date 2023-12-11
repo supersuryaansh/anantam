@@ -1,0 +1,40 @@
+@font-face {
+    font-family: noken;
+    src: url(../assets/fonts/nokenmedium.otf);
+}
+@font-face {
+    font-family: medium;
+    src: url(../assets/fonts/nokenItalic.otf);
+}
+@font-face {
+    font-family: semiBold;
+    src: url(../assets/fonts/nockenSemiBold.otf);
+}
+@font-face {
+    font-family: clock;
+    src: url(../assets/fonts/CLOCK.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: noken;
+}
+:root {
+    --main: #ffca2b;
+    --secondary: #000;
+    --other: #ff1010;
+    --third: #2a4fdb;
+    --footer: #3E8667;
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+div{
+    width: 100%;
+    height: 100vh;
+}
