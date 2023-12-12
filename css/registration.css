@@ -53,6 +53,7 @@ body {
   width: 100%;
   position: fixed;
   bottom: 0;
+  left: 0;
   transform: rotate(180deg);
 }
 nav {
@@ -131,7 +132,7 @@ nav a:nth-child(4) {
 main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100vh;
   margin-inline: 50px;
   position: relative;
@@ -142,9 +143,18 @@ form {
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
-  width: 100%;
+  width: 50%;
   padding-bottom: 100px;
   /*height: 100vh;*/
+}
+form label, form input{
+  white-space: nowrap;
+}
+.event--checkbox{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 50px;
+  justify-items: start;
 }
 form h2 {
   font-size: 2.4rem;
@@ -153,22 +163,52 @@ form h2 {
 form div {
   display: flex;
   align-items: center;
-  gap: 100px;
-}
-form span label {
-  text-transform: uppercase;
+  gap: 14px;
 }
 form span {
   display: flex;
-  gap: 10px;
-  align-items: flex-start;
+  align-items: center;
+  gap: 30px;
 }
-form span input {
+form label{
+  white-space: nowrap;
+}
+form input {
   /* width: 50vw; */
-  padding: 10px;
+  padding: 16px;
   background-color: transparent;
   border: 0;
-  border-bottom: 0.2px solid var(--main);
+  border-bottom: 2px solid var(--main);
+  width: 100%;
+}
+form input:focus{
+  outline: none;
+}
+form button{
+  padding: 15px 30px;
+  background-color: transparent;
+  border: 2px solid var(--main);
+  color: var(--main);
+  transition: 0.4s;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: #3E8667;
+  cursor: pointer;
+}
+.event--area{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.event--area span{
+  display: flex;
+  flex-direction: column;
+}
+.event--checkbox span{
+  display: flex;
+  align-items: center;
 }
 form label,
 form input {
@@ -317,4 +357,11 @@ option {
   form span input{
     width: 90vw;
   }
+}
+
+
+/*NEW CHANGES*/
+main{
+  align-items: flex-start;
+  padding-block: 50px;
 }

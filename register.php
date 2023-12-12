@@ -42,122 +42,109 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/registration.css" />
     <link rel="tab icon" href="./assets/images/icon/ANANTAMLOGO.svg" />
     <title>ANANTAM - REGISTRATION</title>
-  </head>
-  <body>
-    <div class="main--menuPage">
-      <button class="menu--close-btn">
+</head>
+<body>
+<div class="main--menuPage">
+    <button class="menu--close-btn">
         <img src="../assets/images/icon/closeBtn.svg" alt="" />
-      </button>
-      <div class="menuPage--content">
+    </button>
+    <div class="menuPage--content">
         <img src="../assets/images/menuPageLine/lt-corner.svg" alt="" />
         <a href="./sponsors.php">SPONSORS</a>
         <img src="../assets/images/menuPageLine/rt-corner.svg" alt="" />
         <a href="./developer.php">DEVELOPERS</a>
         <img
-          class="logo--img"
-          src="../assets/images/icon/BLACK LOGO.svg"
-          alt="" />
+            class="logo--img"
+            src="../assets/images/icon/BLACK LOGO.svg"
+            alt="" />
         <a href="./prizepool.php">PRIZE POOL</a>
         <img src="../assets/images/menuPageLine/lb-corner.svg" alt="" />
         <a href="./gallery.php">GALLERY</a>
         <img src="../assets/images/menuPageLine/rb-corner.svg" alt="" />
-      </div>
     </div>
-    <nav>
-      <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
-      <a href="./index.php"
-        ><img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt=""
-      /></a>
-      <button class="nav--btn">
+</div>
+<nav>
+    <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
+    <a href="./index.php"
+    ><img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt=""
+        /></a>
+    <button class="nav--btn">
         <img src="./assets/images/icon/menu.svg" alt="" />
-      </button>
-    </nav>
-    <main>
-      <form action="" method="post" enctype="multipart/form-data" id="Form">
-        <h2>User Registration Form :</h2>
-        <div>
-          <span>
-            <label for="usrName">Name:</label>
-            <input
-              type="text"
-              id="usrName"
-              name="usrName"
-              required /><br /><br />
-          </span>
-          <span>
-            <label for="usrGender">Gender:</label>
-            <select id="usrGender" name="usrGender" required>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-              <option value="Other">Other</option>
-            </select>
-          </span>
+    </button>
+</nav>
+<main>
+    <form>
+        <h1>EVENT REGISTRATION FORM : </h1>
+        <span>
+            <input type="text" id="usrName" name="usrName" placeholder="FIRST NAME"/>
+            <input type="text" id="usrName" name="usrName" placeholder="SURNAME"/>
+        </span>
+        <input type="number" id="usrNumber" name="usrNumber" placeholder="PHONE NUMBER(+91-)"/>
+        <input type="email" id="usrMail" name="usrMail" placeholder="YOUR EMAIL ID"/>
+        <div class="event--checkbox">
+        <span>
+            <input type="checkbox" id="hackathon" name="hackathon"/>
+            <label for="hackathon">ANANT NETRUNN</label>
+        </span>
+        <span>
+            <input type="checkbox" id="robowars" name="robowars"/>
+            <label for="robowars">ROBO WARS</label>
+        </span>
+        <span>
+            <input type="checkbox" id="codeCrunch" name="codeCrunch"/>
+            <label for="codeCrunch">CODE CRUNCH</label>
+        </span>
+        <span>
+            <input type="checkbox" id="esports" name="esports"/>
+            <label for="esports">ESPORTS STREET</label>
+        </span>
+        <span>
+            <input type="checkbox" id="bidBoundaries" name="bidBoundaries"/>
+            <label for="bidBoundaries">BID BOUNDARIES</label>
+        </span>
+        <span>
+            <input type="checkbox" id="dalalStreet" name="dalalStreet"/>
+            <label for="dalalStreet">DALAL STREET</label>
+        </span>
+        <span>
+            <input type="checkbox" id="binaryBrains" name="binaryBrains"/>
+            <label for="binaryBrains">BINARY BRAINS</label>
+        </span>
+        <span>
+            <input type="checkbox" id="mangaMania" name="mangaMania"/>
+            <label for="mangaMania">MANGA MANIA</label>
+        </span>
+        <span>
+            <input type="checkbox" id="frameflix" name="frameflix"/>
+            <label for="frameflix">FRAMEFLIX</label>
+        </span>
+        <span>
+            <input type="checkbox" id="pixelPerfect" name="pixelPerfect"/>
+            <label for="pixelPerfect">PIXEL PERFECT</label>
+        </span>
+        <span>
+            <input type="checkbox" id="blindDate" name="blindDate"/>
+            <label for="blindDate">BLIND DATE</label>
+        </span>
         </div>
-        <span>
-          <label for="usrEmail">Email:</label>
-          <input
-            type="email"
-            id="usrEmail"
-            name="usrEmail"
-            required /><br /><br />
-        </span>
+        <button type="submit" name="submit" id="submit">SUBMIT</button>
+    </form>
+    <?php
 
-        <span>
-          <label for="usrPhone">Phone:</label>
-          <input
-            type="text"
-            id="usrPhone"
-            name="usrPhone"
-            pattern="[0-9]{10}"
-            required /><br /><br />
-        </span>
-        <span>
-          <label for="usrCollegeId">College ID:</label>
-          <input
-            type="file"
-            accept="image/*"
-            id="usrCollegeId"
-            name="usrCollegeId"
-            required /><br /><br />
-        </span>
-        <span>
-          <label for="usrPass">Password:</label>
-          <input
-            type="password"
-            id="usrPass"
-            name="usrPass"
-            required /><br /><br />
-        </span>
-        <span>
-          <label for="usrConfPass">Confirm Password:</label>
-          <input
-            type="password"
-            id="usrConfPass"
-            name="usrConfPass"
-            required /><br /><br />
-        </span>
-        <span class="register--link">
-          <p>already have an account?</p>
-          <a href="./login.php">LOGIN NOW!!!</a>
-        </span>
-        <input class="submit--btn" type="submit" value="Submit" name="submit" />
-      </form>
-      <?php
-
-        if(isset($user->errorMessage)){ echo $user->errorMessage; }
-      if(isset($fileUploader->errorMessage)){ echo $fileUploader->errorMessage;
-      } ?>
-      <img
+    if(isset($user->errorMessage)){ echo $user->errorMessage; }
+    if(isset($fileUploader->errorMessage)){ echo $fileUploader->errorMessage;
+    } ?>
+    <img
         class="bottom--line"
         src="./assets/images/webLINES/navLine.png"
         alt="" />
-    </main>
-    <script src="./js/registration.js"></script>
-  </body>
+</main>
+<script src="./js/registration.js"></script>
+</body>
 </html>

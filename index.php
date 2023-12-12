@@ -83,7 +83,7 @@ if (!$db->isConnected()) {
             //check if user is logged in else redirect
                 if ($session->loggedIn() === false) {
                     //redirect to dashboard
-                    echo "<a href='./register.php'>REGISTER</a>";
+                    echo "<a href='registerBackUp.php'>REGISTER</a>";
                 }else{
                     echo "<a href='./dashboard'>DASHBOARD</a>";
                 }
@@ -101,7 +101,7 @@ if (!$db->isConnected()) {
             //check if user is logged in else redirect
             if ($session->loggedIn() === false) {
                 //redirect to dashboard
-                echo "<a href='./register.php'>REGISTER</a>";
+                echo "<a href='registerBackUp.php'>REGISTER</a>";
             }else{
                 echo "<a href='./dashboard'>DASHBOARD</a>";
             }
@@ -509,7 +509,7 @@ if (!$db->isConnected()) {
         <span class="links">
           <h1>LINKS</h1>
           <a href="/events.php">events</a>
-          <a href="/register.php">registration</a>
+          <a href="/registerBackUp.php">registration</a>
           <a href="/login.php">sign in</a>
           <a href="">developers</a>
           <a href="">prize pool</a>
@@ -519,25 +519,6 @@ if (!$db->isConnected()) {
         <span class="contacts">
           <h1>CONTACT US</h1>
           <div>
-               <span>
-              <h2>Dr. Nimish Kumar</h2>
-              <p>HOD of CSE/AI/IT/DS Dep. & Faculty Incharge of GDSC BKBIET</p>
-<!--               <a href="tel:+91-9414648683" 
-                ><img
-                  src="/assets/images/icon/PHONE.png"
-                  alt="" />+91-9414648683</a
-              > -->
-            </span>
-            <span>
-              <h2>Dr. Santosh Jangid</h2>
-              <p>HOD of ECE Dep. & Branch Counsellor of IEEE BKBIET SB</p>
-<!--               <a href="tel:+91-9414367879" 
-                ><img
-                  src="/assets/images/icon/PHONE.png"
-                  alt="" />+91-9414367879</a
-              > -->
-            </span>
-           
             <span>
               <h2>Mr. Sachin</h2>
               <p>Chairperson, IEEE BKBIET SB</p>

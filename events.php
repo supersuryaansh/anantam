@@ -38,7 +38,7 @@
       </div>
       <div>
 <!--         <a href="./events.php">EVENTS</a> -->
-        <a href="./register.php">REGISTER</a>
+        <a href="registerBackUp.php">REGISTER</a>
         <a href="./login.php">SIGN IN</a>
       </div>
       <img src="./assets/images/webLINES/navLine.png" alt="" class="line1" />
@@ -51,7 +51,7 @@
       </span>
       <span class="nav--links">
 <!--         <a class="menuOpenAnker" href="./events.php">EVENTS</a> -->
-        <a href="./register.php">REGISTER</a>
+        <a href="registerBackUp.php">REGISTER</a>
         <a href="./login.php">SIGN IN</a>
         <button class="main--MenuBtn">
           <img src="./assets/images/icon/menu.svg" alt="" />

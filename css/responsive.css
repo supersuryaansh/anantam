@@ -322,4 +322,7 @@
   .line1 {
     bottom: -30px;
   }
+  .event--top-line h1{
+    font-size: 3vw;
+  }
 }
