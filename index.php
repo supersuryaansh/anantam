@@ -96,7 +96,9 @@ if (!$db->isConnected()) {
           <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
         </span>
         <span class="nav--links">
+            <a href="./about.php">ABOUT</a>
           <a class="menuOpenAnker" href="./events.php">EVENTS</a>
+            <a href="./symosium.php">SYMPOSIUM</a>
             <?php
             //check if user is logged in else redirect
             if ($session->loggedIn() === false) {
@@ -213,7 +215,7 @@ if (!$db->isConnected()) {
             by GDSC BKBIET, creating a comprehensive and engaging experience for
             participants.
           </p>
-          <button>EXPLORE</button>
+            <a href="./about.php"><button>KNOW US</button></a>
         </div>
       </div>
     </div>
@@ -514,7 +516,7 @@ if (!$db->isConnected()) {
           <a href="">developers</a>
           <a href="">prize pool</a>
           <a href="">sponsors</a>
-          <a href="./fnq.html">F&Q</a>
+          <a href="fnq.php">F&Q</a>
         </span>
         <span class="contacts">
           <h1>CONTACT US</h1>

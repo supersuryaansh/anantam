@@ -59,7 +59,7 @@
           <a href="">developers</a>
           <a href="">prize pool</a>
           <a href="">sponsors</a>
-          <a href="./fnq.html">F&Q</a>
+          <a href="fnq.php">F&Q</a>
         </span>
         <span class="contacts">
           <h1>CONTACT US</h1>
