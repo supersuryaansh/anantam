@@ -45,7 +45,7 @@ html {
 }
 body {
   font-family: noken;
-  background-color: #2a4fdb;
+  background-color: transparent;
   color: var(--main);
   overflow-x: hidden;
 }
@@ -64,7 +64,7 @@ nav {
   position: relative;
   border: 0;
   z-index: 999;
-  background-color: var(--third);
+  background-color: #fff;
 }
 nav img {
   width: 200px;
