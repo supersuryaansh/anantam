@@ -252,7 +252,7 @@ if (!$db->isConnected()) {
             </p>
           </span>
           <span class="card--btn">
-            <a href="http://localhost/dashboard/?action=hackathon" id="" target="_blank"><button>EXPLORE</button></a>
+            <a href="/problem_statement.php" id="" ><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards card">
