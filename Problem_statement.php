@@ -269,7 +269,7 @@
     </tbody>
   </table>
 </div>
-<script>
+
 <!--Problem statements end  -->
     
 <!--Footet start-->
