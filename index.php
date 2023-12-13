@@ -103,7 +103,7 @@ if (!$db->isConnected()) {
             //check if user is logged in else redirect
             if ($session->loggedIn() === false) {
                 //redirect to dashboard
-                echo "<a href='registerBackUp.php'>REGISTER</a>";
+                echo "<a href='http://bit.ly/anantam-registration'>REGISTER</a>";
             }else{
                 echo "<a href='./dashboard'>DASHBOARD</a>";
             }
@@ -252,7 +252,7 @@ if (!$db->isConnected()) {
             </p>
           </span>
           <span class="card--btn">
-            <a href="http://localhost/dashboard/?action=hackathon" id="" target="_blank"><button>EXPLORE</button></a>
+            <a href="/Problem_statement.php" id="" ><button>Problem Statements</button></a>
           </span>
         </div>
         <div class="cards card">
@@ -511,8 +511,8 @@ if (!$db->isConnected()) {
         <span class="links">
           <h1>LINKS</h1>
           <a href="/events.php">events</a>
-          <a href="/registerBackUp.php">registration</a>
-          <a href="/login.php">sign in</a>
+          <a href="http://bit.ly/anantam-registration">registration</a>
+          <a href="/gallery.php">Gallery</a>
           <a href="">developers</a>
           <a href="">prize pool</a>
           <a href="">sponsors</a>
