@@ -131,25 +131,17 @@
     <tbody>
       <tr>
         <td>1</td>
-        <td data-index="130" class="event--id">AN130</td>
+        <td data-index="130" class="event--id">AN001</td>
         <td>Software</td>
         <td>
           <details>
             <summary>
-              Development of software application for analysis and processing of
-              dvbs2 receiver output stream i.e., raw BB Frames, GSE and TS in
-              near real time.
+             Communication Gap between management, employees and clients 
             </summary>
             <p>
-              Classification & identification of audio, video, data & protocol
-              such as MPE, ULE, SIP, RTP, FTP, SFTP, HTTP, HTTPS, SNMP, POP,
-              SMTP, SSH etc. 2. Classification Identification of
-              encryption/scrambling if present in stream through headers and SI
-              tables 3. Extraction of VoIP calls, audio and video programs,
-              file, email, web-page etc in separate files. 4. Decoding and
-              playing selected audio/video contents Preferred Language- Python,
-              Lab-view, C/C++, VHDL/Verilog Expected Outcome-
-              Algorithm/Software/GUI Preferred Platform- Windows/Linux
+              Communication gap among management, employees, and clients. The management lacks awareness of ground-level processes, while simultaneously remaining unaware of the issues faced by employees and clients. Conversely, employees and clients may experience difficulty in communicating their problems, and the management is unaware of the effectiveness of employee performance or client satisfaction. This creates ambiguity regarding whether the company or institute is successfully fulfilling its vision and mission.
+
+
             </p>
           </details>
         </td>
@@ -164,13 +156,11 @@
 
         <td>
           <details>
-            <summary>Change detection due to human activities.</summary>
+            <summary>Interactive Learning Platform</summary>
             <p>
-              Using satellite imagery, create an automated system for detecting
-              change related only to human activities from satellite imagery.
-              i.e. Develop AI/ML based model for change detection of only
-              man-made objects like vehicles, buildings, roads, aircraft etc.
-              from remote sensing images Data: Sentinel-2, LISS-4
+            Develop a platform that enhances interactive learning experiences for students, incorporating features like virtual labs, quizzes, and collaborative projects to make learning more engaging.
+
+
             </p>
           </details>
         </td>
@@ -185,42 +175,10 @@
         <td>
           <details>
             <summary>
-              Smart and Effective realtime Management of street parking
+              Gamified Learning for Skill Development
             </summary>
             <p>
-              ln lndia, the number of vehicles is constanfly on the rise, while
-              the availability of parking space in cities has not kept pace with
-              the increasing vehicle numbers, primarily due to the rapid groMh
-              in population. Consequenfly, issues such as traffic congestion,
-              narrowed streets due to on-street parking, a mismatch between
-              parking supply and demand, and illegal parking have become all too
-              familiar in lndian cities. Parking space has become a scarce
-              commodity, and instead of simply increasing the number of
-              available parking spaces, it is crucial to employ effective
-              technology-based solutions to optimize their utilization. Smart
-              parking solutions, utilizing sensors and software, can provade
-              realtime information on available parking spaces to both city
-              officials and drivers. Furthermore, leveraging emerging
-              technologies can help optimize parking prices. A low parking price
-              may encourage more vehicles on the road, leading to increased air
-              and noise pollution, whereas too high prices may generate less
-              revenue and less efectuve resource usage.Apart from the loss of
-              revenue for operators, there is economic downside to the business
-              in vicinity, effect on government taxes, employment.At the same
-              parking space area and costs also have a corelation to balance
-              optimum usage and revenue. Therefore, setting the right price for
-              parking based on demand and optimizing occupancy is the best
-              approach. The primary objective of the solution should be to equip
-              city administrators with an effective parking management tool that
-              can predict, manage, and finance parking in cities. An app should
-              be developed to allow citizens to conveniently reserve pce king
-              spots and make payments based on dynamic pricing This not only
-              saves citizens' time spent searching the parking but also reduces
-              environmental degradation resulting from congestion caused by
-              parking and provides a sustainable source of revenue for the city
-              administration. We need an innovative, simple and widely coveraged
-              parking needs in the city and also become most compliant for
-              Traffic and mobility needs.
+              Build a gamified platform that helps students develop specific skills (e.g., coding, critical thinking, problem-solving) in an enjoyable and interactive way.
             </p>
           </details>
         </td>
@@ -233,19 +191,12 @@
         <td>
           <details>
             <summary>
-              Development of Explainable AI (XAI) based model for prediction of
-              heavy /high impact rain events using satellite data
+              Parent-Teacher Communication Platform
             </summary>
             <p>
-              Nowcasting of heavy precipitation rainfall events with an
-              understanding of the most important predictors and also an idea as
-              to why a certain model can fail. Desired Outcome- The developed
-              system shall provide the following: 1. AI based model to predict
-              particular rain episodes of greater impact using satellite data
-              (INSAT-3D/3DR) . 2. An explainable module into the AI model (XAI)
-              3. The final output should be in terms of a web application, with
-              associated accuracy of the models worked on and an explainable
-              component of the outputs.
+              Build a communication platform that facilitates effective and transparent communication between parents and teachers, allowing real-time updates on student progress, events, and educational resources.
+
+
             </p>
           </details>
         </td>
@@ -255,27 +206,22 @@
       <tr>
         <td>5</td>
         <td data-index="234">ANF234</td>
-        <td>Hardware</td>
+        <td>Software</td>
         <td>
           <details>
             <summary>
-              Frequent dislodgement of belt conveyor along hilly terrain for
-              various reasons
+              Open Educational Resources (OER) Enhancement
             </summary>
             <p>
-              The 14.6 km long cable belt conveyor passing over complex hilly
-              terrain suffers belt dislodgements due to various reasons
-              resulting in the sudden loss of production. Solution Desired:
-              Capture reasons for belt dislodgements across its 14.6 KM length
-              from past data and using suitable ML software, prediction of belt
-              dislodgements should be done beforehand to take corrective and
-              preventive actions.
+             Improve the accessibility and usability of open educational resources, making it easier for educators to find, share, and collaborate on high-quality educational materials.
+
+
             </p>
           </details>
         </td>
         
 
-        <!-- Centralized Monitoring System for Street Light Fault Detection and Location Tracking -->
+        <!--Market Access for Small Farmers-->
       </tr>
 
       <tr>
@@ -285,31 +231,12 @@
         <td>
           <details>
             <summary>
-              Centralized Monitoring System for Street Light Fault Detection and
-              Location Tracking
+              Market Access for Small Farmers
             </summary>
             <p>
-              Electricity is the critical need for progress of the livelihood.ln
-              many Indian cities, the maintenance of street lights has become a
-              challenging and inefficient process due to the lack of a
-              centralized monitoring system. ldentifying faults, such as non-
-              functioning lights, current leakage and cable breakage, relies on
-              citizen grievances, leading to delays, increased costs, and safety
-              concerns. Linemen spend valuable time manually searching for
-              faults, diagnosing issues, and fixing them, which can take several
-              days to complete. The absence of precise fault location
-              information further complicates the process. To overcome these
-              obstacles, we seek an innovative solution that provides realtime
-              fault detection, accurate identification of fault types, and
-              precise location tracking of faulty street lights. This solution
-              aims to empower linemen with efficient fault management
-              capabilities, reducing their workload and ensuring timely
-              maintenance. Moreover, it should enable the local authorities to
-              proactively address faults, enhance service quality, and optimize
-              street light maintenance processes in their respective cities..The
-              prime aim of this problem statement is to develop a "Automated
-              Defect Detection and Prevention Assistance with Effective
-              Governance for Cities in India"""
+             Create a platform that connects small-scale farmers with local markets, providing them with information on demand, fair pricing, and logistics to improve their market access and profitability.
+
+
             </p>
           </details>
         </td>
@@ -321,21 +248,16 @@
       <tr>
         <td>7</td>
         <td data-index="669">ANF669</td>
-        <td>Hardware</td>
+        <td>Software</td>
         <td>
           <details>
             <summary>
-              Design of RF Up/Down-converter for signals using GNU Radio and
-              SDRs
+             Supply Chain Optimization
             </summary>
             <p>
-              The 14.6 km long cable belt conveyor passing over complex hilly
-              terrain suffers belt dislodgements due to various reasons
-              resulting in the sudden loss of production. Solution Desired:
-              Capture reasons for belt dislodgements across its 14.6 KM length
-              from past data and using suitable ML software, prediction of belt
-              dislodgements should be done beforehand to take corrective and
-              preventive actions.
+             Design solutions that optimize the agricultural supply chain, reducing waste, improving distribution efficiency, and ensuring fair compensation for farmers throughout the chain.
+
+
             </p>
           </details>
         </td>
@@ -349,6 +271,7 @@
 </div>
 <script>
 <!--Problem statements end  -->
+    
 <!--Footet start-->
 <footer>
     <div class="maker--logo">
