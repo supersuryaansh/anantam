@@ -1,12 +1,4 @@
-<?php
-require_once($_SERVER['DOCUMENT_ROOT']."/"."requireme.php");
-$session = new UserSession();
-global $_SERVER;
-$db = new Database();
-if (!$db->isConnected()) {
-    die("Database Not connected");
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -79,15 +71,7 @@ if (!$db->isConnected()) {
         </div>
         <div>
           <a href="./events.php">EVENTS</a>
-            <?php
-            //check if user is logged in else redirect
-                if ($session->loggedIn() === false) {
-                    //redirect to dashboard
-                    echo "<a href='registerBackUp.php'>REGISTER</a>";
-                }else{
-                    echo "<a href='./dashboard'>DASHBOARD</a>";
-                }
-            ?>
+          <a href='registerBackUp.php'>REGISTER</a>
         </div>
       </nav>
       <nav class="desktop--nav">
@@ -99,15 +83,7 @@ if (!$db->isConnected()) {
             <a href="./about.php">ABOUT</a>
           <a class="menuOpenAnker" href="./events.php">EVENTS</a>
             <a href="./symosium.php">SYMPOSIUM</a>
-            <?php
-            //check if user is logged in else redirect
-            if ($session->loggedIn() === false) {
-                //redirect to dashboard
-                echo "<a href='http://bit.ly/anantam-registration'>REGISTER</a>";
-            }else{
-                echo "<a href='./dashboard'>DASHBOARD</a>";
-            }
-            ?>
+            <a href='http://bit.ly/anantam-registration'>REGISTER</a>
           <button class="main--MenuBtn">
             <img src="./assets/images/icon/menu.svg" alt="" />
           </button>
