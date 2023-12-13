@@ -71,7 +71,7 @@
         </div>
         <div>
           <a href="./events.php">EVENTS</a>
-          <a href='registerBackUp.php'>REGISTER</a>
+          <a href='register.php'>REGISTER</a>
         </div>
       </nav>
       <nav class="desktop--nav">
