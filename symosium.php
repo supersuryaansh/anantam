@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="tab icon" href="./assets/images/icon/ANANTAMLOGO.svg" />
-    <title>ANANTAM - REGISTRATION</title>
+    <title>ANANTAM - SYMPOSIUM</title>
 </head>
 <body>
 <img class="bg--img" src="./assets/images/about--img.png"/>
