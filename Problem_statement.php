@@ -151,7 +151,7 @@
 
       <tr>
         <td>2</td>
-        <td data-index="212">AN212</td>
+        <td data-index="212">AN002</td>
         <td>Software</td>
 
         <td>
@@ -169,7 +169,7 @@
 
       <tr>
         <td>3</td>
-        <td data-index="321">AN321</td>
+        <td data-index="321">AN003</td>
         <td>Software</td>
 
         <td>
@@ -186,7 +186,7 @@
       </tr>
       <tr>
         <td>4</td>
-        <td data-index="135">AN135</td>
+        <td data-index="135">AN004</td>
         <td>Software</td>
         <td>
           <details>
@@ -205,7 +205,7 @@
 
       <tr>
         <td>5</td>
-        <td data-index="234">ANF234</td>
+        <td data-index="234">AN005</td>
         <td>Software</td>
         <td>
           <details>
@@ -226,7 +226,7 @@
 
       <tr>
         <td>6</td>
-        <td data-index="594">ANF594</td>
+        <td data-index="594">AN006</td>
         <td>Hardware</td>
         <td>
           <details>
@@ -247,7 +247,7 @@
 
       <tr>
         <td>7</td>
-        <td data-index="669">ANF669</td>
+        <td data-index="669">AN008</td>
         <td>Software</td>
         <td>
           <details>
@@ -269,7 +269,23 @@
     </tbody>
   </table>
 </div>
+<script>
+  const applyBtn = document.querySelectorAll(".AN--btn");
 
+  function idRetrieve() {
+    applyBtn.forEach((elem) => {
+      elem.addEventListener("click", function(e) {
+        e.preventDefault();
+        const closestEventId = elem.closest(".event--id");
+        const eventIdInput = closestEventId.querySelector(".AN--btn"); // Replace with the actual class of your input field
+        const eventId = eventIdInput.value;
+        console.log(eventId);
+      });
+    });
+  }
+
+  idRetrieve();
+</script>
 <!--Problem statements end  -->
     
 <!--Footet start-->
