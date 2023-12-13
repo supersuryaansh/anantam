@@ -45,9 +45,6 @@ body{
 .date--of-event {
     font-size: 12px !important;
 }
-
-/*NAV TOP*/
-
 .line1 {
     position: absolute;
     bottom: -26px;
@@ -55,30 +52,8 @@ body{
     width: 103%;
     margin-inline: -30px;
 }
-.bottom--line {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    transform: rotate(180deg);
-}
-nav {
-    width: 100%;
-    padding: 30px 20px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    border: 0;
-    z-index: 999;
-    background-color: #000;
-}
-nav img {
-    width: 200px;
-}
-nav a {
-    font-size: 20px;
-    letter-spacing: 3px;
-}
+/*NAV TOP*/
+
 .main--menuPage {
     width: 100vw;
     height: 100%;
@@ -117,19 +92,51 @@ nav a {
 .logo--img {
     width: 200px;
 }
-.nav--btn {
+.mobile--nav {
+    position: relative;
+    display: none;
+    flex-direction: row;
+    z-index: 999;
+    background-color: #000;
+    gap: 30px;
+}
+.desktop--nav {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    background-color: #000;
+}
+.date--of-event{
+    font-size: 12px !important;
+}
+.menu--btn,
+.main--MenuBtn {
+    width: 60px;
     background-color: transparent;
     border: 0;
-    width: 50px;
-    position: relative;
 }
-.nav--btn img {
+.menu--btn img,
+.main--MenuBtn img {
     width: 100%;
 }
-.nav--links{
+nav {
+    width: 100%;
+    padding: 30px 20px;
     display: flex;
-    align-items: center;
+    z-index: 999;
+    justify-content: space-between;
+}
+nav img {
+    width: 200px;
+}
+nav a {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.nav--links {
+    display: flex;
     gap: 20px;
+    align-items: center;
 }
 /*NAV END*/
 
@@ -166,7 +173,7 @@ main h1{
 }
 .desktop--nav {
     display: flex;
-    /*position: fixed;*/
+    position: relative;
     z-index: 999;
     background-color: #000;
 }
@@ -190,6 +197,7 @@ footer {
     padding-inline: 50px;
     padding-block: 100px;
     background: var(--secondary);
+    overflow-x: hidden;
 }
 footer a {
     display: flex;
@@ -302,4 +310,39 @@ p {
     position: absolute;
     bottom: 60px;
 }
+.bottom--line {
+    width: 100vw;
+    position: absolute;
+    /*top: -30px;*/
+    left: 0;
+    transform: rotate(180deg);
+    z-index: 999;
+}
 /*FOOTER E*/
+
+
+@media screen and (max-width: 991px) {
+    .desktop--nav{
+        display: none;
+    }
+    .mobile--nav{
+        position: relative !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile--nav div:nth-child(1){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mobile--nav div:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    main{
+        width: 100%;
+    }
+}

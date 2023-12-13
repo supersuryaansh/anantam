@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/responsive.css"/>
     <link rel="tab icon" href="./assets/images/icon/ANANTAMLOGO.svg" />
     <title>ANANTAM - REGISTRATION</title>
 </head>
@@ -11,41 +12,56 @@
 <img class="bg--img" src="./assets/images/about--img.png"/>
 <div class="main--menuPage">
     <button class="menu--close-btn">
-        <img src="../assets/images/icon/closeBtn.svg" alt="" />
+        <img src="./assets/images/icon/closeBtn.svg" alt="" />
     </button>
     <div class="menuPage--content">
-        <img src="../assets/images/menuPageLine/lt-corner.svg" alt="" />
-        <a href="./sponsors.php">SPONSORS</a>
-        <img src="../assets/images/menuPageLine/rt-corner.svg" alt="" />
-        <a href="./developer.php">DEVELOPERS</a>
+        <img src="./assets/images/menuPageLine/lt-corner.svg" alt="" />
+        <a href="sponsors.php">SPONSORS</a>
+        <img src="./assets/images/menuPageLine/rt-corner.svg" alt="" />
+        <a href="developer.php">DEVELOPERS</a>
         <img
-            class="logo--img"
-            src="../assets/images/icon/BLACK LOGO.svg"
-            alt="" />
-        <a href="./prizepool.php">PRIZE POOL</a>
-        <img src="../assets/images/menuPageLine/lb-corner.svg" alt="" />
-        <a href="./gallery.php">GALLERY</a>
-        <img src="../assets/images/menuPageLine/rb-corner.svg" alt="" />
+                class="logo--img"
+                src="./assets/images/icon/BLACK LOGO.svg"
+                alt="" />
+        <a href="prizepool.php">PRIZE POOL</a>
+        <img src="./assets/images/menuPageLine/lb-corner.svg" alt="" />
+        <a href="gallery.php">GALLERY</a>
+        <img src="./assets/images/menuPageLine/rb-corner.svg" alt="" />
     </div>
 </div>
-<nav class="desktop--nav">
-    <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
-    <span>
-        <a href="index.php">
+    <nav class="mobile--nav">
+        <div>
+          <span>
             <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
             <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
-        </a>
-    </span>
-    <span class="nav--links">
-    <a href="./about.php">ABOUT</a>
-    <a href="./events.php">EVENTS</a>
-    <a href="./symosium.php">SYMPOSIUM</a>
-    <a href="./register.php">REGISTER</a>
-    <button class="nav--btn">
-        <img src="./assets/images/icon/menu.svg" alt="" />
-    </button>
+          </span>
+            <span>
+            <button class="main--MenuBtn">
+              <img src="./assets/images/icon/menu.svg" alt="" />
+            </button>
+          </span>
+        </div>
+        <div>
+            <a href="./events.php">EVENTS</a>
+            <a href="">REGISTER</a>
+        </div>
+    </nav>
+    <nav class="desktop--nav">
+        <span>
+          <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
+          <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
         </span>
-</nav>
+        <span class="nav--links">
+            <a href="./about.php">ABOUT</a>
+          <a class="menuOpenAnker" href="./events.php">EVENTS</a>
+            <a href="./symosium.php">SYMPOSIUM</a>
+                        <a href="./register.php">REGISTER</a>
+          <button class="main--MenuBtn">
+            <img src="./assets/images/icon/menu.svg" alt="" />
+          </button>
+        </span>
+        <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
+    </nav>
 <main>
     <h1 class="about--heading">ABOUT ANANTAM : </h1>
     <h1>
@@ -93,13 +109,12 @@
             In the institute’s 2nd year the IEEE Student Branch was opened by the initiatives of few students. In June 2009 the IEEE Student Branch at BKBIET was established with 26 number of IEEE members and was formally Inaugurated by Dr. V. R. Singh, Chair, IEEE Delhi Section on 19th September 2009. After that till today IEEE-BKBIET has conducted many events like Q-rious_1, Circuit manu, Vocab, Mock campus Placement, Trips etc. IEEE-BKBIET comes under HUB-3. IEEE is the world’s largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity. IEEE and its members inspire a global community through IEEE’s highly cited publications, conferences, technology standards, and professional and educational activities.</h1>
     </div>
 </main>
-    <img
-        class="bottom--line"
-        src="./assets/images/webLINES/navLine.png"
-        alt="" />
-
 
 <footer>
+    <img
+            class="bottom--line"
+            src="./assets/images/webLINES/navLine.png"
+            alt="" />
     <div class="maker--logo">
         <span>
           <a href=""><img src="./assets/images/icon/IEEE.png" alt="" /></a>
