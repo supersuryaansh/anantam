@@ -69,7 +69,6 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
         <img src="./assets/images/menuPageLine/rb-corner.svg" alt="" />
     </div>
 </div>
-<main>
     <nav class="mobile--nav">
         <div>
           <span>
