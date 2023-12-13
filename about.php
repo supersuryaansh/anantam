@@ -37,10 +37,10 @@
         </a>
     </span>
     <span class="nav--links">
-    <a>ABOUT</a>
-    <a>EVENTS</a>
-    <a>SYMPOSIUM</a>
-    <a>REGISTER</a>
+    <a href="./about.php">ABOUT</a>
+    <a href="./events.php">EVENTS</a>
+    <a href="./symosium.php">SYMPOSIUM</a>
+    <a href="./register.php">REGISTER</a>
     <button class="nav--btn">
         <img src="./assets/images/icon/menu.svg" alt="" />
     </button>

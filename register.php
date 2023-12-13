@@ -52,32 +52,73 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
 <body>
 <div class="main--menuPage">
     <button class="menu--close-btn">
-        <img src="../assets/images/icon/closeBtn.svg" alt="" />
+        <img src="./assets/images/icon/closeBtn.svg" alt="" />
     </button>
     <div class="menuPage--content">
-        <img src="../assets/images/menuPageLine/lt-corner.svg" alt="" />
-        <a href="./sponsors.php">SPONSORS</a>
-        <img src="../assets/images/menuPageLine/rt-corner.svg" alt="" />
-        <a href="./developer.php">DEVELOPERS</a>
+        <img src="./assets/images/menuPageLine/lt-corner.svg" alt="" />
+        <a href="sponsors.php">SPONSORS</a>
+        <img src="./assets/images/menuPageLine/rt-corner.svg" alt="" />
+        <a href="developer.php">DEVELOPERS</a>
         <img
-            class="logo--img"
-            src="../assets/images/icon/BLACK LOGO.svg"
-            alt="" />
-        <a href="./prizepool.php">PRIZE POOL</a>
-        <img src="../assets/images/menuPageLine/lb-corner.svg" alt="" />
-        <a href="./gallery.php">GALLERY</a>
-        <img src="../assets/images/menuPageLine/rb-corner.svg" alt="" />
+                class="logo--img"
+                src="./assets/images/icon/BLACK LOGO.svg"
+                alt="" />
+        <a href="prizepool.php">PRIZE POOL</a>
+        <img src="./assets/images/menuPageLine/lb-corner.svg" alt="" />
+        <a href="gallery.php">GALLERY</a>
+        <img src="./assets/images/menuPageLine/rb-corner.svg" alt="" />
     </div>
 </div>
-<nav>
-    <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
-    <a href="./index.php"
-    ><img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt=""
-        /></a>
-    <button class="nav--btn">
-        <img src="./assets/images/icon/menu.svg" alt="" />
-    </button>
-</nav>
+<main>
+    <nav class="mobile--nav">
+        <div>
+          <span>
+            <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
+            <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
+          </span>
+            <span>
+            <button class="main--MenuBtn">
+              <img src="./assets/images/icon/menu.svg" alt="" />
+            </button>
+          </span>
+        </div>
+        <div>
+            <a href="./events.php">EVENTS</a>
+            <?php
+            //check if user is logged in else redirect
+            if ($session->loggedIn() === false) {
+                //redirect to dashboard
+                echo "<a href='registerBackUp.php'>REGISTER</a>";
+            }else{
+                echo "<a href='./dashboard'>DASHBOARD</a>";
+            }
+            ?>
+        </div>
+    </nav>
+    <nav class="desktop--nav">
+        <span>
+          <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
+          <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
+        </span>
+        <span class="nav--links">
+            <a href="./about.php">ABOUT</a>
+          <a class="menuOpenAnker" href="./events.php">EVENTS</a>
+            <a href="./symosium.php">SYMPOSIUM</a>
+            <?php
+            //check if user is logged in else redirect
+            if ($session->loggedIn() === false) {
+                //redirect to dashboard
+                echo "<a href='registerBackUp.php'>REGISTER</a>";
+            }else{
+                echo "<a href='./dashboard'>DASHBOARD</a>";
+            }
+            ?>
+          <button class="main--MenuBtn">
+            <img src="./assets/images/icon/menu.svg" alt="" />
+          </button>
+        </span>
+        <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
+    </nav>
 <main>
     <form>
         <h1>EVENT REGISTRATION FORM : </h1>
