@@ -252,7 +252,7 @@ if (!$db->isConnected()) {
             </p>
           </span>
           <span class="card--btn">
-            <a href="/problem_statement.php" id="" ><button>EXPLORE</button></a>
+            <a href="/Problem_statement.php" id="" ><button>EXPLORE</button></a>
           </span>
         </div>
         <div class="cards card">
