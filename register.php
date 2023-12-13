@@ -1,45 +1,3 @@
-<?php
-require_once($_SERVER['DOCUMENT_ROOT']."/"."requireme.php");
-$session = new UserSession();
-global $_SERVER;
-
-$db = new Database();
-if(!$db->isConnected()){
-    die("Database Not connected");
-}
-
-//check if user is logged in and redirect
-if($session->loggedIn() === true){
-    //redirect to dashboard
-    header("Location: dashboard/");
-    die();
-}
-
-
-//check if files exist and perform the registeration
-if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST['usrGender']) && !empty($_POST['usrEmail']) && !empty($_POST['usrPhone']) && !empty($_POST['usrPass']))
-{
-    $fileUploader = new FileUploader("uploads/");
-    //random chars for prefix
-    $fileName = "college_id_". substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20) ."_".basename($_FILES["usrCollegeId"]["name"]);
-    $fileUploader->uploadFile($_FILES["usrCollegeId"],$fileName,array('png', 'jpg', 'jpeg'));
-
-    if($fileUploader->uploadOk) {
-        $session_code = genHash(50);
-        //register the user
-        $user = new UserRegister($_POST['usrName'], genHash(9), $session_code, $_POST['usrGender'], $_POST['usrEmail'], $_POST['usrPhone'], $fileName, $_POST['usrPass']);
-
-        //login the user
-        $session->setUser($session_code);
-        $db->disconnect();
-        //redirect to dashboard
-        header("Location: dashboard/");
-        die();
-    }
-
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,15 +41,7 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
         </div>
         <div>
             <a href="./events.php">EVENTS</a>
-            <?php
-            //check if user is logged in else redirect
-            if ($session->loggedIn() === false) {
-                //redirect to dashboard
-                echo "<a href='registerBackUp.php'>REGISTER</a>";
-            }else{
-                echo "<a href='./dashboard'>DASHBOARD</a>";
-            }
-            ?>
+            <a href="register.php">REGISTER</a>
         </div>
     </nav>
     <nav class="desktop--nav">
@@ -103,15 +53,7 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
             <a href="./about.php">ABOUT</a>
           <a class="menuOpenAnker" href="./events.php">EVENTS</a>
             <a href="./symosium.php">SYMPOSIUM</a>
-            <?php
-            //check if user is logged in else redirect
-            if ($session->loggedIn() === false) {
-                //redirect to dashboard
-                echo "<a href='registerBackUp.php'>REGISTER</a>";
-            }else{
-                echo "<a href='./dashboard'>DASHBOARD</a>";
-            }
-            ?>
+            <a href='register.php'>REGISTER</a>
           <button class="main--MenuBtn">
             <img src="./assets/images/icon/menu.svg" alt="" />
           </button>
@@ -119,67 +61,8 @@ if(!empty($_FILES['usrCollegeId']) && !empty($_POST['usrName']) && !empty($_POST
         <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
     </nav>
 <main>
-    <form>
-        <h1>EVENT REGISTRATION FORM : </h1>
-        <span>
-            <input type="text" id="usrName" name="usrName" placeholder="FIRST NAME"/>
-            <input type="text" id="usrName" name="usrName" placeholder="SURNAME"/>
-        </span>
-        <input type="number" id="usrNumber" name="usrNumber" placeholder="PHONE NUMBER(+91-)"/>
-        <input type="email" id="usrMail" name="usrMail" placeholder="YOUR EMAIL ID"/>
-        <div class="event--checkbox">
-        <span>
-            <input type="checkbox" id="hackathon" name="hackathon"/>
-            <label for="hackathon">ANANT NETRUNN</label>
-        </span>
-        <span>
-            <input type="checkbox" id="robowars" name="robowars"/>
-            <label for="robowars">ROBO WARS</label>
-        </span>
-        <span>
-            <input type="checkbox" id="codeCrunch" name="codeCrunch"/>
-            <label for="codeCrunch">CODE CRUNCH</label>
-        </span>
-        <span>
-            <input type="checkbox" id="esports" name="esports"/>
-            <label for="esports">ESPORTS STREET</label>
-        </span>
-        <span>
-            <input type="checkbox" id="bidBoundaries" name="bidBoundaries"/>
-            <label for="bidBoundaries">BID BOUNDARIES</label>
-        </span>
-        <span>
-            <input type="checkbox" id="dalalStreet" name="dalalStreet"/>
-            <label for="dalalStreet">DALAL STREET</label>
-        </span>
-        <span>
-            <input type="checkbox" id="binaryBrains" name="binaryBrains"/>
-            <label for="binaryBrains">BINARY BRAINS</label>
-        </span>
-        <span>
-            <input type="checkbox" id="mangaMania" name="mangaMania"/>
-            <label for="mangaMania">MANGA MANIA</label>
-        </span>
-        <span>
-            <input type="checkbox" id="frameflix" name="frameflix"/>
-            <label for="frameflix">FRAMEFLIX</label>
-        </span>
-        <span>
-            <input type="checkbox" id="pixelPerfect" name="pixelPerfect"/>
-            <label for="pixelPerfect">PIXEL PERFECT</label>
-        </span>
-        <span>
-            <input type="checkbox" id="blindDate" name="blindDate"/>
-            <label for="blindDate">BLIND DATE</label>
-        </span>
-        </div>
-        <button type="submit" name="submit" id="submit">SUBMIT</button>
-    </form>
-    <?php
+    <div data-tf-live="01HHHDGMMS4KESRYGVZ8YNPTFC"></div><script src="//embed.typeform.com/next/embed.js"></script>
 
-    if(isset($user->errorMessage)){ echo $user->errorMessage; }
-    if(isset($fileUploader->errorMessage)){ echo $fileUploader->errorMessage;
-    } ?>
     <img
         class="bottom--line"
         src="./assets/images/webLINES/navLine.png"
