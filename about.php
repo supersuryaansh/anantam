@@ -64,13 +64,7 @@
         </span>
         <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
       </nav>
-      <div class="hero--section">
-        <aside class="hero--section-aside-image">
-          <img
-            class="aside--img"
-            src="./assets/images/webLINES/sideImageSlider.png"
-            alt="" />
-        </aside>
+    </main>
 <main>
     <h1 class="about--heading">ABOUT ANANTAM : </h1>
     <h1>
