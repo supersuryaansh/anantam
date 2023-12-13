@@ -9,43 +9,68 @@
 </head>
 <body>
 <img class="bg--img" src="./assets/images/about--img.png"/>
-<div class="main--menuPage">
-    <button class="menu--close-btn">
-        <img src="../assets/images/icon/closeBtn.svg" alt="" />
-    </button>
-    <div class="menuPage--content">
-        <img src="../assets/images/menuPageLine/lt-corner.svg" alt="" />
-        <a href="./sponsors.php">SPONSORS</a>
-        <img src="../assets/images/menuPageLine/rt-corner.svg" alt="" />
-        <a href="./developer.php">DEVELOPERS</a>
+ <div class="date--left">08/01/2024 - 11/01/2024</div>
+
+    <div class="main--menuPage">
+      <button class="menu--close-btn">
+        <img src="./assets/images/icon/closeBtn.svg" alt="" />
+      </button>
+      <div class="menuPage--content">
+        <img src="./assets/images/menuPageLine/lt-corner.svg" alt="" />
+        <a href="sponsors.php">SPONSORS</a>
+        <img src="./assets/images/menuPageLine/rt-corner.svg" alt="" />
+        <a href="developer.php">DEVELOPERS</a>
         <img
-            class="logo--img"
-            src="../assets/images/icon/BLACK LOGO.svg"
-            alt="" />
-        <a href="./prizepool.php">PRIZE POOL</a>
-        <img src="../assets/images/menuPageLine/lb-corner.svg" alt="" />
-        <a href="./gallery.php">GALLERY</a>
-        <img src="../assets/images/menuPageLine/rb-corner.svg" alt="" />
+          class="logo--img"
+          src="./assets/images/icon/BLACK LOGO.svg"
+          alt="" />
+        <a href="prizepool.php">PRIZE POOL</a>
+        <img src="./assets/images/menuPageLine/lb-corner.svg" alt="" />
+        <a href="gallery.php">GALLERY</a>
+        <img src="./assets/images/menuPageLine/rb-corner.svg" alt="" />
+      </div>
     </div>
-</div>
-<nav class="desktop--nav">
-    <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
-    <span>
-        <a href="index.php">
+    <main>
+      <nav class="mobile--nav">
+        <div>
+          <span>
             <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
             <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
-        </a>
-    </span>
-    <span class="nav--links">
-    <a href="./about.php">ABOUT</a>
-    <a href="./events.php">EVENTS</a>
-    <a href="./symosium.php">SYMPOSIUM</a>
-    <a href="./register.php">REGISTER</a>
-    <button class="nav--btn">
-        <img src="./assets/images/icon/menu.svg" alt="" />
-    </button>
+          </span>
+          <span>
+            <button class="main--MenuBtn">
+              <img src="./assets/images/icon/menu.svg" alt="" />
+            </button>
+          </span>
+        </div>
+        <div>
+          <a href="./events.php">EVENTS</a>
+          <a href='register.php'>REGISTER</a>
+        </div>
+      </nav>
+      <nav class="desktop--nav">
+        <span>
+          <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
+          <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
         </span>
-</nav>
+        <span class="nav--links">
+            <a href="./about.php">ABOUT</a>
+          <a class="menuOpenAnker" href="./events.php">EVENTS</a>
+            <a href="./symosium.php">SYMPOSIUM</a>
+            <a href='register.php'>REGISTER</a>
+          <button class="main--MenuBtn">
+            <img src="./assets/images/icon/menu.svg" alt="" />
+          </button>
+        </span>
+        <img class="line1" src="./assets/images/webLINES/navLine.png" alt="" />
+      </nav>
+      <div class="hero--section">
+        <aside class="hero--section-aside-image">
+          <img
+            class="aside--img"
+            src="./assets/images/webLINES/sideImageSlider.png"
+            alt="" />
+        </aside>
 <main>
     <h1 class="about--heading">ABOUT ANANTAM : </h1>
     <h1>
