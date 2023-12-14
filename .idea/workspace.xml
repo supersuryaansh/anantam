@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6c63ebf-863f-4387-959f-baaaae64be0f" name="Changes" comment="making pages responsive///" />
+    <list default="true" id="c6c63ebf-863f-4387-959f-baaaae64be0f" name="Changes" comment="removed linkjodo.php">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +138,7 @@
       <workItem from="1702479296292" duration="96000" />
       <workItem from="1702514823209" duration="1325000" />
       <workItem from="1702542544923" duration="1678000" />
-      <workItem from="1702567383653" duration="597000" />
+      <workItem from="1702567383653" duration="1596000" />
     </task>
     <task id="LOCAL-00001" summary="Date font changed.">
       <option name="closed" value="true" />
@@ -362,7 +364,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702567455672</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="removed linkjodo.php">
+      <option name="closed" value="true" />
+      <created>1702568374325</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1702568374325</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +402,7 @@
     <MESSAGE value="Bg changed of the form..." />
     <MESSAGE value="fnq and About page added..." />
     <MESSAGE value="making pages responsive///" />
-    <option name="LAST_COMMIT_MESSAGE" value="making pages responsive///" />
+    <MESSAGE value="removed linkjodo.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed linkjodo.php" />
   </component>
 </project>
