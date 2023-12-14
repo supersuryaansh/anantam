@@ -9,12 +9,12 @@
     <title>ANANTAM - REGISTRATION</title>
 </head>
 <body>
-<img class="bg--img" src="./assets/images/about--img.png"/>
+<img class="bg--img" src="./assets/images/about--img.png" alt=""/>
 <div class="main--menuPage">
     <button class="menu--close-btn">
         <img src="./assets/images/icon/closeBtn.svg" alt="" />
     </button>
-    <div class="menuPage--content">
+      <div class="menuPage--content">
         <img src="./assets/images/menuPageLine/lt-corner.svg" alt="" />
         <a href="sponsors.php">SPONSORS</a>
         <img src="./assets/images/menuPageLine/rt-corner.svg" alt="" />
@@ -29,13 +29,13 @@
         <img src="./assets/images/menuPageLine/rb-corner.svg" alt="" />
     </div>
 </div>
-    <nav class="mobile--nav">
+<nav class="mobile--nav">
         <div>
           <span>
             <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
             <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
           </span>
-            <span>
+          <span>
             <button class="main--MenuBtn">
               <img src="./assets/images/icon/menu.svg" alt="" />
             </button>
@@ -46,7 +46,7 @@
             <a href="">REGISTER</a>
         </div>
     </nav>
-    <nav class="desktop--nav">
+      <nav class="desktop--nav">
         <span>
           <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
           <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
@@ -111,10 +111,6 @@
 </main>
 
 <footer>
-    <img
-            class="bottom--line"
-            src="./assets/images/webLINES/navLine.png"
-            alt="" />
     <div class="maker--logo">
         <span>
           <a href=""><img src="./assets/images/icon/IEEE.png" alt="" /></a>
@@ -132,7 +128,6 @@
           <h1>LINKS</h1>
           <a href="/events.php">events</a>
           <a href="/register.php">registration</a>
-          <a href="/login.php">sign in</a>
           <a href="">developers</a>
           <a href="">prize pool</a>
           <a href="">sponsors</a>
@@ -183,6 +178,7 @@
     </div>
     <p class="copyright">&COPY; made by ANANTAM TEAM, with 💓💓💓</p>
 </footer>
-<script src="./js/registration.js"></script>
+<!--<script src="./js/registration.js"></script>-->
+<script src="./js/nav.js"></script>
 </body>
 </html>

@@ -71,7 +71,7 @@
         </div>
         <div>
           <a href="./events.php">EVENTS</a>
-          <a href='registerBackUp.php'>REGISTER</a>
+          <a href='register.php'>REGISTER</a>
         </div>
       </nav>
       <nav class="desktop--nav">
@@ -83,7 +83,7 @@
             <a href="./about.php">ABOUT</a>
           <a class="menuOpenAnker" href="./events.php">EVENTS</a>
             <a href="./symosium.php">SYMPOSIUM</a>
-            <a href='http://bit.ly/anantam-registration'>REGISTER</a>
+            <a href='register.php'>REGISTER</a>
           <button class="main--MenuBtn">
             <img src="./assets/images/icon/menu.svg" alt="" />
           </button>

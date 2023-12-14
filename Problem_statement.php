@@ -307,7 +307,6 @@
           <h1>LINKS</h1>
           <a href="/events.php">events</a>
           <a href="/register.php">registration</a>
-          <a href="/login.php">sign in</a>
           <a href="">developers</a>
           <a href="">prize pool</a>
           <a href="">sponsors</a>
