@@ -45,7 +45,7 @@
         </div>
         <div>
             <a href="./events.php">EVENTS</a>
-            <a href="./linkjodo.php">REGISTER</a>
+            <a href="./register.php">REGISTER</a>
         </div>
     </nav>
       <nav class="desktop--nav">
