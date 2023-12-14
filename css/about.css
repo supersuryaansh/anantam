@@ -193,6 +193,7 @@ main h1{
 /*FOOTER S*/
 
 footer {
+    border-top: 2px solid var(--main);
     position: relative;
     padding-inline: 50px;
     padding-block: 100px;
@@ -344,5 +345,13 @@ p {
     }
     main{
         width: 100%;
+    }
+}
+@media screen and (max-width: 570px) {
+    main{
+        padding: 24px 20px;
+    }
+    .about--heading {
+        font-size: 2rem;
     }
 }

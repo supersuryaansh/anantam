@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6c63ebf-863f-4387-959f-baaaae64be0f" name="Changes" comment="making pages responsive///">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem_statement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Problem_statement.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events.php" beforeDir="false" afterPath="$PROJECT_DIR$/events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fnq.php" beforeDir="false" afterPath="$PROJECT_DIR$/fnq.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symosium.php" beforeDir="false" afterPath="$PROJECT_DIR$/symosium.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +54,7 @@
     &quot;JavaScript Debug.register.php.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/rohan/OneDrive/Desktop/Asynchronous&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -135,7 +142,10 @@
       <workItem from="1702448695327" duration="274000" />
       <workItem from="1702454658522" duration="2955000" />
       <workItem from="1702461226147" duration="25000" />
-      <workItem from="1702461266490" duration="1204000" />
+      <workItem from="1702461266490" duration="1352000" />
+      <workItem from="1702479296292" duration="96000" />
+      <workItem from="1702514823209" duration="1325000" />
+      <workItem from="1702542544923" duration="906000" />
     </task>
     <task id="LOCAL-00001" summary="Date font changed.">
       <option name="closed" value="true" />
@@ -329,7 +339,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702448953102</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="making pages responsive///">
+      <option name="closed" value="true" />
+      <created>1702466081700</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1702466081701</updated>
+    </task>
+    <task id="LOCAL-00026" summary="making pages responsive///">
+      <option name="closed" value="true" />
+      <created>1702466142633</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1702466142633</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,18 +1,18 @@
-const mainMenuPageOpenBtn = document.querySelector(".nav--btn");
-const mainMenuPageCloseBtn = document.querySelector(".menu--close-btn");
-const mainMenuPage = document.querySelector(".main--menuPage");
-
-function mainMenu() {
-  mainMenuPageOpenBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      mainMenuPage.style.transform = `translateY(0%)`;
-    });
-  mainMenuPageCloseBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    mainMenuPage.style.transform = `translateY(-130%)`;
-  });
-}
-mainMenu();
+// const mainMenuPageOpenBtn = document.querySelector(".nav--btn");
+// const mainMenuPageCloseBtn = document.querySelector(".menu--close-btn");
+// const mainMenuPage = document.querySelector(".main--menuPage");
+//
+// function mainMenu() {
+//   mainMenuPageOpenBtn.addEventListener("click", function (e) {
+//       e.preventDefault();
+//       mainMenuPage.style.transform = `translateY(0%)`;
+//     });
+//   mainMenuPageCloseBtn.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     mainMenuPage.style.transform = `translateY(-130%)`;
+//   });
+// }
+// mainMenu();
 
 const userPass = document.querySelector("#usrPass");
 const userConfirmPass = document.querySelector("#usrConfPass");
