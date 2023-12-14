@@ -32,8 +32,10 @@
 <nav class="mobile--nav">
         <div>
           <span>
+              <a href="./index.php">
             <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
             <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
+                  </a>
           </span>
           <span>
             <button class="main--MenuBtn">
@@ -43,13 +45,16 @@
         </div>
         <div>
             <a href="./events.php">EVENTS</a>
-            <a href="">REGISTER</a>
+            <a href="./linkjodo.php">REGISTER</a>
         </div>
     </nav>
       <nav class="desktop--nav">
         <span>
+            <a href="./index.php">
           <img src="./assets/images/icon/LOGO-TYPOGRAPGY.png" alt="" />
           <p class="date--of-event">08 JAN, 2024 - 11 JAN, 2024</p>
+            </a>
+
         </span>
         <span class="nav--links">
             <a href="./about.php">ABOUT</a>

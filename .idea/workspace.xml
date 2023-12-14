@@ -8,12 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Problem_statement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Problem_statement.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events.php" beforeDir="false" afterPath="$PROJECT_DIR$/events.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fnq.php" beforeDir="false" afterPath="$PROJECT_DIR$/fnq.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symosium.php" beforeDir="false" afterPath="$PROJECT_DIR$/symosium.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,28 +39,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;JavaScript Debug.Anantam.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.index.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.register.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.register.php.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rohan/OneDrive/Desktop/Asynchronous&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JavaScript Debug.Anantam.executor": "Debug",
+    "JavaScript Debug.index.html.executor": "Debug",
+    "JavaScript Debug.index.php.executor": "Debug",
+    "JavaScript Debug.register.html.executor": "Run",
+    "JavaScript Debug.register.php.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/rohan/OneDrive/Desktop/Asynchronous",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="JavaScript Debug.register.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:59883/index.php/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -145,7 +140,7 @@
       <workItem from="1702461266490" duration="1352000" />
       <workItem from="1702479296292" duration="96000" />
       <workItem from="1702514823209" duration="1325000" />
-      <workItem from="1702542544923" duration="906000" />
+      <workItem from="1702542544923" duration="1678000" />
     </task>
     <task id="LOCAL-00001" summary="Date font changed.">
       <option name="closed" value="true" />
@@ -355,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702466142633</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="making pages responsive///">
+      <option name="closed" value="true" />
+      <created>1702543661331</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1702543661331</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
