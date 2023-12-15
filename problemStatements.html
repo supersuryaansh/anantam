@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.8d8029cf.css">
+    <title>Problem Statements</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="nav__logo-container">
+        <img src="/Navbar-logo.6c7251ce.svg" alt="Logo">
+        <p>8th January to 11th January, 2024</p>
+      </a>
+
+      <div class="nav__menu-container">
+        <img class="nav__menu__open" src="/menu.e83ea243.svg" alt="">
+      </div>
+
+      <img class="nav__lowerBoder" src="/navbar-lowerBorder.8b3cfbd2.svg" alt="">
+    </nav>
+    <!--     Problem statements start-->
+
+    <div class="problem-statements">
+      <table>
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>AN_ID</th>
+            <th>CATEGORY</th>
+            <th>PROBLEM STATEMENT</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td data-index="130" class="event--id">AN001</td>
+            <td>Software</td>
+            <td>
+              <details>
+                <summary>
+                  Communication Gap between management, employees and clients
+                </summary>
+                <p>
+                  Communication gap among management, employees, and clients.
+                  The management lacks awareness of ground-level processes,
+                  while simultaneously remaining unaware of the issues faced by
+                  employees and clients. Conversely, employees and clients may
+                  experience difficulty in communicating their problems, and the
+                  management is unaware of the effectiveness of employee
+                  performance or client satisfaction. This creates ambiguity
+                  regarding whether the company or institute is successfully
+                  fulfilling its vision and mission.
+                </p>
+              </details>
+            </td>
+            <!-- <td><button class="AN--btn">APPLY</button></td> -->
+            <!--  -->
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td data-index="212">AN002</td>
+            <td>Software</td>
+
+            <td>
+              <details>
+                <summary>Interactive Learning Platform</summary>
+                <p>
+                  Develop a platform that enhances interactive learning
+                  experiences for students, incorporating features like virtual
+                  labs, quizzes, and collaborative projects to make learning
+                  more engaging.
+                </p>
+              </details>
+            </td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td data-index="321">AN003</td>
+            <td>Software</td>
+
+            <td>
+              <details>
+                <summary>Gamified Learning for Skill Development</summary>
+                <p>
+                  Build a gamified platform that helps students develop specific
+                  skills (e.g., coding, critical thinking, problem-solving) in
+                  an enjoyable and interactive way.
+                </p>
+              </details>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td data-index="135">AN004</td>
+            <td>Software</td>
+            <td>
+              <details>
+                <summary>Parent-Teacher Communication Platform</summary>
+                <p>
+                  Build a communication platform that facilitates effective and
+                  transparent communication between parents and teachers,
+                  allowing real-time updates on student progress, events, and
+                  educational resources.
+                </p>
+              </details>
+            </td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td data-index="234">AN005</td>
+            <td>Software</td>
+            <td>
+              <details>
+                <summary>Open Educational Resources (OER) Enhancement</summary>
+                <p>
+                  Improve the accessibility and usability of open educational
+                  resources, making it easier for educators to find, share, and
+                  collaborate on high-quality educational materials.
+                </p>
+              </details>
+            </td>
+
+            <!--Market Access for Small Farmers-->
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td data-index="594">AN006</td>
+            <td>Hardware</td>
+            <td>
+              <details>
+                <summary>Market Access for Small Farmers</summary>
+                <p>
+                  Create a platform that connects small-scale farmers with local
+                  markets, providing them with information on demand, fair
+                  pricing, and logistics to improve their market access and
+                  profitability.
+                </p>
+              </details>
+            </td>
+
+            <!-- Centralized Monitoring System for Street Light Fault Detection and Location Tracking -->
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td data-index="669">AN008</td>
+            <td>Software</td>
+            <td>
+              <details>
+                <summary>Supply Chain Optimization</summary>
+                <p>
+                  Design solutions that optimize the agricultural supply chain,
+                  reducing waste, improving distribution efficiency, and
+                  ensuring fair compensation for farmers throughout the chain.
+                </p>
+              </details>
+            </td>
+
+            <!-- Centralized Monitoring System for Street Light Fault Detection and Location Tracking -->
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+    <script>const applyBtn = document.querySelectorAll(".AN--btn");
+function idRetrieve() {
+    applyBtn.forEach((elem)=>{
+        elem.addEventListener("click", function(e) {
+            e.preventDefault();
+            const closestEventId = elem.closest(".event--id");
+            const eventIdInput = closestEventId.querySelector(".AN--btn"); // Replace with the actual class of your input field
+            const eventId = eventIdInput.value;
+            console.log(eventId);
+        });
+    });
+}
+idRetrieve();
+
+</script>
+    <!--Problem statements end  -->
+  <script src="/problemStatements.9f0e7a18.js"></script></body>
+</html>
