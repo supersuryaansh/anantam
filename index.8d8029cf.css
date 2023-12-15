@@ -1186,6 +1186,13 @@ footer .footer__link__container a {
   display: flex;
 }
 
+@media (width <= 768px) {
+  .problem-statements {
+    height: 100%;
+    overflow: auto;
+  }
+}
+
 .problem-statements table {
   margin-top: 10rem !important;
 }
@@ -1310,6 +1317,28 @@ tr:hover {
   color: #f2be22;
   font-size: 2rem;
   line-height: 24px;
+}
+
+.container {
+  background: #f2be22;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container .middle-text {
+  position: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.container .middle-text h1 {
+  color: #0d0c0c;
+  font-size: 10rem;
 }
 
 /*# sourceMappingURL=index.8d8029cf.css.map */
