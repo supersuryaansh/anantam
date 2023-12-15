@@ -721,6 +721,12 @@ footer .footer__link__container a {
   margin-top: 5rem;
 }
 
+@media (width >= 1921px) {
+  .event__carousel {
+    padding: 5rem;
+  }
+}
+
 .event__carousel__card {
   z-index: -1;
   width: 30rem;
@@ -733,6 +739,13 @@ footer .footer__link__container a {
   grid-template-columns: repeat(3, 40rem);
   width: 100%;
   display: grid;
+}
+
+@media (width >= 1921px) {
+  .event__carousel__container {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (width <= 768px) {
@@ -800,7 +813,7 @@ footer .footer__link__container a {
   text-align: center;
   z-index: 995;
   position: fixed;
-  top: 7rem;
+  top: 6rem;
   left: 0;
 }
 
