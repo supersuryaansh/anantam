@@ -930,6 +930,14 @@ footer .footer__link__container a {
   display: flex;
 }
 
+.popup__container .popup__content--text a button {
+  cursor: pointer;
+  background-color: #f2be22;
+  border: 1px solid #0d0c0c;
+  width: 20rem;
+  padding: 2rem;
+}
+
 @media (width <= 768px) {
   .popup__container .popup__content--text ul {
     padding-left: 2rem;
