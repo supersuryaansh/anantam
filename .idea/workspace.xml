@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6c63ebf-863f-4387-959f-baaaae64be0f" name="Changes" comment="removed linkjodo.php">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c6c63ebf-863f-4387-959f-baaaae64be0f" name="Changes" comment="removed linkjodo.php" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +136,7 @@
       <workItem from="1702479296292" duration="96000" />
       <workItem from="1702514823209" duration="1325000" />
       <workItem from="1702542544923" duration="1678000" />
-      <workItem from="1702567383653" duration="1596000" />
+      <workItem from="1702567383653" duration="2213000" />
     </task>
     <task id="LOCAL-00001" summary="Date font changed.">
       <option name="closed" value="true" />
@@ -372,7 +370,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702568374325</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="removed linkjodo.php">
+      <option name="closed" value="true" />
+      <created>1702571810388</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1702571810388</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
