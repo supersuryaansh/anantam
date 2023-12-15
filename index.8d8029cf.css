@@ -1186,6 +1186,10 @@ footer .footer__link__container a {
   display: flex;
 }
 
+.problem-statements table {
+  margin-top: 10rem !important;
+}
+
 td > details > p {
   color: #f2be22;
   margin-top: 1rem;
