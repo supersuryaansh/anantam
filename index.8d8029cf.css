@@ -977,6 +977,22 @@ footer .footer__link__container a {
   display: none;
 }
 
+.scene_element--fadeinleft {
+  animation-name: fadeInLeft;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
 #about {
   width: 100vw;
   height: 100vh;
@@ -1339,6 +1355,21 @@ tr:hover {
 .container .middle-text h1 {
   color: #0d0c0c;
   font-size: 10rem;
+}
+
+.prize__container {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+@media (width <= 768px) {
+  .prize__container img {
+    aspect-ratio: 1;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.8d8029cf.css.map */
