@@ -634,6 +634,10 @@ function closeMenuPanel() {
 },{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"32WEZ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+var _gsap = require("gsap");
+var _gsapDefault = parcelHelpers.interopDefault(_gsap);
+var _scrollTrigger = require("gsap/ScrollTrigger");
+(0, _gsapDefault.default).registerPlugin((0, _scrollTrigger.ScrollTrigger));
 class Footer {
     constructor(element){
         this.element = document.querySelectorAll(element);
@@ -664,6 +668,6 @@ class Footer {
 }
 exports.default = Footer;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["3smKr","bB7Pu"], "bB7Pu", "parcelRequirecaab")
+},{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["3smKr","bB7Pu"], "bB7Pu", "parcelRequirecaab")
 
 //# sourceMappingURL=index.3d214d75.js.map
