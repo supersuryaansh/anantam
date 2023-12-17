@@ -578,9 +578,44 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _preloader = require("./preloader");
 var _preloaderDefault = parcelHelpers.interopDefault(_preloader);
+var _menu = require("./menu");
+(0, _menu.openMenuPanel)();
+(0, _menu.closeMenuPanel)();
 const preloader = new (0, _preloaderDefault.default)();
 preloader.animation();
 
-},{"./preloader":"1Znlp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["13kFe","ll0Hq"], "ll0Hq", "parcelRequirecaab")
+},{"./preloader":"1Znlp","./menu":"bA0sM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bA0sM":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "openMenuPanel", ()=>openMenuPanel);
+parcelHelpers.export(exports, "closeMenuPanel", ()=>closeMenuPanel);
+var _gsap = require("gsap");
+var _scrollTrigger = require("gsap/ScrollTrigger");
+(0, _gsap.gsap).registerPlugin((0, _scrollTrigger.ScrollTrigger));
+const menuOpen = document.querySelector(".nav__menu__open");
+const menuClose = document.querySelector(".menu__popup__close");
+function openMenu(e) {
+    const menu = document.querySelector(".menu__popup");
+    (0, _gsap.gsap).from(".menu__popup", {
+        yPercent: -100
+    });
+    menu.classList.remove("hidden");
+}
+function closeMenu(e) {
+    const menu = document.querySelector(".menu__popup");
+    menu.classList.add("hidden");
+}
+function openMenuPanel() {
+    menuOpen.addEventListener("click", (e)=>{
+        openMenu(e);
+    });
+}
+function closeMenuPanel() {
+    menuClose.addEventListener("click", (e)=>{
+        closeMenu(e);
+    });
+}
+
+},{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["13kFe","ll0Hq"], "ll0Hq", "parcelRequirecaab")
 
 //# sourceMappingURL=prizepool.af1b402a.js.map
