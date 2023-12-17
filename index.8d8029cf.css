@@ -1192,6 +1192,7 @@ footer .footer__link__container a {
 
 @media (width <= 768px) {
   .problem-statements {
+    justify-content: flex-start;
     height: 100%;
     padding-top: 10rem;
     overflow: auto;
@@ -1236,6 +1237,12 @@ table {
   width: 80%;
   height: 50%;
   overflow: hidden;
+}
+
+@media (width <= 768px) {
+  table {
+    width: 100%;
+  }
 }
 
 th, td {
