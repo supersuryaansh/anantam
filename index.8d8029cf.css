@@ -1212,14 +1212,14 @@ footer .footer__link__container a {
   }
 }
 
-td > details > p {
+td > p {
   color: #f2be22;
   margin-top: 1rem;
   font-size: 2rem;
 }
 
 @media (width <= 768px) {
-  td > details > p {
+  td > p {
     font-size: 1rem;
   }
 }
