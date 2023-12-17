@@ -1443,9 +1443,16 @@ tr:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 100vh;
   font-size: 3rem;
   display: flex;
+}
+
+@media (width <= 768px) {
+  .developers {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=index.8d8029cf.css.map */
