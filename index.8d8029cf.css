@@ -499,7 +499,6 @@ footer .footer__link__container a {
 }
 
 .footer__bottom__links {
-  border: 2px solid #f2f2f233;
   border-radius: 2rem;
   list-style: none;
 }
@@ -1438,6 +1437,15 @@ tr:hover {
     aspect-ratio: 1;
     width: 100%;
   }
+}
+
+.developers {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3rem;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.8d8029cf.css.map */
