@@ -1335,7 +1335,7 @@ tr:hover {
 }
 
 .question--area p {
-  text-transform: lowercase;
+  text-transform: capitalize;
   color: #f2be22;
   font-size: 2rem;
   line-height: 24px;
