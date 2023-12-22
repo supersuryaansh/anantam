@@ -1455,4 +1455,22 @@ tr:hover {
   }
 }
 
+.sponsor {
+  padding-top: 10rem;
+}
+
+.sponsor__container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.sponsor__container a {
+  text-decoration: none;
+}
+
+.sponsor__container .sponsor__logo {
+  width: 30rem;
+}
+
 /*# sourceMappingURL=index.8d8029cf.css.map */
